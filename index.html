@@ -93,11 +93,11 @@
         <div class="modern-block__wrapper">
             <section class="modern-block">
                 <h3 class="modern-block__title">Сосредоточьтесь на главном</h3>
-                <p class="modern-block__description">
-                    Пока наши консервативные конкуренты придерживаются традиционных методов работы, мы шагаем в ногу со временем!<br> Консалтинговая Компания «Развитие» предлагает цифровизацию вашей бухгалтерии, что позволит избежать бюрократических проволочек,
-                    получить постоянный доступ к документам и обеспечить их надежное и долговременное хранение.<br> Мы берем на себя все эти обязательства, чтобы предприниматели могли сосредоточиться на развитии и совершенствовании своей работы, а не
-                    на отчетах, платежных поручениях и актах.
-                </p>
+                <div class="modern-block__description">
+                    <p>Пока наши консервативные конкуренты придерживаются традиционных методов работы, мы шагаем в ногу со временем!</p>
+                    <p>Консалтинговая Компания «Развитие» предлагает цифровизацию вашей бухгалтерии, что позволит избежать бюрократических проволочек, получить постоянный доступ к документам и обеспечить их надежное и долговременное хранение.</p>
+                    <p>Мы берем на себя все эти обязательства, чтобы предприниматели могли сосредоточиться на развитии и совершенствовании своей работы, а не на отчетах, платежных поручениях и актах.</p>
+                </div>
                 <ul class="modern-block__list">
                     <li class="modern-block__list-element">Цифровизация вашей бухгалтерии</li>
                     <li class="modern-block__list-element">Отсутствие бюрократических проволочек</li>
@@ -136,15 +136,27 @@
                         </div>
                     </div>
                 </div>
-                <form action="" method="post">
-                    <label for="username">Имя</label>
-                    <input type="text" name="user-name" id="username" placeholder="Алексей">
-                    <label for="companyname">Название компании или ИНН</label>
-                    <input type="text" name="company-name" id="companyname" placeholder="Название компании или ИНН">
-                    <label for="userphone">Номер телефона</label>
-                    <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
-                    <label for="confirmuser">Я даю свое согласие на обработку моих персональных данных.</label>
-                    <input type="checkbox" name="confirm-yes" id="confirmuser" checked>
+                <form action="" method="post" class="ask-block__callback-form">
+                    <legend>Задайте нам вопрос</legend>
+                    <p>Если хотя бы один вопрос заставил вас задуматься, то вам несомненно требуются перемены и надежный партнер!</p>
+                    <ul class="ask-block__callback-form_list">
+                        <li>
+                            <label for="username">Имя</label>
+                            <input type="text" name="user-name" id="username" placeholder="Алексей">
+                        </li>
+                        <li>
+                            <label for="companyname">Название компании или ИНН</label>
+                            <input type="text" name="company-name" id="companyname" placeholder="Название компании или ИНН">
+                        </li>
+                        <li>
+                            <label for="userphone">Номер телефона</label>
+                            <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
+                        </li>
+                        <li>
+                            <input type="checkbox" name="confirm-yes" id="confirmuser" checked>
+                            <label for="confirmuser">Я даю свое согласие на обработку моих персональных данных.</label>
+                        </li>
+                    </ul>
                     <input type="submit" value="Перезвоните нам">
                 </form>
             </section>

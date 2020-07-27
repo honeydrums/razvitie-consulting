@@ -16,6 +16,7 @@ body {
     display: block;
     font-size: 30px;
     font-weight: bold;
+    text-align: right;
     color: rgba(15, 81, 43, 1);
     text-decoration: none;
 }
@@ -289,16 +290,22 @@ body {
 
 .advantages-block__description {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px 100px;
+    /* или 9% */
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    place-items: end;
+    padding-bottom: 60px;
 }
 
 .advantages-block__description p {
     margin: 0;
     padding: 0;
+    font-size: 20px;
+}
+
+.advantages-block__description p strong {
+    font-size: 19px;
 }
 
 
@@ -318,28 +325,234 @@ body {
 
 /* блок сосредоточьтесь на главном */
 
+.modern-block__wrapper {
+    background-image: url('../img/modern-illustration.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .modern-block {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-template-rows: 1fr;
+    grid-gap: 0 2%;
+    grid-template-areas: 'mb-title mb-list' 'mb-text mb-list';
     max-width: 1184px;
+    max-height: 528px;
     width: 100%;
     margin: 0 auto;
+    padding: 80px 0;
+}
+
+.modern-block__title {
+    grid-area: mb-title;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.modern-block__description {
+    grid-area: mb-text;
+    margin: 20px 0;
+}
+
+.modern-block__description p {
+    font-size: 20px;
+    font-family: 'Roboto';
+}
+
+.modern-block__list {
+    grid-area: mb-list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    list-style: none;
+}
+
+.modern-block__list-element {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 0 15px;
+}
+
+.modern-block__list-element:first-child:before {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url('../img/cloud-upload-outline.svg');
+    background-repeat: no-repeat;
+}
+
+.modern-block__list-element:nth-child(2):before {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url('../img/rocket-outline.svg');
+    background-repeat: no-repeat;
+}
+
+.modern-block__list-element:nth-child(3):before {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url('../img/key-outline.svg');
+    background-repeat: no-repeat;
+}
+
+.modern-block__list-element:last-child:before {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    background-image: url('../img/finger-print-sharp.svg');
+    background-repeat: no-repeat;
 }
 
 
 /* блок "вашему бизнесу пора вырасти" */
 
 .ask-block__wrapper {
+    background: linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
+}
+
+.ask-block {
     max-width: 1184px;
     width: 100%;
     margin: 0 auto;
+}
+
+.ask-block__title {
+    margin: 0;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* форма "перезвоните нам" */
+
+.ask-block__callback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 32px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    /* временные размеры формы */
+    width: 400px;
+    height: 832px;
+}
+
+.ask-block__callback-form legend {
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ask-block__callback-form label {}
+
+.ask-block__callback-form_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ask-block__callback-form_list li:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+}
+
+.ask-block__callback-form input[type="submit"] {
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.ask-block__callback-form input[type="submit"]:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.ask-block__callback-form input[type="submit"]:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
 }
 
 
 /* блок с регистрацией */
 
 .signup-block__wrapper {
+    background-color: rgba(244, 242, 229, 1);
+}
+
+.signup-block {
+    display: grid;
+    grid-template-areas: 'sb-title sb-signup' 'sb-text sb-signup';
+    grid-template-columns: 65% 30%;
+    grid-template-rows: 1fr;
+    grid-gap: 0 2%;
     max-width: 1184px;
     width: 100%;
+    max-height: 499px;
     margin: 0 auto;
+}
+
+.signup-block__title {
+    grid-area: sb-title;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.signup-block__text {
+    grid-area: sb-text;
+    font-size: 20px;
+}
+
+.signup-block__decorative-phone {
+    grid-area: sb-signup;
+    background: url('../img/mobile-phone-border.svg') no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+.signup-block__decorative-phone__title {
+    margin: 0;
+    font-size: 30px;
+}
+
+.signup-block__decorative-phone__link {
+    padding: 19px 50px;
+    background: linear-gradient(2.66deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.signup-block__decorative-phone__link:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.signup-block__decorative-phone__link:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
 }
 
 
@@ -454,10 +667,6 @@ body {
 
 /* номера телефонов в подвале */
 
-.main-footer__contacts a:first-child {
-    text-align: right;
-}
-
 .main-footer__contacts a {
     padding-top: 10px;
 }
@@ -471,4 +680,145 @@ body {
 
 .main-footer__copyright a {
     color: rgba(0, 0, 0, 1);
+}
+
+
+/* страница "Контакты" */
+
+.contacts-page__top-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1184px;
+    width: 100%;
+    max-height: 328px;
+    margin: 0 auto;
+}
+
+.contacts-page__title {
+    margin: 0 auto 78px;
+    padding-top: 80px;
+}
+
+.contacts-page__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 80px;
+    list-style: none;
+}
+
+.contacts-page__list li {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 0 30px;
+}
+
+.contacts-page__list li a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+.contacts-page__list-phone {
+    grid-template-areas: 'contacts-icon contacts-phone-1' 'contacts-icon contacts-phone-2';
+}
+
+.contacts-page__list-phone:first-child {
+    grid-area: contacts-phone-1;
+}
+
+.contacts-page__list-phone:last-child {
+    grid-area: contacts-phone-2;
+}
+
+.contacts-page__-email-us__form input[type="submit"] {
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contacts-page__-email-us__form input[type="submit"]:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.contacts-page__-email-us__form input[type="submit"]:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
+}
+
+.contacts-page__list-phone:before {
+    content: '';
+    background-image: url('../img/contacts-page/phones-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    grid-area: contacts-icon;
+}
+
+.contacts-page__list-address {
+    font-size: 20px;
+}
+
+.contacts-page__list-address:before {
+    content: '';
+    background-image: url('../img/contacts-page/address-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+}
+
+.contacts-page__list-mail:before {
+    content: '';
+    background-image: url('../img/contacts-page/email-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+}
+
+.contacts-page__email-us__wrapper {
+    background-color: rgba(244, 242, 229, 1);
+}
+
+.contacts-page__email-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1184px;
+    max-height: 835px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contacts-page__email-us_title {
+    padding-top: 90px;
+    margin: 0 auto 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contacts-page__email-us_text {
+    margin: 0 auto 35px;
+    font-size: 20px;
+}
+
+.contacts-page__email-us__form-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
