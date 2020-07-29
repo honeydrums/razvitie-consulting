@@ -83,8 +83,28 @@ body {
     list-style: none;
 }
 
+.main-header__nav-list_element a:first-child,
+.main-header__nav-list_dropdown-element {
+    padding: 30px 0;
+}
+
+.main-header__nav-list_dropdown {
+    display: none;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header__nav-list_element a:first-child:hover+.main-header__nav-list_dropdown {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    list-style: none;
+}
+
 .main-header__nav-list_element a {
     font-size: 22px;
+    font-weight: bold;
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
 }
@@ -138,6 +158,49 @@ body {
     width: 65%;
     font-size: 14px;
     background-color: rgba(255, 255, 255, 1);
+}
+
+
+/* шапка с 1200px */
+
+@media (max-width: 1200px) {
+    .contact-phone {
+        font-size: 24px;
+    }
+    .main-header__nav-list {
+        margin: 0 35px;
+    }
+    .main-header__top,
+    .main-footer {
+        padding: 0 20px;
+    }
+    .main-header__bottom {
+        margin: 0 20px;
+    }
+    .main-header__work-hours li {
+        width: 20vw;
+    }
+}
+
+
+/* 940px - убираем время работы */
+
+@media (max-width: 940px) {
+    .main-header__work-hours {
+        display: none;
+    }
+    .main-header__nav-list_element a {
+        font-size: 16px;
+    }
+}
+
+
+/* 680px */
+
+@media (max-width: 680px) {
+    .main-header__nav {
+        display: none;
+    }
 }
 
 
@@ -550,6 +613,7 @@ body {
     background: linear-gradient(2.66deg, #0F512B -62.32%, #90BF57 76.94%);
     border-radius: 5px;
     font-size: 22px;
+    font-weight: bold;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -594,6 +658,7 @@ body {
 
 .main-footer__contacts {
     grid-area: phone;
+    padding-top: 15px;
     justify-self: right;
 }
 
@@ -621,6 +686,10 @@ body {
     padding: 0;
     align-content: end;
     list-style: none;
+}
+
+.main-header__work-hours-title {
+    display: none;
 }
 
 .main-footer__work-hours li {
@@ -697,6 +766,33 @@ body {
 
 .main-footer__copyright a {
     color: rgba(0, 0, 0, 1);
+}
+
+
+/* подвал сайта меньше 940px */
+
+@media (max-width: 940px) {
+    .main-footer {
+        display: block;
+        max-height: fit-content;
+    }
+    .main-footer__contacts {
+        padding: 15px 0;
+    }
+    .main-footer__nav,
+    .main-footer__copyright {
+        display: none;
+        visibility: hiddn;
+    }
+    .main-footer__work-hours {
+        grid-template-columns: auto;
+    }
+    .main-header__work-hours-title {
+        display: inline-block;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 
@@ -898,7 +994,7 @@ body {
 }
 
 .checkbox-wrap label {
-    padding-left: 2.2em;
+    padding-left: 2.4em;
     cursor: pointer;
 }
 
@@ -973,4 +1069,93 @@ body {
 .contacts-page__email-us__form input[type="submit"]:active {
     background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
     box-shadow: none;
+}
+
+
+/* страница "Вход в личный кабинет" */
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1184px;
+}
+
+.login-page__title {
+    margin: 70px auto 60px;
+}
+
+.login-page__form {
+    padding-bottom: 160px;
+}
+
+.login-page__form label input[type="text"] {
+    width: 100%;
+    height: 56px;
+    margin: 10px 0 25px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background: #F4F2E5;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-page__form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    max-width: 336px;
+    width: 100%;
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-page__form input[type="submit"]:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.login-page__form input[type="submit"]:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
+}
+
+.login-page__form-recover {
+    text-align: center;
+}
+
+.login-page__form-recover a {
+    color: #0F512B;
+}
+
+.login-page__form>.checkbox-wrap {
+    margin: 10px auto 30px;
+}
+
+
+/* страница регистрации */
+
+.signup-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1184px;
+}
+
+.signup-page__form label input[type="text"] {
+    width: 100%;
+    height: 56px;
+    margin: 10px 0 25px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background: #F4F2E5;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 }

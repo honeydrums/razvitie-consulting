@@ -51,7 +51,30 @@
         </div>
     </header>
     <main>
-
+        <section class="login-page">
+            <h1 class="login-page__title">Вход в личный кабинет</h1>
+            <form action="post" class="login-page__form">
+                <label for="">
+                    Логин
+                    <input type="text" name="" id="" placeholder="Логин">
+                </label>
+                <label for="">
+                    Пароль
+                    <input type="text" name="" id="" placeholder="Пароль">
+                </label>
+                <div class="checkbox-wrap">
+                    <label>
+                        <input type="checkbox" name="remember-yes" checked>
+                        <span class="check__box"></span>
+                        Запомнить меня
+                    </label>
+                </div>
+                <input type="submit" value="Войти">
+                <p class="login-page__form-recover">
+                    <a href="">Забыли логин или пароль?</a>
+                </p>
+            </form>
+        </section>
     </main>
     <div class="main-footer__wrapper">
         <footer class="main-footer">
