@@ -10,6 +10,9 @@ body {
 }
 
 
+/* доступное скрытие элементов */
+
+
 /* номер телефона в шапке и подвале */
 
 .contact-phone {
@@ -84,6 +87,14 @@ body {
     font-size: 22px;
     color: rgba(0, 0, 0, 1);
     text-decoration: none;
+}
+
+.main-header__nav-list_element a:hover {
+    color: #90BF57;
+}
+
+.main-header__nav-list_element a:active {
+    color: #90BF57;
 }
 
 
@@ -459,8 +470,6 @@ body {
     font-weight: bold;
 }
 
-.ask-block__callback-form label {}
-
 .ask-block__callback-form_list {
     padding: 0;
     margin: 0;
@@ -610,7 +619,7 @@ body {
     height: inherit;
     margin: 0;
     padding: 0;
-    align-content: center;
+    align-content: end;
     list-style: none;
 }
 
@@ -664,6 +673,14 @@ body {
     text-decoration: none;
 }
 
+.main-footer__nav-list_element a:hover {
+    color: #90BF57;
+}
+
+.main-footer__nav-list_element a:active {
+    color: #90BF57;
+}
+
 
 /* номера телефонов в подвале */
 
@@ -694,10 +711,16 @@ body {
     margin: 0 auto;
 }
 
+
+/* заголовок страницы */
+
 .contacts-page__title {
     margin: 0 auto 78px;
     padding-top: 80px;
 }
+
+
+/* список контактной информации */
 
 .contacts-page__list {
     display: flex;
@@ -732,27 +755,6 @@ body {
 
 .contacts-page__list-phone:last-child {
     grid-area: contacts-phone-2;
-}
-
-.contacts-page__-email-us__form input[type="submit"] {
-    height: 56px;
-    font-size: 22px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 1);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.contacts-page__-email-us__form input[type="submit"]:hover {
-    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
-}
-
-.contacts-page__-email-us__form input[type="submit"]:active {
-    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
-    box-shadow: none;
 }
 
 .contacts-page__list-phone:before {
@@ -790,7 +792,12 @@ body {
     height: 64px;
 }
 
+
+/* обёртка страницы */
+
 .contacts-page__email-us__wrapper {
+    position: relative;
+    top: -5px;
     background-color: rgba(244, 242, 229, 1);
 }
 
@@ -817,8 +824,153 @@ body {
     font-size: 20px;
 }
 
+
+/*  форма "напишите нам" */
+
+.contacts-page__email-us__form {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
 .contacts-page__email-us__form-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.contacts-page__email-us__form-list li:nth-child(2) {
+    grid-row-start: 2;
+}
+
+.contacts-page__email-us__form-list li:nth-child(3) {
+    grid-row-start: 3;
+}
+
+.contacts-page__email-us__form-list li:last-child {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.contacts-page__email-us__form-list li {
+    text-align: left;
+}
+
+.contacts-page__email-us__form-list li label {
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+.contacts-page__email-us__form-list li input,
+.contacts-page__email-us__form-list li textarea {
+    width: 100%;
+    height: 56px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.contacts-page__email-us__form-list li textarea {
+    height: 90%;
+    resize: none;
+}
+
+.textarea-counter {
+    float: right;
+}
+
+
+/* чекбокс в соглашении */
+
+.checkbox-wrap {
+    margin: 30px auto;
+}
+
+.checkbox-wrap input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox-wrap label {
+    padding-left: 2.2em;
+    cursor: pointer;
+}
+
+.check__box {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    margin: -8px -40px;
+    background-image: url('../img/custom-checkbox/blank.svg');
+}
+
+
+/* чекнутая кнопка */
+
+.checkbox-wrap input:checked+.check__box {
+    background-image: url('../img/custom-checkbox/checked-box.svg');
+}
+
+
+/* кнопка в фокусе */
+
+.checkbox-wrap input:focus+.check__box {
+    background-image: url('../img/custom-checkbox/focused.svg');
+}
+
+.checkbox-wrap input:checked:focus+.check__box {
+    background-image: url('../img/custom-checkbox/focused-checked.svg');
+}
+
+
+/* отключёная кнопка */
+
+.checkbox-wrap input:disabled+.check__box {}
+
+.checkbox-wrap input:checked:disabled+.check__box {}
+
+
+/* больше 500 символов в сообщении формы */
+
+.too-many-symbols__textarea {
+    color: rgba(255, 0, 0, 1);
+    border: 1px solid rgba(255, 0, 0, 1) !important;
+    outline: none;
+}
+
+.too-many-symbols__button {
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    opacity: 0.4;
+}
+
+
+/* кнопка "отправить" в форме*/
+
+.contacts-page__email-us__form input[type="submit"] {
+    max-width: 368px;
+    width: 100%;
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contacts-page__email-us__form input[type="submit"]:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.contacts-page__email-us__form input[type="submit"]:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
 }
