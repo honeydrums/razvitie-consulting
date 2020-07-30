@@ -28,6 +28,9 @@
                         <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
+                <button class="main-header__nav-trigger" type="button">
+                    <span></span>
+                </button>
                 <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
             </div>
         </div>
@@ -113,7 +116,7 @@
         </div>
         <div class="ask-block__wrapper">
             <section class="ask-block">
-                <h3 class="ask-block__title">Вашему бизнесу пора вырасти</h3>
+                <h3 class="ask-block__title">Вашему бизнесу пора вырасти!</h3>
                 <div class="ask-block__questions-wrapper">
                     <h4 class="ask-block__questions-title">К нам обращаются:</h4>
                     <ul class="ask-block__quesitons-list">
@@ -126,23 +129,27 @@
                         <div class="ask-block__questions-brick">
                             <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
                             <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
                         </div>
                         <div class="ask-block__questions-brick">
                             <p>Не успеваете адаптироваться к изменениям в налоговом кодексе?</p>
                             <span class="brick-hashtag"># решение трудовых споров</span>
+                            <span class="arrow-forward"></span>
                         </div>
                         <div class="ask-block__questions-brick">
                             <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
                             <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
                         </div>
                         <div class="ask-block__questions-brick">
                             <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
                             <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
                         </div>
                     </div>
                 </div>
                 <form action="" method="post" class="ask-block__callback-form">
-                    <legend>Задайте нам вопрос</legend>
+                    <legend>Задайте нам свой вопрос</legend>
                     <p>Если хотя бы один вопрос заставил вас задуматься, то вам несомненно требуются перемены и надежный партнер!</p>
                     <ul class="ask-block__callback-form_list">
                         <li>
@@ -157,10 +164,13 @@
                             <label for="userphone">Номер телефона</label>
                             <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
                         </li>
-                        <li>
-                            <input type="checkbox" name="confirm-yes" id="confirmuser" checked>
-                            <label for="confirmuser">Я даю свое согласие на обработку моих персональных данных.</label>
-                        </li>
+                        <div class="checkbox-wrap">
+                            <label>
+                                <input type="checkbox" name="confirm-yes" checked>
+                                <span class="check__box"></span>
+                                Я даю свое согласие на обработку моих персональных данных.
+                            </label>
+                        </div>
                     </ul>
                     <input type="submit" value="Перезвоните нам">
                 </form>
@@ -193,7 +203,7 @@
                 <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
             </div>
             <section class="main-footer__copyright">
-                <p>Сайт создан <a href="wizard-c.ru">WIZARD-C</a></p>
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a></p>
                 <p>© 2020 Все права защищены</p>
                 <a href="policy.html">Политика конфиденциальности</a>
             </section>
