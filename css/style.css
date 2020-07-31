@@ -145,6 +145,12 @@ body {
     list-style: none;
 }
 
+.main-header__nav-list_element {
+    /* width: 100%; */
+    padding: 30px 0;
+    text-align: center;
+}
+
 .main-header__nav-list_dropdown {
     display: none;
     visibility: hidden;
@@ -152,7 +158,7 @@ body {
     padding: 0;
 }
 
-.main-header__nav-list_element a:first-child:hover+.main-header__nav-list_dropdown {
+.main-header__nav-list li:first-child:hover+.main-header__nav-list_dropdown {
     display: block;
     visibility: visible;
     position: absolute;
@@ -225,7 +231,7 @@ body {
         font-size: 24px;
     }
     .main-header__nav-list {
-        margin: 0 35px;
+        padding: 0 15px;
     }
     .main-header__top,
     .main-footer {
@@ -375,6 +381,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .callback-form__button:hover {
@@ -483,7 +490,6 @@ body {
     margin: 0;
     font-size: 36px;
     font-weight: bold;
-    font-family: 'Roboto';
 }
 
 .modern-block__description {
@@ -493,7 +499,6 @@ body {
 
 .modern-block__description p {
     font-size: 20px;
-    font-family: 'Roboto';
 }
 
 .modern-block__list {
@@ -728,6 +733,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .ask-block__callback-form input[type="submit"]:hover {
@@ -791,6 +797,7 @@ body {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
 }
 
 .signup-block__decorative-phone__link:hover {
@@ -1248,6 +1255,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .contacts-page__email-us__form input[type="submit"]:hover {
@@ -1272,15 +1280,17 @@ body {
 
 .login-page__title {
     margin: 70px auto 60px;
+    padding: 0 20px;
     font-size: 36px;
 }
 
 .login-page__form {
     max-width: 524px;
-    padding-bottom: 160px;
+    padding: 0 20px 160px;
 }
 
-.login-page__form label input[type="text"] {
+.login-page__form label input[type="text"],
+.login-page__form label input[type="password"] {
     width: 100%;
     height: 56px;
     margin: 10px 0 25px;
@@ -1290,6 +1300,27 @@ body {
     background: #F4F2E5;
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* иконка спрятанного пароля */
+label {
+    position: relative;
+}
+
+.password-control {
+    background: url(../img/no-view.svg) 0 0 no-repeat;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: -12px;
+    cursor: pointer;
+}
+.view {
+    background: url(../img/view.svg) 0 0 no-repeat;
+}
+
+/*  */
 
 .login-page__form input[type="submit"] {
     display: block;
@@ -1305,6 +1336,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .login-page__form input[type="submit"]:hover {
@@ -1376,6 +1408,7 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .signup-page__form input[type="submit"]:hover {
@@ -1385,4 +1418,309 @@ body {
 .signup-page__form input[type="submit"]:active {
     background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
     box-shadow: none;
+}
+
+/* страница вопрос-ответ */
+
+.faq-welcome {
+    display: flex;
+    flex-direction: column;
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.faq-welcome__title {
+    margin: 80px auto 32px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.faq-welcome__text {
+    margin: 0 10px 32px;
+    font-size: 22px;
+}
+
+.faq-welcome__tags-list {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 10px 66px;
+    padding: 0;
+    list-style: none;
+}
+
+.faq-tag {
+    padding: 5px 10px;
+    color: rgba(144, 191, 87, 1);
+    border: 2px solid rgba(144, 191, 87, 1);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.faq-welcome__tags-list_element {
+    margin: 0 16px 16px 0;
+}
+
+.faq-questions__wrapper {
+    background: linear-gradient(10.14deg, #0F512B -62.32%, #90BF57 76.94%);
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1184px;
+    width: 100%;
+}
+
+.faq-questions__title {
+    margin: 80px 10px 50px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.faq-questions__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin: 0 10px 80px;
+    place-items: center;
+}
+
+.faq-questions__layout-element {
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+}
+
+.faq-questions__layout-element button {
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
+    width: 100%;
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.faq-questions__layout-element button:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.faq-questions__layout-element button:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
+}
+
+/* карточки с ответами 1160px */
+
+@media (max-width: 1160px) {
+    .faq-questions__layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* карточки с ответами 760px */
+
+@media (max-width: 760px) {
+    .faq-welcome__title {
+        font-size: 26px;
+    }
+    .faq-welcome__text {
+        font-size: 16px;
+    }
+    .faq-questions__layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* всплывающая форма "напишите нам" */
+.popup-email-us-hide {
+    display: none;
+    visibility: hidden;
+}
+.popup-email-us__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(15px);
+}
+
+.popup-email-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1184px;
+    max-height: 835px;
+    width: 100%;
+    padding: 34px 57px 39px 54px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.popup-email-us__title {
+    margin: 0 auto 30px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.popup-email-us__text {
+    margin: 0 auto 35px;
+    font-size: 20px;
+}
+
+
+/*  форма "напишите нам" */
+
+.popup-email-us__form {
+    width: 100%;
+}
+
+.popup-email-us__form-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popup-email-us__form-list li:nth-child(2) {
+    grid-row-start: 2;
+}
+
+.popup-email-us__form-list li:nth-child(3) {
+    grid-row-start: 3;
+}
+
+.popup-email-us__form-list li:last-child {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.popup-email-us__form-list li {
+    text-align: left;
+}
+
+.popup-email-us__form-list li label {
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+.popup-email-us__form-list li input,
+.popup-email-us__form-list li textarea {
+    width: 100%;
+    height: 56px;
+    padding: 10px;
+    background-color: rgba(244, 242, 229, 1);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.popup-email-us__form-list li textarea {
+    height: 90%;
+    resize: none;
+}
+
+.textarea-counter {
+    float: right;
+    color: rgba(130, 130, 130, 1);
+}
+
+.popup-email-us__form .checkbox-wrap {
+    margin: 30px 0;
+}
+
+.popup-email-us__form .checkbox-wrap .check__box {
+    margin: -8px -40px;
+}
+
+
+
+/* больше 500 символов в сообщении формы */
+
+.too-many-symbols__textarea {
+    color: rgba(255, 0, 0, 1);
+    border: 1px solid rgba(255, 0, 0, 1) !important;
+    outline: none;
+}
+
+.too-many-symbols__button {
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    opacity: 0.4;
+}
+
+
+/* кнопка "отправить" в форме*/
+
+.popup-email-us__form input[type="submit"] {
+    max-width: 368px;
+    width: 100%;
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.popup-email-us__form input[type="submit"]:hover {
+    box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.popup-email-us__form input[type="submit"]:active {
+    background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
+}
+
+@media (max-width: 660px) {
+    .popup-email-us {
+        width: auto;
+        max-height: 1006px;
+        margin: 26px 8px;
+        padding: 25px 16px;
+    }
+    .popup-email-us__title {
+        font-size: 26px;
+    }
+    .popup-email-us__text {
+        font-size: 14px;
+    }
+    .popup-email-us__form-list {
+        display: block;
+    }
+    .popup-email-us__form-list li {
+        margin-bottom: 16px;
+    }
+    .popup-email-us__form-list li textarea {
+        height: 296px;
+    }
+    .popup-email-us__form .checkbox-wrap label {
+        text-align: left;
+    }
+    .popup-email-us__form .checkbox-wrap {
+        margin: 40px 0 30px;
+    }
 }
