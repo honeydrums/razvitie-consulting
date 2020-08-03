@@ -142,6 +142,41 @@
                 </div>
             </section>
         </div>
+        <div class="contacts-page__email-us__wrapper">
+            <section class="contacts-page__email-us">
+                <h2 class="contacts-page__email-us_title">Напишите нам</h2>
+                <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все интересующие вас вопросы.</p>
+                <form action="" method="post" class="contacts-page__email-us__form">
+                    <ul class="contacts-page__email-us__form-list">
+                        <li>
+                            <label for="username">Имя</label>
+                            <input type="text" id="username" name="user-name" placeholder="Алексей">
+                        </li>
+                        <li>
+                            <label for="firmname">Название компании или ИНН</label>
+                            <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+                        </li>
+                        <li>
+                            <label for="userphone">Номер телефона</label>
+                            <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
+                        </li>
+                        <li>
+                            <label for="formmessage">Сообщение</label>
+                            <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"></textarea>
+                            <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
+                        </li>
+                    </ul>
+                    <div class="checkbox-wrap">
+                        <label>
+                            <input type="checkbox" name="confirm-yes" checked>
+                            <span class="check__box"></span>
+                            Я даю свое согласие на обработку моих персональных данных.
+                        </label>
+                    </div>
+                    <input type="submit" value="Отправить">
+                </form>
+            </section>
+        </div>
     </main>
     <div class="main-footer__wrapper">
         <footer class="main-footer">

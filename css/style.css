@@ -1108,6 +1108,7 @@ body {
 .contacts-page__email-us__form {
     width: 100%;
     margin-bottom: 80px;
+    padding: 0 10px;
 }
 
 .contacts-page__email-us__form-list {
@@ -1268,6 +1269,23 @@ body {
 }
 
 
+/* форма напишите нам на разрешении 680px и меньше */
+
+@media (max-width: 680px) {
+    .contacts-page__email-us_title {
+        padding-top: 32px;
+        font-size: 26px;
+    }
+    .contacts-page__email-us_text {
+        margin: 0 20px 35px;
+        font-size: 16px;
+    }
+    .contacts-page__email-us__form-list {
+        display: block;
+    }
+}
+
+
 /* страница "Вход в личный кабинет" */
 
 .login-page {
@@ -1301,7 +1319,9 @@ body {
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 /* иконка спрятанного пароля */
+
 label {
     position: relative;
 }
@@ -1316,9 +1336,11 @@ label {
     bottom: -12px;
     cursor: pointer;
 }
+
 .view {
     background: url(../img/view.svg) 0 0 no-repeat;
 }
+
 
 /*  */
 
@@ -1420,6 +1442,7 @@ label {
     box-shadow: none;
 }
 
+
 /* страница вопрос-ответ */
 
 .faq-welcome {
@@ -1520,6 +1543,7 @@ label {
     box-shadow: none;
 }
 
+
 /* карточки с ответами 1160px */
 
 @media (max-width: 1160px) {
@@ -1527,6 +1551,7 @@ label {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 
 /* карточки с ответами 760px */
 
@@ -1542,11 +1567,14 @@ label {
     }
 }
 
+
 /* всплывающая форма "напишите нам" */
+
 .popup-email-us-hide {
     display: none;
     visibility: hidden;
 }
+
 .popup-email-us__wrapper {
     position: absolute;
     width: 100%;
@@ -1652,7 +1680,6 @@ label {
 .popup-email-us__form .checkbox-wrap .check__box {
     margin: -8px -40px;
 }
-
 
 
 /* больше 500 символов в сообщении формы */
