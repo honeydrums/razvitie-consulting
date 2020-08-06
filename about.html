@@ -13,21 +13,29 @@
 <body>
     <header class="main-header">
         <div class="main-header__top-wrapper">
-            <div class="main-header__top">
-                <a href="index.html"><img src="img/logo.svg" alt="Логоти консалтинговой компании Развитие"></a>
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
                 <nav class="main-header__nav">
                     <ul class="main-header__nav-list">
-                        <li class="main-header__nav-list_element"><a href="services.html">Услуги</a></li>
+                        <li class="main-header__nav-list_element"><a href="services.html">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="index.html">Юридическая поддержка</a></li>
+                                <li class="main-header__nav-list_dropdown-element"><a href="index.html">Бухгалтерское сопровождение</a></li>
+                            </ul>
+                        </li>
                         <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
                         <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
                         <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
+                <button class="main-header__nav-trigger" type="button">
+                    <span></span>
+                </button>
                 <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
             </div>
         </div>
         <div class="main-header__bottom-wrapper">
-            <div class="main-header__bottom">
+            <div class="main-header__bottom centered">
                 <ul class="main-header__work-hours">
                     <li class="main-header__work-hours-element">
                         <p>Пн-Чт</p>
@@ -52,15 +60,49 @@
     </header>
     <main>
         <div class="about-welcome__wrapper">
-            <section class="about-welcome">
+            <section class="about-welcome centered">
                 <h1 class="about-welcome__title">Консалтинговая Компания «Развитие» - ваш лучший выбор!</h1>
                 <p class="about-welcome__text">Современная и молодая, активная и трудолюбивая представительница среднего бизнеса. Опытный профессионал своего дела, с более чем одиннадцатилетним стажем. Специалист на рынке услуг и консалтинга, ориентированный на работу с предприятиями
                     и организациями всех форм собственности в различных отраслях экономики. Признанный член Института профессиональных бухгалтеров и аудиторов России. Она заставит вас забыть о ворохе бумаг и непредвиденных визитах налоговой. С ее профессиональной
                     командой вы вступите в цифровую эпоху комфорта.</p>
             </section>
         </div>
+        <div class="work-principles__wrapper">
+            <section class="work-principles centered">
+                <h2 class="work-principles__title">Принципы работы</h2>
+                <ul class="work-principles__list">
+                    <li class="work-principles__list-element">Качество</li>
+                    <li class="work-principles__list-element">Уверенный рост и развитие</li>
+                    <li class="work-principles__list-element">Ответственность</li>
+                    <li class="work-principles__list-element">Репутация</li>
+                    <li class="work-principles__list-element">Цифровые технологии</li>
+                    <li class="work-principles__list-element">Честность</li>
+                </ul>
+                <section class="work-principles__quality">
+                    <h3 class="work-principles__quality-title">Консалтинговая Компания «Развитие» демонстрирует качество<br>своей работы на конкретных цифрах.</h3>
+                    <ul class="work-principles__quality-list">
+                        <li class="work-principles__quality-list-element">
+                            <h4>7 лет</h4>
+                            <p>Составляет опыт наших специалистов в вопросе предоставлению полного цикла услуг в процедуре банкротства. Консалтинговая Компания «Развитие» одна из немногих на рынке имеет собственные наработки в данной области.</p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>120 000 000 ₽</h4>
+                            <p>Было возмещено нашими специалистами из бюджета в пользу наших клиентов.</p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>Опытная команда</h4>
+                            <p>Качество работы команды определяет и большой опыт в сферах внедрения бухгалтерского и налогового учета, оптимизации расходов в сфере строительства и производства.</p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>Точно в срок!</h4>
+                            <p>Слаженность, оперативность и точность в работе для нас не пустой звук. Именно поэтому отчётность наших клиентов сдается в срок и в полном объеме.</p>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
         <div class="about-team__wrapper">
-            <section class="about-team">
+            <section class="about-team centered">
                 <h2 class="about-team__title">Наша команда</h2>
                 <div class="about-team__gallery">
                     <figure class="about-team__gallery-element">

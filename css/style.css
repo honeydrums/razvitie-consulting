@@ -10,6 +10,14 @@ body {
 }
 
 
+/* класс для центрирования обёрток */
+
+.centered {
+    max-width: 1184px;
+    width: 100%;
+}
+
+
 /* доступное скрытие элементов */
 
 
@@ -43,8 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1184px;
-    width: 100%;
     max-height: 120px;
     margin: 16px auto 0;
 }
@@ -61,8 +67,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1184px;
-    width: 100%;
     height: inherit;
     margin: 0 auto;
 }
@@ -317,8 +321,6 @@ body {
 }
 
 .main-banner {
-    max-width: 1184px;
-    width: 100%;
     height: 100%;
     margin: 0 auto;
     background-image: url('../img/main-banner.jpg');
@@ -359,8 +361,6 @@ body {
 }
 
 .callback-form form {
-    max-width: 1184px;
-    width: 100%;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -441,8 +441,6 @@ body {
 }
 
 .advantages-block {
-    max-width: 1184px;
-    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -578,9 +576,7 @@ body {
     grid-template-rows: 1fr;
     grid-gap: 0 2%;
     grid-template-areas: 'mb-title mb-list' 'mb-text mb-list';
-    max-width: 1184px;
     max-height: 528px;
-    width: 100%;
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -678,9 +674,6 @@ body {
     grid-template-columns: 1.55fr 1fr;
     grid-template-rows: min-content;
     grid-template-areas: 'ask-title ask-title' 'ask-bricks ask-form';
-    max-width: 1184px;
-    width: 100%;
-    /* height: inherit; */
     margin: 0 auto;
 }
 
@@ -864,8 +857,6 @@ body {
     grid-template-columns: 65% 30%;
     grid-template-rows: 1fr;
     grid-gap: 0 2%;
-    max-width: 1184px;
-    width: 100%;
     max-height: 499px;
     margin: 0 auto;
 }
@@ -1177,6 +1168,7 @@ body {
     height: 64px;
 }
 
+
 /* контактная информация с 980px */
 
 @media (max-width: 980px) {
@@ -1194,6 +1186,7 @@ body {
         height: 50px;
     }
 }
+
 
 /* контактная информация с 766px */
 
@@ -1221,6 +1214,7 @@ body {
     }
 }
 
+
 /* обёртка страницы */
 
 .contacts-page__email-us__wrapper {
@@ -1234,9 +1228,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1184px;
     max-height: 835px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -1478,6 +1470,7 @@ body {
     }
 }
 
+
 /* иконка спрятанного пароля */
 
 label {
@@ -1548,7 +1541,6 @@ label {
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-    max-width: 1184px;
 }
 
 .signup-page__title {
@@ -1606,7 +1598,6 @@ label {
 .faq-welcome {
     display: flex;
     flex-direction: column;
-    max-width: 1184px;
     margin: 0 auto;
 }
 
@@ -1649,8 +1640,6 @@ label {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1184px;
-    width: 100%;
 }
 
 .faq-questions__title {
@@ -1718,7 +1707,6 @@ label {
     background: rgba(0, 0, 0, 0.35);
     mix-blend-mode: normal;
     backdrop-filter: blur(15px);
-    opacity: 1;
     transition: 0.2s;
 }
 
@@ -1736,7 +1724,6 @@ label {
 
 .faq-detailed-block-hidden {
     display: none;
-    opacity: 0;
 }
 
 .faq-detailed__title {
@@ -1792,6 +1779,7 @@ label {
     background-image: url('../img/close-button.svg');
 }
 
+
 /* положение кнопки "закрыть" на меньших разрешениях экрана */
 
 @media (max-width: 1180px) {
@@ -1810,7 +1798,6 @@ label {
     }
 }
 
-
 @media (max-width: 680px) {
     .close-button {
         width: 26px;
@@ -1827,7 +1814,6 @@ label {
     }
 }
 
-
 @media (max-width: 390px) {
     .close-button {
         width: 22px;
@@ -1835,6 +1821,7 @@ label {
         left: 88%;
     }
 }
+
 
 /* карточки с ответами 1160px */
 
@@ -1884,9 +1871,7 @@ label {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 1184px;
     max-height: 835px;
-    width: 100%;
     padding: 34px 57px 39px 54px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 1);
@@ -2047,6 +2032,153 @@ label {
 
 /* страница "о компании" */
 
+
+/* первый блок */
+
+.about-welcome__wrapper {
+    background: rgba(244, 242, 229, 1) url('../img/about/about-background.png') no-repeat right top;
+    background-size: contain;
+    max-height: 550px;
+    height: 28.7vw;
+}
+
+.about-welcome {
+    margin: 0 auto;
+    height: inherit;
+}
+
+.about-welcome__title {
+    margin: 0;
+    padding: 75px 0 45px;
+    font-size: 36px;
+    width: 55%;
+}
+
+.about-welcome__text {
+    margin: 0;
+    font-size: 20px;
+    width: 57%;
+}
+
+
+/* принципы работы */
+
+.work-principles {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-principles__title {
+    margin: 0 auto;
+    padding: 80px 0 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.work-principles__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.work-principles__list-element {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.work-principles__list-element:before {
+    content: '';
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    padding-right: 16px;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.work-principles__list-element:first-child:before {
+    background: url('../img/work-principles/wp-quality.svg') no-repeat;
+}
+
+.work-principles__list-element:nth-child(2):before {
+    background: url('../img/work-principles/wp-grown.svg') no-repeat;
+}
+
+.work-principles__list-element:nth-child(3):before {
+    background: url('../img/work-principles/wp-key.svg') no-repeat;
+}
+
+.work-principles__list-element:nth-child(4):before {
+    background: url('../img/work-principles/wp-reputation.svg') no-repeat;
+}
+
+.work-principles__list-element:nth-child(5):before {
+    background: url('../img/work-principles/wp-techno.svg') no-repeat;
+}
+
+.work-principles__list-element:last-child:before {
+    background: url('../img/work-principles/wp-honest.svg') no-repeat;
+}
+
+
+/* блок качество */
+
+.work-principles__quality {
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 50px 0 0 0;
+    background: #90BF57 url('../img/work-principles/wp-quality-graphic.svg') no-repeat right;
+}
+
+@media (min-width: 1920px) {
+    .work-principles__quality {
+        width: calc(100% + 15.3vw);
+    }
+}
+
+.work-principles__quality-title {
+    width: 50%;
+    margin: 0;
+    padding: 75px 0 40px 75px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.work-principles__quality-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 20px 120px;
+    width: 70%;
+    margin: 0;
+    padding: 0 0 40px 75px;
+    list-style: none;
+}
+
+.work-principles__quality-list-element h4 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.work-principles__quality-list-element p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* наша команда */
+
 .about-team__wrapper {
     background-color: #F4F2E5;
 }
@@ -2054,8 +2186,6 @@ label {
 .about-team {
     display: flex;
     flex-direction: column;
-    max-width: 1184px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -2104,11 +2234,10 @@ label {
     transform: translateY(-70%);
 }
 
+
 /* 404 */
 
 .wrong-page {
-    max-width: 1184px;
-    width: 100%;
     margin: 0 auto;
 }
 
