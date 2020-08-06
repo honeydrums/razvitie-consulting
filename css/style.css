@@ -2111,7 +2111,7 @@ label {
 }
 
 .work-principles__list-element:nth-child(3):before {
-    background: url('../img/work-principles/wp-key.svg') no-repeat;
+    background: url('../img/work-principles/wp-responsibility.svg') no-repeat;
 }
 
 .work-principles__list-element:nth-child(4):before {
@@ -2133,7 +2133,7 @@ label {
     width: 100%;
     margin-top: 80px;
     border-radius: 50px 0 0 0;
-    background: #90BF57 url('../img/work-principles/wp-quality-graphic.svg') no-repeat right;
+    background: #90BF57 url('../img/work-principles/wp-quality-graphic.svg') no-repeat right 80%;
 }
 
 @media (min-width: 1920px) {
@@ -2174,6 +2174,57 @@ label {
 .work-principles__quality-list-element p {
     font-size: 16px;
     color: rgba(255, 255, 255, 1);
+}
+
+
+/* блок с принципами */
+
+.work-principles__other-wrapper {
+    display: grid;
+}
+
+.work-principles__tech {
+    margin-left: -20%;
+    padding: 64px 0;
+    border-radius: 0 0 50px 0;
+    background: linear-gradient(17.31deg, #0F512B -60.2%, #90BF57 175.89%);
+}
+
+.work-principles__tech-title {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.work-principles__tech-title,
+.work-principles__tech-text {
+    width: 45%;
+    margin: 0 0 0 20%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.work-principles__grow-title,
+.work-principles__responsibility-title,
+.work-principles__reputation-title,
+.work-principles__honest-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(15, 81, 43, 1);
+}
+
+.work-principles__grow-slogan,
+.work-principles__responsibility-slogan,
+.work-principles__reputation-slogan,
+.work-principles__honest-slogan {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(144, 191, 87, 1);
+}
+
+.work-principles__grow-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 
