@@ -2,13 +2,13 @@ let faqMoreBtns = document.querySelectorAll('.faq-questions__layout-element butt
 let faqDetailedAnswer = document.querySelector('.faq-detailed-wrapper__text');
 let closeBtns = document.querySelectorAll('.close-button');
 
-for (var faqMoreBtn of faqMoreBtns) {
+for (let faqMoreBtn of faqMoreBtns) {
     faqMoreBtn.addEventListener('click', function() {
         faqDetailedAnswer.classList.remove('faq-detailed-block-hidden');
     })
 }
 
-for (var closeBtn of closeBtns) {
+for (let closeBtn of closeBtns) {
     closeBtn.addEventListener('click', function() {
         faqDetailedAnswer.classList.add('faq-detailed-block-hidden');
     })
