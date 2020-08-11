@@ -2304,7 +2304,7 @@ label {
     font-weight: bold;
 }
 
-.personal-description:hover {
+.about-team__gallery-element:hover .personal-description {
     height: 100%;
     overflow: scroll;
     transform: translateY(-80%);
