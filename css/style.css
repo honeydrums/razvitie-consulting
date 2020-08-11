@@ -9,6 +9,16 @@ body {
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    color: #0F512B;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 10px rgba(144, 191, 87, 1);
+}
+
 
 /* класс для центрирования обёрток */
 
@@ -2295,7 +2305,9 @@ label {
 }
 
 .personal-description:hover {
-    transform: translateY(-70%);
+    height: 100%;
+    overflow: scroll;
+    transform: translateY(-80%);
 }
 
 
