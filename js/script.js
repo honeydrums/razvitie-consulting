@@ -13,3 +13,10 @@ for (let closeBtn of closeBtns) {
         faqDetailedAnswer.classList.add('faq-detailed-block-hidden');
     })
 }
+
+let teamCards = document.querySelectorAll('.about-team__gallery-element')
+for (let teamCard of teamCards) {
+    teamCard.addEventListener('click', function() {
+        this.classList.toggle('flop')
+    })
+}
