@@ -2876,8 +2876,8 @@ label {
 }
 
 .about-team__gallery-element:hover {
-    -webkit-box-shadow: 0px 5px 10px 2px rgba(234, 217, 187, 1);
-    box-shadow: 0px 5px 10px 2px rgba(234, 217, 187, 1);
+    /* -webkit-box-shadow: 0px 5px 10px 2px rgba(234, 217, 187, 1); */
+    /* box-shadow: 0px 5px 10px 2px rgba(234, 217, 187, 1); */
 }
 
 .front-name {
