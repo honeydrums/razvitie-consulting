@@ -2293,6 +2293,11 @@ label {
     transform-style: preserve-3d;
     /* Вращение в 3D */
     perspective: 1000px;
+    cursor: pointer;
+}
+
+.about-team__gallery-element:active {
+    transform: scale(0.97);
 }
 
 .about-team__gallery-element img {
@@ -2301,7 +2306,7 @@ label {
 
 .flop {
     transform: rotateY(180deg);
-    /* При наведении вращаем */
+    /* При клике вращаем */
 }
 
 .about-team__gallery-element img,
