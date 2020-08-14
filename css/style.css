@@ -2541,6 +2541,76 @@ label {
     width: 57%;
 }
 
+@media (max-width: 1480px) {
+    .about-welcome__wrapper {
+        height: 33vw;
+    }
+    .about-welcome__title {
+        padding: 40px 0;
+    }
+    .about-welcome__text {
+        width: 51%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-welcome {
+        padding: 0 20px;
+    }
+    .about-welcome__title {
+        padding: 28px 0 16px;
+        font-size: 26px;
+    }
+    .about-welcome__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 945px) {
+    .about-welcome__wrapper {
+        height: 37vw;
+    }
+    .about-welcome__text {
+        width: 42%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 860px) {
+    .about-welcome__title {
+        padding: 20px 0 14px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 795px) {
+    .about-welcome__wrapper {
+        background: rgba(244, 242, 229, 1) url('../img/about/about-mobile-background.jpg') no-repeat right bottom;
+        height: 47vw;
+    }
+    .about-welcome__text {
+        width: 58%;
+    }
+}
+
+@media (max-width: 680px) {
+    .about-welcome__wrapper {
+        height: calc(806px - 48vw);
+        background-size: contain;
+        max-height: 806px;
+    }
+    .about-welcome__title {
+        width: initial;
+        padding: 38px 0 16px;
+        font-size: 26px;
+    }
+    .about-welcome__text {
+        width: initial;
+        font-size: 16px;
+    }
+}
+
 
 /* принципы работы */
 
@@ -2824,7 +2894,7 @@ label {
 /* наша команда */
 
 .about-team__wrapper {
-    background-color: #F4F2E5;
+    background-color: rgba(244, 242, 229, 1);
 }
 
 .about-team {
@@ -2960,11 +3030,17 @@ label {
 .our-clients__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[6];
-    grid-template-columns: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
     margin: 0 0 80px;
     padding: 0;
     list-style: none;
+}
+
+.our-clients__list-element {
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -2977,4 +3053,13 @@ label {
 .wrong-page * {
     margin: 0;
     padding: 15px;
+}
+
+
+/* временные стили */
+
+.work-principles__wrapper,
+.our-clients__wrapper,
+.about-team__wrapper {
+    display: none;
 }
