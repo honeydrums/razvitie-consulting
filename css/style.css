@@ -2587,7 +2587,9 @@ label {
 @media (max-width: 795px) {
     .about-welcome__wrapper {
         background: rgba(244, 242, 229, 1) url('../img/about/about-mobile-background.jpg') no-repeat right bottom;
-        height: 47vw;
+        max-height: 806px;
+        height: calc(806px - 30vw);
+        background-size: cover;
     }
     .about-welcome__text {
         width: 58%;
@@ -2596,9 +2598,7 @@ label {
 
 @media (max-width: 680px) {
     .about-welcome__wrapper {
-        height: calc(806px - 48vw);
-        background-size: contain;
-        max-height: 806px;
+        background-size: cover;
     }
     .about-welcome__title {
         width: initial;
