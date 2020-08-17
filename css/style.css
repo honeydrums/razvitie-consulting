@@ -3153,7 +3153,7 @@ label {
     position: relative;
     margin: 0;
     width: 100%;
-    height: 403px;
+    height: 33.3vw;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -3195,6 +3195,7 @@ label {
 
 .about-team__gallery-element img {
     width: 100%;
+    height: inherit;
     z-index: 2;
 }
 
@@ -3210,7 +3211,9 @@ label {
     /* Абсолютное позиционирование */
     top: 0;
     bottom: 0;
-    /* Задаём так высоту */
+    right: 0;
+    left: 0;
+    /* Задаём размеры описания карточки */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /* Скрываем обратную поверхность */
@@ -3232,6 +3235,13 @@ label {
 
 .personal-description span {
     font-weight: bold;
+}
+
+.front-name,
+.personal-description h4,
+.personal-description span,
+.personal-description__regalia {
+    font-size: 14px;
 }
 
 
@@ -3284,7 +3294,6 @@ label {
 
 /* временные стили */
 
-.our-clients__wrapper,
-.about-team__wrapper {
+.our-clients__wrapper {
     display: none;
 }
