@@ -2725,8 +2725,6 @@ label {
 @media (max-width: 1200px) {
     .work-principles__list {
         padding: 0 75px;
-    }
-    .work-principles__list {
         grid-gap: 20px;
     }
 }
@@ -2837,6 +2835,85 @@ label {
 }
 
 
+/* блок качество / адаптив */
+
+@media (max-width: 1710px) {
+    .work-principles__quality {
+        width: calc(100% + 10vw);
+        background: rgba(144, 191, 87, 1) url('../img/work-principles/wp-quality-graphic.svg') no-repeat right 80%;
+        background-size: 30%;
+    }
+    .work-principles__quality-list {
+        grid-gap: 20px 80px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .work-principles__quality {
+        width: calc(100% + 6vw);
+    }
+}
+
+@media (max-width: 1360px) {
+    .work-principles__quality {
+        background: rgba(144, 191, 87, 1);
+    }
+    .work-principles__quality-list {
+        width: 80%;
+    }
+    .work-principles__quality-title {
+        width: 80%;
+    }
+    .work-principles__quality {
+        width: initial;
+    }
+}
+
+@media (max-width: 680px) {
+    .work-principles__quality-title {
+        font-size: 26px;
+        padding: 32px 0 40px 75px;
+    }
+    .work-principles__quality-title {
+        width: 95%;
+    }
+}
+
+@media (max-width: 520px) {
+    .work-principles__quality-list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, min-content);
+    }
+    .work-principles__quality {
+        border-radius: 0 50px 0 0;
+    }
+    .work-principles__quality-title {
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 420px) {
+    .work-principles__quality-title {
+        width: 100%;
+        padding: 32px 20px 16px;
+    }
+    .work-principles__quality-list {
+        width: 100%;
+        padding: 0 20px;
+        grid-template-rows: 1fr min-content 1fr 1fr;
+    }
+    .work-principles__quality-title {
+        font-size: 20px;
+    }
+    .work-principles__quality-list-element h4 {
+        font-size: 26px;
+    }
+    .work-principles__quality-list-element p {
+        font-size: 14px;
+    }
+}
+
+
 /* блок с принципами */
 
 .work-principles__other-wrapper {
@@ -2928,6 +3005,10 @@ label {
     list-style: none;
 }
 
+.work-principles__grow-list_element {
+    margin-bottom: 32px;
+}
+
 .work-principles__grow-list_element span {
     color: rgba(15, 81, 43, 1);
     font-weight: bold;
@@ -2936,6 +3017,7 @@ label {
 .work-principles__grow-list_element::before {
     content: '';
     display: inline-block;
+    float: left;
     width: 70px;
     height: 70px;
     padding-right: 16px;
@@ -2944,77 +3026,93 @@ label {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 1710px) {
-    .work-principles__quality {
-        width: calc(100% + 10vw);
-        background: rgba(144, 191, 87, 1) url('../img/work-principles/wp-quality-graphic.svg') no-repeat right 80%;
-        background-size: 30%;
+@media (max-width: 1200px) {
+    .work-principles__other-wrapper {
+        padding: 0 75px;
+        grid-gap: 10px 30px;
     }
-    .work-principles__quality-list {
-        grid-gap: 20px 80px;
-    }
-}
-
-@media (max-width: 1500px) {
-    .work-principles__quality {
-        width: calc(100% + 6vw);
+    .work-principles__tech-text {
+        width: 60%;
     }
 }
 
-@media (max-width: 1360px) {
-    .work-principles__quality {
-        background: rgba(144, 191, 87, 1);
-    }
-    .work-principles__quality-list {
-        width: 80%;
-    }
-    .work-principles__quality-title {
-        width: 80%;
-    }
-    .work-principles__quality {
-        width: initial;
+@media (max-width: 980px) {
+    .work-principles__other-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px 20px;
     }
 }
 
-@media (max-width: 680px) {
-    .work-principles__quality-title {
-        font-size: 26px;
-        padding: 32px 0 40px 75px;
+@media (max-width: 760px) {
+    .work-principles__other-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, min-content);
     }
-    .work-principles__quality-title {
-        width: 95%;
+    .work-principles__tech,
+    .work-principles__grow,
+    .work-principles__responsibility,
+    .work-principles__reputation,
+    .work-principles__honest {
+        grid-column: 1;
     }
 }
 
 @media (max-width: 520px) {
-    .work-principles__quality-list {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+    .work-principles__tech {
+        margin: 0 -14vw 0 -40%;
+        background: linear-gradient(180deg, #0F512B -60.2%, #90BF57 175.89%);
     }
-    .work-principles__quality {
-        border-radius: 0 50px 0 0;
-    }
-    .work-principles__quality-title {
-        font-size: 20px;
-        line-height: 1.4;
+    .work-principles__tech-title,
+    .work-principles__tech-text {
+        margin: 0 0 0 25%;
     }
 }
 
 @media (max-width: 420px) {
-    .work-principles__quality-title {
-        width: 100%;
-        padding: 32px 20px 16px;
+    .work-principles__tech-title {
+        font-size: 26px;
+        margin: 0 0 0 28%;
     }
-    .work-principles__quality-list {
-        width: 100%;
+    .work-principles__tech-text {
+        font-size: 14px;
+        margin: 0 0 0 28%;
+    }
+    .work-principles__other-wrapper {
         padding: 0 20px;
-        grid-template-rows: 1fr min-content 1fr 1fr;
+        grid-gap: 0;
     }
-    .work-principles__quality-list-element h4 {
+    .work-principles__tech {
+        margin: 0 -4.8vw 0 -40%;
+    }
+    .work-principles__grow-title {
+        width: 75%;
+    }
+    .work-principles__grow-slogan {
+        font-size: 16px;
+    }
+    .work-principles__grow-list_element {
+        font-size: 14px;
+    }
+    .work-principles__grow-title,
+    .work-principles__responsibility-title,
+    .work-principles__reputation-title,
+    .work-principles__honest-title {
         font-size: 26px;
     }
-    .work-principles__quality-list-element p {
+    .work-principles__tech-text,
+    .work-principles__grow-text,
+    .work-principles__responsibility-text,
+    .work-principles__reputation-text,
+    .work-principles__honest-text {
         font-size: 14px;
+    }
+    .work-principles__tech-slogan,
+    .work-principles__grow-slogan,
+    .work-principles__responsibility-slogan,
+    .work-principles__reputation-slogan,
+    .work-principles__honest-slogan {
+        font-size: 16px;
     }
 }
 
