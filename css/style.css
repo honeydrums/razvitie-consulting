@@ -2967,6 +2967,7 @@ label {
         -ms-grid-rows: min-content 20px min-content 20px min-content 20px min-content;
         grid-template-rows: repeat(4, -webkit-min-content);
         grid-template-rows: repeat(4, min-content);
+        padding: 0 0 40px 10px;
     }
     .work-principles__quality-list>*:nth-child(1) {
         -ms-grid-row: 1;
@@ -3214,14 +3215,16 @@ label {
 
 @media (max-width: 520px) {
     .work-principles__tech {
-        margin: 0 -14vw 0 -40%;
+        padding: 40px 0;
+        margin: 0 -2vw 0 -40%;
         background: -webkit-gradient(linear, left top, left bottom, color-stop(-60.2%, #0F512B), color-stop(175.89%, #90BF57));
         background: -o-linear-gradient(top, #0F512B -60.2%, #90BF57 175.89%);
         background: linear-gradient(180deg, #0F512B -60.2%, #90BF57 175.89%);
     }
     .work-principles__tech-title,
     .work-principles__tech-text {
-        margin: 0 0 0 25%;
+        width: 65%;
+        margin: 0 0 0 29%;
     }
 }
 
@@ -3388,7 +3391,16 @@ label {
     z-index: 4;
 }
 
+@media (max-width: 1200px) {
+    .about-team {
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 680px) {
+    .personal-description {
+        padding: 5px;
+    }
     .personal-description h4 {
         margin: 0;
         font-size: 20px;
