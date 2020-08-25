@@ -9,7 +9,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Poppins', 'Arial', sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 body {
@@ -3306,6 +3306,8 @@ label {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     margin-bottom: 87px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .about-team__gallery-element {
@@ -3391,9 +3393,32 @@ label {
     z-index: 4;
 }
 
+.personal-description__position,
+.personal-description__regalia {
+    word-break: break-word;
+}
+
+.personal-description h4 {
+    margin-top: 0;
+}
+
 @media (max-width: 1200px) {
     .about-team {
         padding: 0 10px;
+    }
+    .front-name {
+        padding: 1rem 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 960px) {
+    .front-name {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+    }
+    .about-team__gallery-element {
+        height: 33vw;
     }
 }
 

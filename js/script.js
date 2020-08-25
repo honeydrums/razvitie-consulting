@@ -20,3 +20,20 @@ for (let teamCard of teamCards) {
         this.classList.toggle('flop')
     })
 }
+
+// проверим, все ли поля в форме "перезвоните нам" заполнены
+let callbackFormBtn = document.querySelector('.callback-form__button');
+let callbackFormInputs = document.querySelectorAll('.callback-form__list-element input');
+
+for (let callbackFormInput of callbackFormInputs) {
+    callbackFormBtn.addEventListener('click', function(evt) {
+        // evt.preventDefault();
+        if (callbackFormInput.value <= 1) {
+            console.log('пусто');
+            callbackFormInput.style.boxShadow = 'inset 0px 0px 3px 1px red';
+        } else {
+            console.log('не пусто');
+            callbackFormInput.style.boxShadow = 'none';
+        }
+    })
+}
