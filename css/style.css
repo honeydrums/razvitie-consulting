@@ -1769,6 +1769,13 @@ label {
     border-radius: 0 0 15px 15px;
 }
 
+/* мобильная версия попапа */
+
+@media (max-width: 860px) {
+    .faq-detailed__title {
+        font-size: 26px;
+    }
+}
 
 /* кнопка закрыть */
 
