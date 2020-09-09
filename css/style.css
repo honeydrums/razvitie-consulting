@@ -3465,7 +3465,7 @@ label {
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+    grid-gap: 20px;
     margin: 0 0 80px;
     padding: 0;
     list-style: none;
@@ -3477,6 +3477,20 @@ label {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+}
+
+.our-clients__list-element img {
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .our-clients {
+        padding: 0 10px;
+    }
+    .our-clients__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -3493,10 +3507,6 @@ label {
 
 
 /* временные стили */
-
-.our-clients__wrapper {
-    display: none;
-}
 
 .main-header__nav-list_element:hover>ul.main-header__nav-list_dropdown {
     display: block;
