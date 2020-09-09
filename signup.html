@@ -13,21 +13,29 @@
 <body>
     <header class="main-header">
         <div class="main-header__top-wrapper">
-            <div class="main-header__top">
-                <a href="index.html"><img src="img/logo.svg" alt="Логоти консалтинговой компании Развитие"></a>
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
                 <nav class="main-header__nav">
                     <ul class="main-header__nav-list">
-                        <li class="main-header__nav-list_element"><a href="services.html">Услуги</a></li>
+                        <li class="main-header__nav-list_element"><a href="services.html">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="index.html">Юридическая поддержка</a></li>
+                                <li class="main-header__nav-list_dropdown-element"><a href="index.html">Бухгалтерское сопровождение</a></li>
+                            </ul>
+                        </li>
                         <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
                         <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
                         <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
+                <button class="main-header__nav-trigger" type="button">
+                    <span></span>
+                </button>
                 <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
             </div>
         </div>
         <div class="main-header__bottom-wrapper">
-            <div class="main-header__bottom">
+            <div class="main-header__bottom centered">
                 <ul class="main-header__work-hours">
                     <li class="main-header__work-hours-element">
                         <p>Пн-Чт</p>
@@ -51,7 +59,7 @@
         </div>
     </header>
     <main>
-        <section class="signup-page">
+        <section class="signup-page centered">
             <h1 class="signup-page__title">Регистрация личного кабинета</h1>
             <form action="post" class="signup-page__form">
                 <label>
