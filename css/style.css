@@ -491,7 +491,7 @@ body {
 }
 
 .callback-form form {
-    margin: 0 20px;
+    margin: 0 auto;
     padding-bottom: 20px;
 }
 
@@ -551,7 +551,7 @@ body {
     box-shadow: none;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1200px) {
     .callback-form form {
         width: 85%;
     }
@@ -674,16 +674,17 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1200px) {
     .advantages-block__list {
         margin: 0 auto;
-        padding: 0 15px 70px;
+        padding: 0 0 70px;
     }
     .advantages-block__list-element {
         margin: 0 10px;
     }
     .advantages-block__description {
-        padding: 0 60px 60px;
+        margin: 0 auto;
+        padding: 0 20px 60px;
     }
 }
 
@@ -699,13 +700,13 @@ body {
     .advantages-block__list-element {
         margin: 10px 0;
     }
+}
+
+@media (max-width: 720px) {
     .advantages-block {
         background: url('../img/modern-illustration.svg') no-repeat right 75px;
         background-size: 150px;
     }
-}
-
-@media (max-width: 720px) {
     .advantages-block__title {
         width: 80%;
         margin: 0;
@@ -756,12 +757,6 @@ body {
 
 
 /* блок сосредоточьтесь на главном */
-
-.modern-block__wrapper {
-    background-image: url('../img/modern-illustration.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-}
 
 .modern-block {
     display: -ms-grid;
@@ -869,6 +864,14 @@ body {
 @media (max-width: 1120px) {
     .modern-block__wrapper {
         background-image: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .modern-block__wrapper {
+        background-image: url('../img/modern-illustration.svg');
+        background-repeat: no-repeat;
+        background-position: right;
     }
 }
 
@@ -3569,7 +3572,7 @@ label {
 
 /* временные стили */
 
-.modern-block__wrapper,
+
 .ask-block__wrapper,
 .signup-block__wrapper {
     display: none;
