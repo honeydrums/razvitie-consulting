@@ -595,6 +595,7 @@ body {
     padding: 63px 0 32px;
     margin: 0 auto;
     font-size: 36px;
+    line-height: 63.5px;
     text-align: center;
 }
 
@@ -652,6 +653,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
+    line-height: 30px;
 }
 
 .advantages-block__description p strong {
@@ -709,6 +711,7 @@ body {
         margin: 0;
         padding: 20px;
         font-size: 26px;
+        line-height: 36px;
         text-align: left;
     }
     .advantages-block__list {
@@ -723,6 +726,7 @@ body {
     }
     .advantages-block__description p {
         font-size: 16px;
+        line-height: 26px;
     }
     .advantages-block__description p strong {
         font-size: 16px;
@@ -733,6 +737,20 @@ body {
     }
     .advantages-block__list-element {
         font-size: 16px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .advantages-block__title {
+        width: 65%;
+        padding: 24px 20px;
+    }
+    .advantages-block {
+        background-size: 140px;
+    }
+    .advantages-block__description {
+        padding: 0 20px;
     }
 }
 
