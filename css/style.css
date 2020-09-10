@@ -87,6 +87,12 @@ body {
     margin: 16px auto 0;
 }
 
+@media (max-width: 680px) {
+    .main-header__top {
+        margin: 5px auto 0;
+    }
+}
+
 .main-header__bottom-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,7 +127,7 @@ body {
 /* кнопка меню на мобильной версии */
 
 .main-header__nav-trigger {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 10px;
     display: -webkit-box;
@@ -138,7 +144,7 @@ body {
     width: 30px;
     height: 30px;
     /* margin-right: 10px; */
-    padding: 40px 10px;
+    /* padding: 40px 10px; */
     background: 0 0;
     border: 0;
     -webkit-user-select: none;
@@ -338,7 +344,7 @@ body {
 }
 
 
-/* 940px - убираем время работы */
+/* 940px - убираем время работы, уменьшаем логотип и номер телефона */
 
 @media (max-width: 940px) {
     .main-header__nav {
@@ -347,8 +353,18 @@ body {
     .main-header__work-hours {
         display: none;
     }
+    .main-header__nav-list {
+        padding: 0;
+    }
     .main-header__nav-list_element a {
         font-size: 16px;
+    }
+
+    .main-header__top a > img {
+        width: 10vw;
+    }
+    .contact-phone {
+        font-size: 18px;
     }
 }
 
@@ -364,6 +380,12 @@ body {
     }
     .main-header__bottom-wrapper {
         display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .main-header__top a > img {
+        width: 17vw;
     }
 }
 
@@ -424,16 +446,30 @@ body {
     font-size: 36px;
 }
 
+@media (max-width: 1200px) {
+    .main-banner__title {
+        margin: 0 20px;
+    }
+}
+
 @media (max-width: 900px) {
     .main-banner__wrapper {
         height: 39.7vw;
     }
     .main-banner__title {
+        padding-top: 30px;
+        width: 70%;
         font-size: 26px;
-        width: 40%;
+    }
+}
+
+@media (max-width: 680px) {
+    .main-banner__wrapper {
+        height: 106vw;
     }
     .main-banner {
-        /* background: url('../img/mobile-main-banner.png') no-repeat; */
+        background: rgba(244, 242, 229, 1) url('../img/about/about-mobile-background.jpg') no-repeat right bottom;
+        background-size: cover;
     }
 }
 
@@ -824,10 +860,9 @@ body {
 .ask-block__wrapper {
     max-height: 1087px;
     height: 68vw;
-    background: url('../img/person_main-bg.png') no-repeat, -o-linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
-    background: url('../img/person_main-bg.png') no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(138, 186, 65, 1)), to(rgba(84, 140, 65, 1)));
-    background: url('../img/person_main-bg.png') no-repeat, linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
-    /* background-image: url('../img/person_main-bg.png'); */
+    background: -o-linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 186, 65, 1)), to(rgba(84, 140, 65, 1)));
+    background: linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
 }
 
 .ask-block {
@@ -841,6 +876,7 @@ body {
     grid-template-rows: min-content;
     grid-template-areas: 'ask-title ask-title' 'ask-bricks ask-form';
     margin: 0 auto;
+    /* background: url('../img/person_main-bg.png') no-repeat; */
 }
 
 .ask-block__title {
@@ -3514,6 +3550,12 @@ label {
 
 
 /* временные стили */
+
+.modern-block__wrapper,
+.ask-block__wrapper,
+.signup-block__wrapper {
+    display: none;
+}
 
 .main-header__nav-list_element:hover>ul.main-header__nav-list_dropdown {
     display: block;
