@@ -689,6 +689,9 @@ body {
 }
 
 @media (max-width: 1120px) {
+    .advantages-block {
+        background: url('../img/modern-illustration.svg') no-repeat right 250px;
+    }
     .advantages-block__list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -704,8 +707,8 @@ body {
 
 @media (max-width: 720px) {
     .advantages-block {
-        background: url('../img/modern-illustration.svg') no-repeat right 75px;
-        background-size: 150px;
+        background: url('../img/modern-illustration.svg') no-repeat right 100px;
+        background-size: 200px;
     }
     .advantages-block__title {
         width: 80%;
@@ -767,7 +770,7 @@ body {
     grid-template-rows: 1fr;
     grid-gap: 0 2%;
     grid-template-areas: 'mb-title mb-list' 'mb-text mb-list';
-    max-height: 528px;
+    /* max-height: 528px; */
     margin: 0 auto;
     padding: 80px 0;
 }
@@ -790,6 +793,7 @@ body {
 
 .modern-block__description p {
     font-size: 20px;
+    line-height: 30px;
 }
 
 .modern-block__list {
@@ -859,6 +863,12 @@ body {
     vertical-align: middle;
     background-image: url('../img/finger-print-sharp.svg');
     background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+    .modern-block {
+        padding: 80px 0 80px 20px;
+    }
 }
 
 @media (max-width: 1120px) {
