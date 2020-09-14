@@ -37,3 +37,25 @@ for (let callbackFormInput of callbackFormInputs) {
         }
     })
 }
+
+// мобильное меню
+let burgerBtn = document.querySelector('.main-header__nav-trigger');
+let loginRow = document.querySelector('.main-header__bottom-wrapper');
+let headerNav = document.querySelector('.main-header__nav');
+
+burgerBtn.addEventListener('click', function() {
+    console.log('клик');
+    loginRow.classList.toggle('main-header__bottom-wrapper-mobile');
+    headerNav.classList.toggle('main-header__nav-mobile');
+})
+
+function hideMobileMenu(x) { //функция скрывает мобильное меню при изменении разрешения
+    if(x.matches) {
+        loginRow.classList.remove('main-header__bottom-wrapper-mobile');
+        headerNav.classList.remove('main-header__nav-mobile');
+    }
+}
+
+let x = window.matchMedia('(min-width: 700px)')
+hideMobileMenu(x)
+x.addListener(hideMobileMenu)

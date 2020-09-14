@@ -381,6 +381,16 @@ body {
     .main-header__bottom-wrapper {
         display: none;
     }
+    .main-header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-header__nav-list_element {
+        width: 100%;
+        padding: 20px;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+        text-align: left;
+    }
 }
 
 @media (max-width: 560px) {
@@ -3608,4 +3618,21 @@ label {
 
 .main-header__nav-list_dropdown-element {
     margin: 10px 40px;
+}
+
+/* стили для js */
+
+.main-header__bottom-wrapper-mobile {
+    display: block;
+}
+
+.main-header__nav-mobile {
+    display: block;
+    width: 100%;
+    height: initial;
+    position: absolute;
+    top: 17.3vw;
+    left: 0;
+    right: 0;
+    background-color: rgba(244, 242, 229, 1);
 }
