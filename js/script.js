@@ -45,6 +45,7 @@ let headerNav = document.querySelector('.main-header__nav');
 
 burgerBtn.addEventListener('click', function() {
     console.log('клик');
+    burgerBtn.classList.toggle('main-header__nav-trigger-show');
     loginRow.classList.toggle('main-header__bottom-wrapper-mobile');
     headerNav.classList.toggle('main-header__nav-mobile');
 })
