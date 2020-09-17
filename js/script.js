@@ -52,6 +52,7 @@ burgerBtn.addEventListener('click', function() {
 
 function hideMobileMenu(x) { //функция скрывает мобильное меню при изменении разрешения
     if(x.matches) {
+        burgerBtn.classList.remove('main-header__nav-trigger-show');
         loginRow.classList.remove('main-header__bottom-wrapper-mobile');
         headerNav.classList.remove('main-header__nav-mobile');
     }
@@ -60,3 +61,14 @@ function hideMobileMenu(x) { //функция скрывает мобильно�
 let x = window.matchMedia('(min-width: 700px)')
 hideMobileMenu(x)
 x.addListener(hideMobileMenu)
+
+// текущая страница
+
+let currentPage = location.href;
+let menuItems = document.querySelectorAll('.main-header__nav-list_element a');
+
+for (menuItem of menuItems) {
+    if(menuItem.href === currentPage) {
+        menuItem.id = 'active';
+    }
+}
