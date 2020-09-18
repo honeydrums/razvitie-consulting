@@ -3621,7 +3621,7 @@ label {
 /* страница бухгалтерское сопровождение/аутсорсинг */
 
 .outsourcing-welcome__wrapper {
-    background: rgba(244, 242, 229, 1) url('../img/outsource/outsourcing-background.png') no-repeat right top;
+    background: rgba(244, 242, 229, 1) url('../img/outsource/outsourcing-background.png') no-repeat top;
     background-size: contain;
     max-height: 550px;
     height: 28.7vw;
@@ -3862,7 +3862,7 @@ label {
 
 @media (min-width: 1660px) {
     .os-services {
-        background: url('../img/outsource/girl-services-bg.png') no-repeat right bottom, linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+        background: url('../img/outsource/girl-services-bg.png') no-repeat 80vw bottom, linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
     }
 }
 
@@ -3928,6 +3928,9 @@ label {
         margin: 0 auto 24px;
         font-size: 26px;
         line-height: 36px;
+    }
+    .os-services__list {
+        margin: 0 0 12px;
     }
     .os-services__list-element {
         grid-column: span 12;
