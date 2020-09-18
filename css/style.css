@@ -3714,17 +3714,6 @@ label {
     }
 }
 
-.outsourcing-page__top-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    max-height: 328px;
-}
-
 /* преимущества на странице аутсорсинг */
 
 .outsourcing-page__top-section {
@@ -3735,7 +3724,6 @@ label {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-height: 328px;
 }
 
 
@@ -3744,6 +3732,9 @@ label {
 .outsourcing-page__title {
     margin: 0 auto 47px;
     padding-top: 80px;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
 }
 
 
@@ -3822,22 +3813,31 @@ label {
     }
 }
 
+/* 860px */
 
-/* преимущества с 766px */
+@media (max-width: 860px) {
+    .outsourcing-page__list li {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
 
-@media (max-width: 766px) {
+/* 768px */
+
+@media (max-width: 768px) {
     .outsourcing-page__title {
         margin: 0 15px 32px;
-        padding-top: 44px;
+        padding-top: 32px;
+        font-size: 26px;
+        line-height: 36px;
+        text-align: left;
     }
     .outsourcing-page__list {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
+        align-items: center;
         margin: 0 auto 40px;
     }
     .outsourcing-page__list li {
@@ -3858,6 +3858,12 @@ label {
 
 .os-services {
     background: linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+}
+
+@media (min-width: 1660px) {
+    .os-services {
+        background: url('../img/outsource/girl-services-bg.png') no-repeat right bottom, linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+    }
 }
 
 .os-services__wrapper {
@@ -3929,6 +3935,10 @@ label {
     .os-services__list-element img {
         width: 32px;
         height: 32px;
+        margin: 15px 12px 56px;
+    }
+    .os-services__list-element_title {
+        margin: 15px 30px 30px 0;
     }
 }
 
