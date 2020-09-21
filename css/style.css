@@ -373,6 +373,7 @@ body {
     }
     .contact-phone {
         font-size: 18px;
+        text-align: left;
     }
 }
 
@@ -380,9 +381,6 @@ body {
 /* 680px */
 
 @media (max-width: 680px) {
-    .contact-phone {
-        display: none;
-    }
     .main-header__nav {
         display: none;
     }
@@ -1351,7 +1349,7 @@ body {
     -ms-grid-column: 5;
 }
 
-.main-header__work-hours-title {
+.main-footer__work-hours_title {
     display: none;
 }
 
@@ -1470,6 +1468,12 @@ body {
         font-weight: bold;
         margin: 0;
         padding: 0;
+    }
+    .main-footer__work-hours_title {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 17px 0;
     }
 }
 
@@ -3620,8 +3624,15 @@ label {
 
 /* страница бухгалтерское сопровождение/аутсорсинг */
 
+@media (min-width: 796px) {
+    .outsourcing-welcome {
+        
+    background: url('../img/outsource/outsourcing-background.png') no-repeat top right;
+    }
+}
+
 .outsourcing-welcome__wrapper {
-    background: rgba(244, 242, 229, 1) url('../img/outsource/outsourcing-background.png') no-repeat top;
+    background: linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
     background-size: contain;
     max-height: 550px;
     height: 28.7vw;
@@ -3634,15 +3645,16 @@ label {
 
 .outsourcing-welcome__title {
     margin: 0;
-    padding: 75px 0 45px;
+    padding: 57px 0 16px;
     font-size: 36px;
     width: 55%;
 }
 
 .outsourcing-welcome__text {
+    width: 35%;
     margin: 0;
     font-size: 20px;
-    width: 57%;
+    line-height: 26px;
 }
 
 @media (max-width: 1480px) {
