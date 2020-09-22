@@ -925,6 +925,7 @@ body {
     .modern-block__list-element {
         grid-gap: initial;
         justify-content: left;
+        margin-bottom: 16px;
     }
     .modern-block__list-element::before {
         padding-right: 10px;
@@ -934,6 +935,10 @@ body {
 @media (max-width: 720px) {
     .modern-block__title {
         font-size: 26px;
+        margin-bottom: 16px;
+    }
+    .modern-block__description {
+        display: none;
     }
 }
 
@@ -1350,10 +1355,6 @@ body {
 .main-footer__work-hours>*:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 5;
-}
-
-.main-footer__work-hours_title {
-    display: none;
 }
 
 .main-footer__work-hours li {
@@ -2393,6 +2394,7 @@ label {
 @media (max-width: 760px) {
     .faq-welcome__title {
         font-size: 26px;
+        margin: 36px 20px 17px;
     }
     .faq-welcome__text {
         font-size: 16px;
@@ -3555,6 +3557,11 @@ label {
 }
 
 @media (max-width: 680px) {
+    .about-team__title {
+        font-size: 26px;
+        margin: 32px auto;
+        padding: 0;
+    }
     .personal-description {
         padding: 5px;
     }
@@ -3624,6 +3631,15 @@ label {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 680px) {
+    .our-clients__title {
+        font-size: 26px;
+        margin: 32px auto;
+        padding: 0;
+    }
+}
+
 
 /* страница бухгалтерское сопровождение/аутсорсинг */
 
