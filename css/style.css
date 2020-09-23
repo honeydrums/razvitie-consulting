@@ -1444,6 +1444,13 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
+/* уберём время работы на десктопе */
+
+@media (min-width: 940px) {
+    .main-footer__work-hours_title {
+        display: none;
+    }
+}
 
 /* подвал сайта меньше 940px */
 
