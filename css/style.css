@@ -947,7 +947,7 @@ body {
 
 .ask-block__wrapper {
     max-height: 1087px;
-    height: 68vw;
+    /* height: 100vw; */
     background: -o-linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(138, 186, 65, 1)), to(rgba(84, 140, 65, 1)));
     background: linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
@@ -964,7 +964,7 @@ body {
     grid-template-rows: min-content;
     grid-template-areas: 'ask-title ask-title' 'ask-bricks ask-form';
     margin: 0 auto;
-    /* background: url('../img/person_main-bg.png') no-repeat; */
+    padding-bottom: 80px;
 }
 
 .ask-block__title {
@@ -973,7 +973,7 @@ body {
     -ms-grid-column-span: 2;
     grid-area: ask-title;
     margin: 0;
-    padding: 80px 0 55px;
+    padding: 80px 0 47px;
     font-size: 36px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -1046,7 +1046,7 @@ body {
 
 .ask-block__questions-brick {
     position: relative;
-    padding: 15px 20px;
+    padding: 15px 40px 15px 20px;
     border: 2px solid rgba(255, 255, 255, 1);
     border-radius: 20px;
     -webkit-transition: 0.2s;
@@ -1088,6 +1088,26 @@ body {
     font-weight: bold;
 }
 
+/* bg img */
+
+@media (min-width: 1620px) {
+    .ask-block__wrapper {
+        background: url('../img/person_main-bg.png') no-repeat, linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
+    }
+}
+
+@media (max-width: 1200px) {
+    .ask-block {
+        padding: 0 20px 36px;
+        grid-gap: 0 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .ask-block__title {
+        padding: 32px 20px 18px;
+    }
+}
 
 /* форма "перезвоните нам" */
 
@@ -1188,6 +1208,30 @@ body {
     box-shadow: none;
 }
 
+
+@media (max-width: 1040px) {
+    .ask-block__questions-title,
+    .ask-block__questions-text,
+    .ask-block__quesitons-list {
+        display: none;
+        visibility: hidden;
+    }
+    .ask-block__questions-brick_wrapper {
+        grid-template-columns: auto;
+    }
+    .ask-block__callback-form {
+        width: fit-content;
+        height: fit-content;
+        padding-top: 29px;
+        justify-content: start;
+    }
+    .ask-block__callback-form legend {
+        margin-bottom: 16px;
+    }
+    .ask-block__callback-form p {
+        margin-bottom: 16px;
+    }
+}
 
 /* блок с регистрацией */
 
@@ -3997,8 +4041,6 @@ label {
 
 /* временные стили */
 
-
-.ask-block__wrapper,
 .signup-block__wrapper {
     display: none;
 }
