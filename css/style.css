@@ -1690,7 +1690,7 @@ body {
 
 @media (max-width: 766px) {
 	.contacts-page__title {
-		margin: 0 15px 32px;
+		margin: 0 20px 32px;
 		padding-top: 44px;
 	}
 	.contacts-page__list {
