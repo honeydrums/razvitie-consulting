@@ -1290,7 +1290,13 @@ body {
 /* блок с регистрацией */
 
 .signup-block__wrapper {
-	background-color: rgba(244, 242, 229, 1);
+	background: rgba(244, 242, 229, 1);
+}
+
+@media (min-width: 1620px) {
+	.signup-block__wrapper {
+		background: url('../img/person_main-bg.png') no-repeat 0 -1080px, rgba(244, 242, 229, 1);
+	}
 }
 
 .signup-block {
@@ -4128,10 +4134,6 @@ label {
 
 
 /* временные стили */
-
-.signup-block__wrapper {
-	display: none;
-}
 
 .main-header__nav-list_element:hover>ul.main-header__nav-list_dropdown {
 	display: block;
