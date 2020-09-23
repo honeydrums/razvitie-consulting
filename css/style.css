@@ -586,7 +586,8 @@ body {
 
 @media (max-width: 1200px) {
 	.callback-form form {
-		width: 85%;
+        /* width: 85%; */
+        margin: 0 8%;
 	}
 }
 
