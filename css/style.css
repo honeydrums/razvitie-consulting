@@ -1280,7 +1280,8 @@ body {
         margin-bottom: 36px;
     }
     .ask-block__callback-form {
-        width: 100%;
+		width: 100%;
+		height: auto;
         padding: 30px 20px;
     }
 }
