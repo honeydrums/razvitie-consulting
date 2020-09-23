@@ -1109,9 +1109,7 @@ body {
 
 @media (min-width: 1620px) {
 	.ask-block__wrapper {
-		background: url('../img/person_main-bg.png') no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(138, 186, 65, 1)), to(rgba(84, 140, 65, 1)));
-		background: url('../img/person_main-bg.png') no-repeat, -o-linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
-		background: url('../img/person_main-bg.png') no-repeat, linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
+		background: url('../img/person_main-bg.png') no-repeat -6vw -167px, linear-gradient(rgba(138, 186, 65, 1), rgba(84, 140, 65, 1));
 	}
 }
 
@@ -1295,7 +1293,7 @@ body {
 
 @media (min-width: 1620px) {
 	.signup-block__wrapper {
-		background: url('../img/person_main-bg.png') no-repeat 0 -1080px, rgba(244, 242, 229, 1);
+		background: url('../img/person_main-bg.png') no-repeat -6vw -1248px, rgba(244, 242, 229, 1);
 	}
 }
 
@@ -1316,7 +1314,7 @@ body {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
 	grid-area: sb-title;
-	margin: 0;
+	margin: 110px 0 0 0;
 	font-size: 36px;
 	font-weight: 600;
 }
@@ -1325,7 +1323,10 @@ body {
 	-ms-grid-row: 3;
 	-ms-grid-column: 1;
 	grid-area: sb-text;
+	margin-bottom: 80px;
 	font-size: 20px;
+	line-height: 30px;
+
 }
 
 .signup-block__decorative-phone {
@@ -1333,6 +1334,8 @@ body {
 	-ms-grid-row-span: 3;
 	-ms-grid-column: 3;
 	grid-area: sb-signup;
+	margin-top: 80px;
+	padding: 90px 23px 0;
 	background: url('../img/mobile-phone-border.svg') no-repeat center;
 	background-size: contain;
 	text-align: center;
