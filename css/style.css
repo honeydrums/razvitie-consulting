@@ -1298,30 +1298,22 @@ body {
 }
 
 .signup-block {
-	display: -ms-grid;
-	display: grid;
-	grid-template-areas: 'sb-title sb-signup' 'sb-text sb-signup';
-	grid-template-columns: 60% 1fr;
-	grid-template-rows: 1fr;
-	grid-gap: 0 2%;
-	max-height: 499px;
+	display: flex;
 	margin: 0 auto;
 	padding-top: 80px;
 }
 
+.signup-block__description {
+	flex-basis: 100%;
+}
+
 .signup-block__title {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-	grid-area: sb-title;
-	margin: 110px 0 0 0;
+	margin: 0;
 	font-size: 36px;
 	font-weight: 600;
 }
 
 .signup-block__text {
-	-ms-grid-row: 3;
-	-ms-grid-column: 1;
-	grid-area: sb-text;
 	margin-bottom: 80px;
 	font-size: 20px;
 	line-height: 30px;
@@ -1329,21 +1321,18 @@ body {
 }
 
 .signup-block__decorative-phone {
-	-ms-grid-row: 1;
-	-ms-grid-row-span: 3;
-	-ms-grid-column: 3;
-	grid-area: sb-signup;
 	display: flex;
     flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: 120px 40px 20px;
+	padding-top: 7%;
 	background: url('../img/mobile-phone-border.svg') no-repeat center;
 	background-size: contain;
 	text-align: center;
 }
 
 .signup-block__decorative-phone__title {
+	width: 58%;
 	margin: 0;
 	font-size: 30px;
 }
@@ -1380,19 +1369,33 @@ body {
 		/* padding: inherit; */
 	}
 	.signup-block__title {
-		margin: 110px 0 0 20px;
+		padding-left: 20px;
 	}
 	.signup-block__text {
-		margin-left: 20px;
+		padding-left: 20px;
+	}
+	.signup-block__decorative-phone {
+		padding-top: 11%;
 	}
 }
 
-@media (max-width: 680px) {
+@media (max-width: 980px) {
 	.signup-block {
 		display: flex;
 		flex-direction: column;
 		padding: 30px 20px 0;
 	}
+	.signup-block__decorative-phone {
+		height: 60vw;
+		padding-top: initial;
+	}
+	.signup-block__decorative-phone__title {
+		width: 70%;
+		padding: 16vw 5vw 0;
+	}
+}
+
+@media (max-width: 680px) {
 	.signup-block__title {
 		margin: 0 auto 20px;
 		text-align: center;
@@ -1416,9 +1419,10 @@ body {
 		padding: 60px 0 0;
 	}
 	.signup-block__decorative-phone__title {
-		width: 60%;
+		width: 90%;
 		font-size: 20px;
 		line-height: 30px;
+		padding: 5vw 5vw 0;
 	}
 	.signup-block__decorative-phone__link {
 		font-size: 18px;
