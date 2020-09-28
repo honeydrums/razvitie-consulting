@@ -1411,6 +1411,7 @@ body {
 	}
 	.signup-block__decorative-phone__title {
 		width: 60%;
+		padding: initial;
 	}
 }
 
