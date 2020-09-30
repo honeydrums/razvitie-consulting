@@ -2111,6 +2111,7 @@ body {
 }
 
 .login-page__form {
+	width: 100%;
 	max-width: 524px;
 	padding-bottom: 160px;
 }
