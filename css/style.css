@@ -4241,7 +4241,7 @@ label {
 
 @media (min-width: 796px) {
 	.legal-welcome {
-		/* background: url('../img/outsource/outsourcing-background.png') no-repeat top right; */
+		background: url('../img/legal/legal-background.png') no-repeat top right;
 	}
 }
 
@@ -4250,7 +4250,7 @@ label {
 	background: linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
 	background-size: contain;
 	max-height: 550px;
-	height: 28.7vw;
+	height: 27.7vw;
 }
 
 .legal-welcome {
@@ -4443,6 +4443,12 @@ label {
 	.lg-services__list-element_title {
 		margin: 15px 30px 30px 0;
 	}
+}
+
+/* блок "окажем квалифицированную помощь" */
+
+.feedback-help__wrapper {
+	background-color: #F4F2E5;
 }
 
 /* 404 */
