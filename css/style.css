@@ -2240,7 +2240,8 @@ label {
 	width: 100%;
 	height: 56px;
 	margin: 10px 0 25px;
-	padding: 0 20px;
+	padding: 0 60px 0 20px;
+    overflow: scroll;
 	border: none;
 	border-radius: 5px;
 	background: #F4F2E5;
@@ -2280,6 +2281,18 @@ label {
 	box-shadow: none;
 }
 
+@media (max-width: 680px) {
+	.signup-page__title {
+		margin: 36px auto 16px;
+		font-size: 26px;
+	}
+	.signup-page {
+		padding: 0 20px;
+	}
+	.signup-page__form {
+		padding-bottom: 32px;
+	}
+}
 
 /* страница вопрос-ответ */
 
