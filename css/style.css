@@ -2115,6 +2115,10 @@ body {
 	padding-bottom: 160px;
 }
 
+.login-page__form label {
+	display: block;
+}
+
 .login-page__form label input[type="text"],
 .login-page__form label input[type="password"] {
 	width: 100%;

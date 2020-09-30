@@ -81,7 +81,7 @@ let passwordToggleRepeat = document.querySelector('#passwordToggleRepeat');
 let userPassword = document.querySelector('#user-password');
 let userPasswordRepeat = document.querySelector('#user-password-repeat');
 
-function showPassword() {
+function showPassword(userPassword, userPasswordRepeat) {
     if (userPassword.type === 'password') {
         passwordToggle.classList.add('view');
         userPassword.type = 'text';
@@ -91,12 +91,24 @@ function showPassword() {
     }
 };
 
-function showPasswordRepeat() {
-    if (userPasswordRepeat.type === 'password') {
-        passwordToggleRepeat.classList.add('view');
-        userPasswordRepeat.type = 'text';
-    } else {
-        passwordToggleRepeat.classList.remove('view');
-        userPasswordRepeat.type = 'password';
-    }
-};
+// function showPasswordRepeat() {
+//     if (userPasswordRepeat.type === 'password') {
+//         passwordToggleRepeat.classList.add('view');
+//         userPasswordRepeat.type = 'text';
+//     } else {
+//         passwordToggleRepeat.classList.remove('view');
+//         userPasswordRepeat.type = 'password';
+//     }
+// };
+
+// показать / скрыть пароль на странице входа 
+
+// function showLoginPassword() {
+//     if (userPassword.type === 'password') {
+//         this.classList.add('view');
+//         userPassword.type = 'text';
+//     } else {
+//         this.classList.remove('view');
+//         userPassword.type = 'password';
+//     }
+// }
