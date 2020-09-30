@@ -75,21 +75,28 @@ for (menuItem of menuItems) {
 
 // показать/скрыть пароль 
 
+let passwordToggle = document.querySelector('#passwordToggle');
+let passwordToggleRepeat = document.querySelector('#passwordToggleRepeat');
+
 let userPassword = document.querySelector('#user-password');
 let userPasswordRepeat = document.querySelector('#user-password-repeat');
 
 function showPassword() {
     if (userPassword.type === 'password') {
+        passwordToggle.classList.add('view');
         userPassword.type = 'text';
     } else {
+        passwordToggle.classList.remove('view');
         userPassword.type = 'password';
     }
 };
 
 function showPasswordRepeat() {
     if (userPasswordRepeat.type === 'password') {
+        passwordToggleRepeat.classList.add('view');
         userPasswordRepeat.type = 'text';
     } else {
+        passwordToggleRepeat.classList.remove('view');
         userPasswordRepeat.type = 'password';
     }
 };
