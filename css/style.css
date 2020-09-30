@@ -2148,7 +2148,7 @@ label {
 	display: inline-block;
 	position: absolute;
 	right: 5px;
-	bottom: -12px;
+	bottom: 29px;
 	cursor: pointer;
 }
 
@@ -2228,6 +2228,10 @@ label {
 .signup-page__form {
 	max-width: 524px;
 	padding-bottom: 80px;
+}
+
+.signup-page__form label {
+	display: block;
 }
 
 .signup-page__form label input[type="text"],

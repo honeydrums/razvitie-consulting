@@ -72,3 +72,24 @@ for (menuItem of menuItems) {
         menuItem.id = 'active';
     }
 }
+
+// показать/скрыть пароль 
+
+let userPassword = document.querySelector('#user-password');
+let userPasswordRepeat = document.querySelector('#user-password-repeat');
+
+function showPassword() {
+    if (userPassword.type === 'password') {
+        userPassword.type = 'text';
+    } else {
+        userPassword.type = 'password';
+    }
+};
+
+function showPasswordRepeat() {
+    if (userPasswordRepeat.type === 'password') {
+        userPasswordRepeat.type = 'text';
+    } else {
+        userPasswordRepeat.type = 'password';
+    }
+};
