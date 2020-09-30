@@ -77,11 +77,13 @@ for (menuItem of menuItems) {
 
 let passwordToggle = document.querySelector('#passwordToggle');
 let passwordToggleRepeat = document.querySelector('#passwordToggleRepeat');
+let loginPasswordToggle = document.querySelector('#loginPasswordToggle');
 
 let userPassword = document.querySelector('#user-password');
 let userPasswordRepeat = document.querySelector('#user-password-repeat');
+let loginPassword = document.querySelector('#loginPasswordToggle');
 
-function showPassword(userPassword, userPasswordRepeat) {
+function showPassword() {
     if (userPassword.type === 'password') {
         passwordToggle.classList.add('view');
         userPassword.type = 'text';
@@ -91,24 +93,24 @@ function showPassword(userPassword, userPasswordRepeat) {
     }
 };
 
-// function showPasswordRepeat() {
-//     if (userPasswordRepeat.type === 'password') {
-//         passwordToggleRepeat.classList.add('view');
-//         userPasswordRepeat.type = 'text';
-//     } else {
-//         passwordToggleRepeat.classList.remove('view');
-//         userPasswordRepeat.type = 'password';
-//     }
-// };
+function showPasswordRepeat() {
+    if (userPasswordRepeat.type === 'password') {
+        passwordToggleRepeat.classList.add('view');
+        userPasswordRepeat.type = 'text';
+    } else {
+        passwordToggleRepeat.classList.remove('view');
+        userPasswordRepeat.type = 'password';
+    }
+};
 
 // показать / скрыть пароль на странице входа 
 
-// function showLoginPassword() {
-//     if (userPassword.type === 'password') {
-//         this.classList.add('view');
-//         userPassword.type = 'text';
-//     } else {
-//         this.classList.remove('view');
-//         userPassword.type = 'password';
-//     }
-// }
+function showLoginPassword() {
+    if (userPassword.type === 'password') {
+        loginPasswordToggle.classList.add('view');
+        userPassword.type = 'text';
+    } else {
+        loginPasswordToggle.classList.remove('view');
+        userPassword.type = 'password';
+    }
+}

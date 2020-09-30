@@ -2133,9 +2133,23 @@ body {
 	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 680px) {
+	.login-page__title {
+		padding: 0;
+		margin: 36px auto 16px;
+		font-size: 26px;
+	}
+	.login-page {
+		padding: 0 20px;
+	}
+	.login-page__form {
+		padding-bottom: 32px;
+	}
+}
+
 @media (max-width: 560px) {
 	.login-page__form {
-		padding: 0 20px 160px;
+		/* padding: 0 20px 160px; */
 	}
 }
 
@@ -2245,13 +2259,20 @@ label {
 	width: 100%;
 	height: 56px;
 	margin: 10px 0 25px;
-	padding: 0 60px 0 20px;
-    overflow: scroll;
+	padding: 0 20px;
 	border: none;
 	border-radius: 5px;
 	background: #F4F2E5;
 	-webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* отступы в полях ввода пароля */
+
+#user-password,
+#user-password-repeat {
+	padding: 0 60px 0 20px;
+    overflow: scroll;
 }
 
 .signup-page__form input[type="submit"] {
