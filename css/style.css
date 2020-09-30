@@ -4239,6 +4239,108 @@ label {
 /* страница "Юридические услуги" */
 
 
+@media (min-width: 796px) {
+	.legal-welcome {
+		/* background: url('../img/outsource/outsourcing-background.png') no-repeat top right; */
+	}
+}
+
+.legal-welcome__wrapper {
+	background: -o-linear-gradient(325deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
+	background: linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
+	background-size: contain;
+	max-height: 550px;
+	height: 28.7vw;
+}
+
+.legal-welcome {
+	margin: 0 auto;
+	height: inherit;
+}
+
+.legal-welcome__title {
+	margin: 0;
+	padding: 57px 0 16px;
+	font-size: 36px;
+	width: 55%;
+}
+
+.legal-welcome__text {
+	width: 35%;
+	margin: 0;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+@media (max-width: 1480px) {
+	.legal-welcome__wrapper {
+		height: 33vw;
+	}
+	.legal-welcome__title {
+		padding: 40px 0;
+	}
+	.legal-welcome__text {
+		width: 51%;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.legal-welcome {
+		padding: 0 20px;
+	}
+	.legal-welcome__title {
+		padding: 28px 0 16px;
+		font-size: 26px;
+	}
+	.legal-welcome__text {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 945px) {
+	.legal-welcome__wrapper {
+		height: 37vw;
+	}
+	.legal-welcome__text {
+		width: 42%;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 860px) {
+	.legal-welcome__title {
+		padding: 20px 0 14px;
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 795px) {
+	.legal-welcome {
+		padding: 0 20px 20px;
+	}
+	.legal-welcome__wrapper {
+		background: rgba(244, 242, 229, 1);
+		height: auto;
+	}
+	.outsourcing-welcome__text {
+		width: 93%;
+		line-height: 26px;
+	}
+}
+
+@media (max-width: 680px) {
+	.legal-welcome__title {
+		width: initial;
+		padding: 38px 0 16px;
+		font-size: 26px;
+	}
+	.legal-welcome__text {
+		width: initial;
+		font-size: 16px;
+	}
+}
+
 /* блок "услуги в сфере аутсорсинга" */
 
 .lg-services {
