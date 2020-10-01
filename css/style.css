@@ -4245,19 +4245,19 @@ label {
 
 /* страница "Юридические услуги" */
 
-
-@media (min-width: 796px) {
-	.legal-welcome {
-		background: url('../img/legal/legal-background.png') no-repeat top right;
-	}
+.legal-welcome__wrapper {
+	background: linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
+	max-height: 584px;
+	height: 27vw;
 }
 
-.legal-welcome__wrapper {
-	background: -o-linear-gradient(325deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
-	background: linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
-	background-size: contain;
-	max-height: 550px;
-	height: 27.7vw;
+/* костыль, сорян */
+
+@media (min-width: 1100px) {
+	.legal-welcome__wrapper {
+		background: url('../img/legal/legal-background.png') no-repeat bottom right, linear-gradient(125deg, rgba(250, 248, 236, 1), rgba(234, 217, 187, 1));
+		background-size: contain;
+	}
 }
 
 .legal-welcome {
@@ -4274,20 +4274,20 @@ label {
 
 .legal-welcome__text {
 	width: 35%;
-	margin: 0;
-	font-size: 20px;
+	margin: 0 0 20px 0;
+	font-size: 16px;
 	line-height: 26px;
 }
 
 @media (max-width: 1480px) {
 	.legal-welcome__wrapper {
-		height: 33vw;
+		height: 30vw;
 	}
 	.legal-welcome__title {
 		padding: 40px 0;
 	}
 	.legal-welcome__text {
-		width: 51%;
+		width: 40%;
 		font-size: 18px;
 	}
 }
@@ -4305,12 +4305,17 @@ label {
 	}
 }
 
+@media (max-width: 1100px) {
+	.legal-welcome__text {
+		width: 100%;
+	}
+}
+
 @media (max-width: 945px) {
 	.legal-welcome__wrapper {
 		height: 37vw;
 	}
 	.legal-welcome__text {
-		width: 42%;
 		font-size: 14px;
 	}
 }
@@ -4345,6 +4350,12 @@ label {
 	.legal-welcome__text {
 		width: initial;
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.legal-welcome__title {
+		width: 60%;
 	}
 }
 
