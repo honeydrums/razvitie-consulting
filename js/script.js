@@ -114,3 +114,20 @@ function showLoginPassword() {
         userPassword.type = 'password';
     }
 }
+
+// отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
+
+let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
+let submitBtn = document.querySelector('input[type="submit"]');
+
+checkBox.addEventListener('change', function() {
+    if (this.checked === false) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('too-many-symbols__button');
+        console.log('nope');
+    } else {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('too-many-symbols__button');
+        console.log('yep');
+    }
+});

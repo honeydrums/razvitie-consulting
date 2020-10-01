@@ -132,51 +132,53 @@
         <section class="feedback-help__wrapper">
             <div class="feedback-help centered">    
                 <h2 class="feedback-help__title">Окажем квалифицированную помощь</h2>
-                <div>
-                    <p>Если у Вас возникли проблемы, связанные с:</p>
-                    <ul>
-                        <li>Арбитражем (представление интересов в арбитражном суде);</li>
-                        <li>Взысканием дебиторской задолженности;</li>
-                        <li>Сопровождением деятельности предприятий;</li>
-                        <li>Регистрацией предприятий коммерческих и некоммерческих;</li>
-                        <li>Регистрацией индивидуальных предпринимателей;</li>
-                        <li>Банкротством.</li>
-                    </ul>
-                    <p>Обратившись к нам со своей проблемой, Вы можете быть уверены в том, что Вас внимательно выслушают, дадут необходимыеконсультации и ответят на все интересующие Вас вопросы.</p>
-                    <p>Наша Компания не оказывает услуги в рамках уголовного и семейного права, но непременно подскажет куда обратиться к соответствующим специалистам.</p>
-                    <button>Порядок взаимодействия с аутсорсинговой компанией</button>
-                </div>
-                <div>
-                    <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все интересующие вас вопросы.</p>
-                    <form action="" method="post" class="contacts-page__email-us__form">
-                        <ul class="contacts-page__email-us__form-list">
-                            <li>
-                                <label for="username">Имя</label>
-                                <input type="text" id="username" name="user-name" placeholder="Алексей">
-                            </li>
-                            <li>
-                                <label for="firmname">Название компании или ИНН</label>
-                                <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
-                            </li>
-                            <li>
-                                <label for="userphone">Номер телефона</label>
-                                <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
-                            </li>
-                            <li>
-                                <label for="formmessage">Сообщение</label>
-                                <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"></textarea>
-                                <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
-                            </li>
+                <div class="feedback-help__content">
+                    <div class="rules-block">
+                        <p class="rules-block__title">Если у Вас возникли проблемы, связанные с:</p>
+                        <ul class="rules-block__list">
+                            <li class="rules-block__list-element">Арбитражем (представление интересов в арбитражном суде);</li>
+                            <li class="rules-block__list-element">Взысканием дебиторской задолженности;</li>
+                            <li class="rules-block__list-element">Сопровождением деятельности предприятий;</li>
+                            <li class="rules-block__list-element">Регистрацией предприятий коммерческих и некоммерческих;</li>
+                            <li class="rules-block__list-element">Регистрацией индивидуальных предпринимателей;</li>
+                            <li class="rules-block__list-element">Банкротством.</li>
                         </ul>
-                        <div class="checkbox-wrap">
-                            <label>
-                                <input type="checkbox" name="confirm-yes" checked>
-                                <span class="check__box"></span>
-                                Я даю свое согласие на обработку моих персональных данных.
-                            </label>
-                        </div>
-                        <input type="submit" value="Отправить">
-                    </form>
+                        <p class="rules-block__text">Обратившись к нам со своей проблемой, Вы можете быть уверены в том, что Вас внимательно выслушают, дадут необходимыеконсультации и ответят на все интересующие Вас вопросы.</p>
+                        <p class="rules-block__text">Наша Компания не оказывает услуги в рамках уголовного и семейного права, но непременно подскажет куда обратиться к соответствующим специалистам.</p>
+                        <a class="rules-block__rules-file">Порядок взаимодействия с аутсорсинговой компанией</a>
+                    </div>
+                    <div>
+                        <p>Оставьте свои контактные данные для связи.</p>
+                        <form action="" method="post" class="contacts-page__email-us__form">
+                            <ul class="contacts-page__email-us__form-list">
+                                <li>
+                                    <label for="username">Имя</label>
+                                    <input type="text" id="username" name="user-name" placeholder="Алексей">
+                                </li>
+                                <li>
+                                    <label for="firmname">Название компании или ИНН</label>
+                                    <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+                                </li>
+                                <li>
+                                    <label for="userphone">Номер телефона</label>
+                                    <input type="tel" name="user-phone" id="userphone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7(___)___-__-__">
+                                </li>
+                                <li>
+                                    <label for="formmessage">Сообщение</label>
+                                    <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"></textarea>
+                                    <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
+                                </li>
+                            </ul>
+                            <div class="checkbox-wrap">
+                                <label>
+                                    <input type="checkbox" name="confirm-yes" checked>
+                                    <span class="check__box"></span>
+                                    Я даю свое согласие на обработку моих персональных данных.
+                                </label>
+                            </div>
+                            <input type="submit" value="Отправить">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -218,6 +220,7 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/email-us-form-checker.js"></script>
 </body>
 
 </html>
