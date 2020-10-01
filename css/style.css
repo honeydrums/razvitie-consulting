@@ -2038,6 +2038,7 @@ body {
 
 /* кнопка "отправить" в форме*/
 
+.form-block__form input[type="submit"],
 .contacts-page__email-us__form input[type="submit"] {
 	max-width: 368px;
 	width: 100%;
@@ -2056,11 +2057,13 @@ body {
 	transition: 0.2s;
 }
 
+.form-block__form input[type="submit"]:hover,
 .contacts-page__email-us__form input[type="submit"]:hover {
 	-webkit-box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
 	box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
 }
 
+.form-block__form input[type="submit"]:active,
 .contacts-page__email-us__form input[type="submit"]:active {
 	background: -o-linear-gradient(87.03deg, #0F512B -60.2%, #90BF57 175.89%);
 	background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
@@ -2080,9 +2083,11 @@ body {
 		margin: 0 20px 35px;
 		font-size: 16px;
 	}
+	.form-block__form-list,
 	.contacts-page__email-us__form-list {
 		display: block;
 	}
+	.form-block__form-list li label
 	.contacts-page__email-us__form-list li label {
 		margin-top: 20px;
 	}
@@ -4466,7 +4471,10 @@ label {
 }
 
 .feedback-help__content {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 80px;
+	margin-bottom: 80px;
 }
 
 .rules-block__title {
@@ -4485,7 +4493,7 @@ label {
 }
 
 .rules-block__list-element {
-	display: inline-block;
+	display: flex;
 	margin-bottom: 20px;
 }
 .rules-block__list-element::before {
@@ -4501,6 +4509,7 @@ label {
 }
 
 .rules-block__rules-file {
+	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
 	font-size: 16px;
@@ -4514,14 +4523,103 @@ label {
 	display: inline-block;
 	width: 64px;
 	height: 64px;
-	background-image: url('../img/legal/lg-icons/rules.svg');
+	margin-right: 16px;
+	background: url('../img/legal/lg-icons/rules.svg') no-repeat;
 	background-size: contain;
 }
 
+.form-block__text {
+	padding: 0;
+	margin: 0 0 27px 0;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.form-block__form input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+}
+
+/* форма обратной связи на странице "Юридические услуги" */
+
+.form-block__form-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.form-block__form-list li:not(:last-child) {
+	text-align: left;
+	margin-bottom: 32px;
+}
+
+.form-block__form-list li label {
+	display: inline-block;
+	margin-bottom: 11px;
+}
+
+.form-block__form-list li input,
+.form-block__form-list li textarea {
+	width: 100%;
+	height: 56px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: none;
+}
+
+.form-block__form-list li textarea {
+	height: 168px;
+	resize: none;
+}
+
+.textarea-counter {
+	float: right;
+}
+
+.form-block__form .checkbox-wrap {
+	margin: 30px 0;
+}
+
+.form-block__form .checkbox-wrap .check__box {
+	margin: -8px -40px;
+}
+
+
+@media (max-width: 1200px) {
+	.feedback-help__content {
+		padding: 0 20px;
+	}
+}
+
 @media (max-width: 680px) {
+	.feedback-help__content {
+		grid-template-columns: 1fr;
+	}
 	.feedback-help__title {
-		padding-top: 32px;
+		padding: 32px 20px 0;
 		font-size: 26px;
+		line-height: 36px;
+		text-align: center;
+	}
+	.rules-block__title {
+		font-size: 16px;
+		line-height: 24px;
+		margin: 0 0 16px 0;
+	}
+	.form-block__text {
+		font-size: 26px;
+		line-height: 39px;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 480px) {
+	.rules-block__rules-file {
+		display: none;
 	}
 }
 

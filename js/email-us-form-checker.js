@@ -1,7 +1,7 @@
-let commentTextarea = document.querySelector('.contacts-page__email-us__form-list li textarea'); //найдём textarea
+let commentTextarea = document.querySelector('#formmessage'); //найдём textarea
 let textareaQuantity = document.querySelector('.textarea-quantity');
 let textareaCounter = document.querySelector('.textarea-counter');
-let formButton = document.querySelector('.contacts-page__email-us__form input[type="submit"]');
+let formButton = document.querySelector('input[type="submit"]');
 
 commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
     textareaQuantity.innerHTML = this.value.length; // счётчик количества введённых символов
