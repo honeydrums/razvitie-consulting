@@ -4188,6 +4188,7 @@ label {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	position: relative;
 	border: 2px solid rgba(255, 255, 255, 1);
 	border-radius: 15px;
 	-ms-grid-column-span: 6;
@@ -4405,6 +4406,7 @@ label {
 }
 
 .lg-services__list-element {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -4413,6 +4415,20 @@ label {
 	-ms-grid-column-span: 6;
 	grid-column: span 6;
 	background-color: rgba(255, 255, 255, 1);
+}
+
+/* зелёные декоративные точки на страницах аутсорсинг и юридические услуги */
+
+.os-services__list-element::after,
+.lg-services__list-element::after {
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 5px;
+	margin: 5px 0;
+	border-radius: 10px;
+	background-color: #90BF57;
 }
 
 .lg-services__list-element img {
