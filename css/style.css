@@ -2462,7 +2462,6 @@ label {
 	}
 	.faq-welcome__title {
 		margin: 36px 0 17px;
-		padding: 0 10px;
 	}
 	.your-ask {
 		font-size: 26px;
@@ -2633,7 +2632,7 @@ label {
 @media (max-width: 760px) {
 	.faq-welcome__title {
 		font-size: 26px;
-		margin: 36px 20px 17px;
+		margin: 36px 10px 17px;
 	}
 	.faq-welcome__text {
 		font-size: 16px;
@@ -4241,6 +4240,183 @@ label {
 	}
 	.os-services__list-element_title {
 		margin: 15px 30px 30px 0;
+	}
+}
+
+/*  блок с вариантами юридического обслуживания */
+
+.options {
+	display: flex;
+	flex-direction: column;
+}
+
+.options__title {
+	margin: 0 auto 33px;
+    padding-top: 80px;
+	font-size: 36px;
+	font-weight: bold;
+    line-height: 54px;
+    text-align: center;
+}
+
+.options__description {
+	max-width: 756px;
+	width: 100%;
+	margin: 0 auto 32px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.options__list {
+	margin: 0 0 82px 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 21px;
+}
+
+.options__list-element {
+	min-height: 197px;
+}
+
+.options__list-element:first-child {
+	background: url('../img/outsource/options/option-1.svg') right 80% no-repeat #F4F2E5;
+}
+
+.options__list-element:nth-child(2) {
+	background: url('../img/outsource/options/option-2.svg') right 80% no-repeat #F4F2E5;
+}
+
+.options__list-element:nth-child(3) {
+	background: url('../img/outsource/options/option-3.svg') right 80% no-repeat #F4F2E5;
+}
+
+.options__list-element:last-child {
+	background: url('../img/outsource/options/option-4.svg') right 80% no-repeat #F4F2E5;
+}
+
+
+.options__list-element__description {
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	padding: 24px 28px;
+	width: 67%;
+}
+
+.options__advantages-title {
+	margin: 0 auto 64px;
+	padding: 0;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.options__advantages-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 45px;
+	margin: 0 0 80px 0;
+	padding: 0;
+	list-style: none;
+	justify-items: start;
+}
+
+.options__advantages-list__element {
+	display: grid;
+	grid-auto-flow: column;
+    grid-gap: 20px;
+    height: max-content;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.options__advantages-list__element:first-child {
+	background: url('../img/outsource/advantages/advantage-1.svg') no-repeat;
+}
+
+.options__advantages-list__element:nth-child(2) {
+	background: url('../img/outsource/advantages/advantage-2.svg') no-repeat;
+}
+
+.options__advantages-list__element:nth-child(3) {
+	background: url('../img/outsource/advantages/advantage-3.svg') no-repeat;
+}
+
+.options__advantages-list__element:nth-child(4) {
+	background: url('../img/outsource/advantages/advantage-4.svg') no-repeat;
+}
+
+.options__advantages-list__element:nth-child(5) {
+	background: url('../img/outsource/advantages/advantage-5.svg') no-repeat;
+}
+
+.options__advantages-list__element:last-child {
+	background: url('../img/outsource/advantages/advantage-6.svg') no-repeat;
+}
+
+.options__advantages-list__element::before {
+	content: '';
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+}
+
+@media (max-width: 1200px) {
+	.options__list {
+		padding: 0 20px;
+	}
+	.options__advantages-list {
+		padding: 0 20px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.options__title {
+		margin: 0 15px 32px;
+		padding-top: 32px;
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.options__description {
+		font-size: 16px;
+		line-height: 26px;
+		padding: 0 15px;
+	}
+	.options__list {
+		padding: 0 0 0 15px;
+		grid-template-columns: 1fr;
+	}
+	.options__list-element {
+		min-height: 248px;
+	}
+	.options__list-element:first-child,
+	.options__list-element:nth-child(2),
+	.options__list-element:nth-child(3),
+	.options__list-element:last-child {
+		background-size: 100px 80px;
+	}
+	.options__list-element__description {
+		width: 81%;
+		font-size: 14px;
+	}
+	.options__advantages-title {
+		padding: 0 15px;
+		line-height: 29px;
+	}
+	.options__advantages-list {
+		grid-template-columns: 1fr;
+		margin: 0 0 37px 0;
+	}
+	.options__advantages-list__element {
+		grid-gap: 16px;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 21px;
 	}
 }
 
