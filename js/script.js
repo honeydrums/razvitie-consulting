@@ -58,7 +58,7 @@ function hideMobileMenu(x) { //функция скрывает мобильно�
     }
 }
 
-let x = window.matchMedia('(min-width: 700px)')
+let x = window.matchMedia('(min-width: 681px)')
 hideMobileMenu(x)
 x.addListener(hideMobileMenu)
 
@@ -131,3 +131,11 @@ checkBox.addEventListener('change', function() {
         console.log('yep');
     }
 });
+
+// счётчик символов в textarea 
+let commentTextarea = document.querySelector('#formmessage'); //найдём textarea
+let textareaQuantity = document.querySelector('.textarea-quantity');
+
+commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
+    textareaQuantity.innerHTML = this.value.length;
+}
