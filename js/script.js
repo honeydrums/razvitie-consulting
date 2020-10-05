@@ -120,7 +120,7 @@ function showLoginPassword() {
 let fileName = document.querySelector('#formFile');
 let fileNameInput = document.querySelector('#formFileLabel');
 
-fileName = fileNameInput.value;
+fileName.innerHTML = fileNameInput.value;
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
