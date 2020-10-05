@@ -117,21 +117,21 @@ function showLoginPassword() {
 
 // имя файла в поле для загрузки
 
-let fileName = document.querySelector('#formFile');
-let fileNameInput = document.querySelector('#formFileLabel');
+// let fileName = document.querySelector('#formFile');
+// let fileNameInput = document.querySelector('#formFileLabel');
 
-fileNameInput.onchange = function(evt) {
-    evt.preventDefault;
-    fileNameInput.innerHTML = fileName.value;
-})
+// fileNameInput.onchange = function(evt) {
+//     evt.preventDefault;
+//     fileNameInput.innerHTML = fileName.value;
+// }
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
 let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
 let submitBtn = document.querySelector('input[type="submit"]');
 
-checkBox.addEventListener('change', function() {
-    if (this.checked === false) {
+function checkPropButton() {
+    if (checkBox.checked === false) {
         submitBtn.disabled = true;
         submitBtn.classList.add('too-many-symbols__button');
         console.log('nope');
@@ -140,12 +140,12 @@ checkBox.addEventListener('change', function() {
         submitBtn.classList.remove('too-many-symbols__button');
         console.log('yep');
     }
-});
+};
 
 // счётчик символов в textarea 
-let commentTextarea = document.querySelector('#formmessage'); //найдём textarea
-let textareaQuantity = document.querySelector('.textarea-quantity');
+// let commentTextarea = document.querySelector('#formmessage'); //найдём textarea
+// let textareaQuantity = document.querySelector('.textarea-quantity');
 
-commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
-    textareaQuantity.innerHTML = this.value.length;
-}
+// commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
+//     textareaQuantity.innerHTML = this.value.length;
+// }
