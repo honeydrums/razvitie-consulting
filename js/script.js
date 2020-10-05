@@ -42,19 +42,28 @@ for (let callbackFormInput of callbackFormInputs) {
 let burgerBtn = document.querySelector('.main-header__nav-trigger');
 let loginRow = document.querySelector('.main-header__bottom-wrapper');
 let headerNav = document.querySelector('.main-header__nav');
+let footer = document.querySelector('.main-footer__wrapper');
+let allPage = document.body;
 
 burgerBtn.addEventListener('click', function() {
     console.log('клик');
     burgerBtn.classList.toggle('main-header__nav-trigger-show');
     loginRow.classList.toggle('main-header__bottom-wrapper-mobile');
     headerNav.classList.toggle('main-header__nav-mobile');
-})
+    footer.classList.toggle('footer-sticky');
+    allPage.classList.toggle('cancel-scroll');
+});
 
-function hideMobileMenu(x) { //функция скрывает мобильное меню при изменении разрешения
+
+
+//функция скрывает мобильное меню при изменении разрешения
+function hideMobileMenu(x) {
     if(x.matches) {
         burgerBtn.classList.remove('main-header__nav-trigger-show');
         loginRow.classList.remove('main-header__bottom-wrapper-mobile');
         headerNav.classList.remove('main-header__nav-mobile');
+        footer.classList.remove('footer-sticky');
+        allPage.classList.remove('cancel-scroll');
     }
 }
 
@@ -114,16 +123,6 @@ function showLoginPassword() {
         userPassword.type = 'password';
     }
 }
-
-// имя файла в поле для загрузки
-
-// let fileName = document.querySelector('#formFile');
-// let fileNameInput = document.querySelector('#formFileLabel');
-
-// fileNameInput.onchange = function(evt) {
-//     evt.preventDefault;
-//     fileNameInput.innerHTML = fileName.value;
-// }
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
