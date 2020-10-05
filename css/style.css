@@ -5,7 +5,9 @@
 * Browsers: last 10 version
 */
 
-* {
+*,
+*::before,
+*::after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-size: 16px;
@@ -4878,6 +4880,8 @@ label {
 }
 
 .personal-main__form-list {
+	max-width: 640px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -4893,8 +4897,25 @@ label {
 }
 
 .personal-main__form-list__element select,
-.personal-main__form-list__element input {
+.personal-main__form-list__element label {
 	grid-column-start: 2;
+	height: 53px;
+    padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f4f2e5;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.personal-main__form-list__element input {
+	appearance: none;
+	visibility: hidden;
+}
+
+.personal-main__form-list__element label {
+	cursor: pointer;
+	background: #f4f2e5 url('../img/personal/upload-file.svg') no-repeat right;
 }
 
 /* кнопка "загрузить" */
@@ -4951,8 +4972,11 @@ label {
 		margin: 32px auto;
 	}
 	.personal-main__form-list__element select,
-	.personal-main__form-list__element input {
+	.personal-main__form-list__element label {
 		grid-column: 1 / 3;
+	}
+	.personal-main__form-list__element label {
+		padding: 15px 10px;
 	}
 }
 
