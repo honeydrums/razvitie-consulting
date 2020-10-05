@@ -115,6 +115,13 @@ function showLoginPassword() {
     }
 }
 
+// имя файла в поле для загрузки
+
+let fileName = document.querySelector('#formFile');
+let fileNameInput = document.querySelector('#formFileLabel');
+
+fileName = fileNameInput.value;
+
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
 let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
@@ -139,10 +146,3 @@ let textareaQuantity = document.querySelector('.textarea-quantity');
 commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
     textareaQuantity.innerHTML = this.value.length;
 }
-
-// имя файла в поле для загрузки
-
-let fileName = document.querySelector('#formFile');
-let fileNameInput = document.querySelector('#formFileLabel');
-
-fileName = fileNameInput.value;
