@@ -62,17 +62,17 @@
                         Выберите тип документа из меню
                         <select name="upload-form-select" id="formSelect">
                             <option disabled selected>Ничего не выбрано</option>
-                            <option value="first">первый</option>
-                            <option value="second">второй</option>
-                            <option value="third">третий</option>
-                            <option value="fourth">четвёртый</option>
-                            <option value="fifth">пятый</option>
+                            <option value="contract">Договор</option>
+                            <option value="report and invoice">Акт и счёт-фактура</option>
+                            <option value="universal transfer document">УПД</option>
+                            <option value="invoice">Накладная и счёт-фактура</option>
+                            <option value="other">Прочее</option>
                         </select>
                     </li>
                     <li class="personal-main__form-list__element">
                         Прикрепите документ
                         <label for="formFile" id="formFileLabel">Файл не прикреплён</label>
-                        <input type="file" name="upload-form-file" id="formFile">
+                        <input type="file" name="upload-form-file" id="formFile" onchange="getFileName()">
                     </li>
                 </ol>
                 <input type="submit" value="Загрузить">

@@ -148,3 +148,12 @@ function checkPropButton() {
 // commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
 //     textareaQuantity.innerHTML = this.value.length;
 // }
+
+function getFileName(evt) {
+    console.log('загружен файл');
+
+    let fileName = document.querySelector('input[type=file]').files[0].name;
+    let fileLabel = document.querySelector('#formFileLabel');
+
+    fileLabel.innerHTML = fileName;
+}

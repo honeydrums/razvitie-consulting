@@ -2312,7 +2312,8 @@ label {
 #user-password,
 #user-password-repeat {
 	padding: 0 60px 0 20px;
-    overflow: scroll;
+	overflow: scroll;
+	background-color: rgba(255, 255, 255, 1);
 }
 
 .signup-page__form input[type="submit"] {
@@ -5008,6 +5009,266 @@ label {
 	}
 	.personal-main__form-list__element label {
 		padding: 15px 10px;
+		overflow: scroll;
+	}
+}
+
+/* страница 'личные данные' */
+
+.pd-section__wrapper {
+	background-color: #F4F2E5;
+}
+
+.pd-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.pd-section__title {
+	margin: 88px auto 64px;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.pd-section {
+		padding: 0 20px;
+	}
+}
+
+/* обёртка */
+
+.pd-section__company-data-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 143px;
+}
+
+@media(max-width: 980px) {
+	.pd-section__company-data-wrapper {
+		grid-gap: 0 5%;
+	}
+}
+
+/* контактные данные компании */
+
+.company-data__title {
+	font-size: 30px;
+	line-height: 39px;
+	font-weight: 600;
+}
+
+.company-data__info label {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+/* изменить пароль */
+
+.change-password__title {
+	/* margin: 67px auto 48px; */
+	margin: 0;
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: 600;
+	text-align: center;
+	grid-column: 2/10;
+    grid-row: 4/4;
+}
+
+.change-password__form {
+	grid-row: 5/10;
+    grid-column: 2/10;
+}
+
+.change-password__form label {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+/* форма смены пароля */
+
+.change-password__form label {
+	display: block;
+}
+
+.company-data__info label input,
+.change-password__form label input[type="text"],
+.change-password__form label input[type="number"],
+.change-password__form label input[type="password"] {
+	width: 100%;
+    height: 56px;
+    margin: 10px 0 25px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+	background: #F4F2E5;
+	background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.change-password__form input[type="submit"] {
+	display: block;
+    margin: 0 auto;
+    max-width: 336px;
+    width: 100%;
+    height: 56px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: -o-linear-gradient(87.37deg, #0F512B -62.32%, #90BF57 76.94%);
+    background: linear-gradient(2.63deg, #0F512B -62.32%, #90BF57 76.94%);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.change-password__form input[type="submit"]:hover {
+	box-shadow: 0px 8px 16px rgba(15, 81, 43, 0.25);
+}
+
+.change-password__form input[type="submit"]:active {
+	background: linear-gradient(2.97deg, #0F512B -60.2%, #90BF57 175.89%);
+    box-shadow: none;
+}
+
+.pd-section__change-password {
+	/* display: flex;
+	flex-direction: column;
+	padding: 25% 10% 10%; */
+	display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+	background: url('../img/personal/restore-password-mobile.png') center bottom no-repeat;
+	background-size: contain;
+}
+
+@media (max-width: 1200px) {
+	.pd-section__change-password {
+		margin-top: 5vw;
+		justify-content: flex-end;
+	}
+}
+
+@media (max-width: 1060px) {
+	.pd-section__company-data-wrapper {
+		grid-gap: 0 70px;
+	}
+}
+
+@media (max-width: 860px) {
+	.pd-section__title {
+		margin: 36px 0 24px;
+		font-size: 26px;
+		line-height: 36px;
+		text-align: left;
+	}
+	.pd-section__company-data-wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 0;
+	}
+	.pd-section__change-password {
+		width: auto;
+		margin: 0;
+		justify-self: center;
+	}
+}
+
+/* контактные данные личного помощника */
+
+.assistant__wrapper {
+	background: -o-linear-gradient(74.61deg, #0F512B -62.32%, #90BF57 76.94%);
+	background: linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+}
+
+@media (min-width: 780px) {
+	.assistant__wrapper {
+		background: url('../img/outsource/girl-services-bg.png') no-repeat 60vw bottom, -o-linear-gradient(74.61deg, #0F512B -62.32%, #90BF57 76.94%);
+		background: url('../img/outsource/girl-services-bg.png') no-repeat 60vw bottom, linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+	}
+}
+
+@media (max-width: 780px) {
+	.assistant__wrapper {
+		background: url('../img/outsource/girl-services-bg.png') no-repeat center bottom, -o-linear-gradient(74.61deg, #0F512B -62.32%, #90BF57 76.94%);
+		background: url('../img/outsource/girl-services-bg.png') no-repeat center bottom, linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
+	}
+}
+
+.assistant {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+	.assistant {
+		padding: 0 20px;
+	}
+}
+
+.assistant__title {
+	width: 70%;
+	margin: 80px 0 33px;
+	font-size: 30px;
+	line-height: 39px;
+	font-weight: 600;
+	text-align: left;
+	color: #FFFFFF;
+}
+
+.assistant__data {
+	display: flex;
+	flex-direction: column;
+	max-width: 487px;
+	margin-bottom: 175px;
+}
+
+@media (max-width: 780px) {
+	.assistant__data {
+		max-width: none;
+		margin-bottom: 553px;
+	}
+}
+
+.assistant__data label {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.assistant__data label input {
+	display: block;
+	width: 100%;
+    height: 48px;
+    margin: 10px 0 25px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+	background: #F4F2E5;
+	background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 680px) {
+	.assistant__title {
+		margin: 32px auto 16px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 26px;
+		text-align: center;
+	}
+	.assistant__data label {
+		font-size: 14px;
+		line-height: 26px;
 	}
 }
 
@@ -5121,4 +5382,11 @@ ol li:before {
 
 #active {
 	color: #90BF57;
+}
+
+select {
+    background: url('../img/arrow-down-sign-to-navigate.svg') no-repeat right;
+	-webkit-appearance: none;
+	background-size: 18px;
+    background-position-x: 97%;
 }
