@@ -16,23 +16,16 @@
         <div class="main-header__top-wrapper">
             <div class="main-header__top centered">
                 <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-                <nav class="main-header__nav">
-                    <ul class="main-header__nav-list">
-                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-                            <ul class="main-header__nav-list_dropdown">
-                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
-                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское сопровождение</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
+                <div class="profile-header">
+                    <p>Специалист по бухгалтерскому и налоговому учету</p>
+                    <p><b>Колмановская</b>Александра Александровна</p>
+                    <a href="tel:+74822733-001">+7 (4822) 733-001</a>
+                    <a href="mailto:callmenow@razvitie.ru">callmenow@razvitie.ru</a>
+                </div>
+                <button class="main-button">Связаться</button>
                 <button class="main-header__nav-trigger" type="button">
                 <span></span>
             </button>
-                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
             </div>
         </div>
         <div class="main-header__bottom-wrapper">
@@ -56,6 +49,155 @@
     </header>
     <main>
         <h1 class="personal-title">История операций</h1>
+        <table class="personal-table centered">
+            <tr class="personal-table__row">
+                <th class="personal-table__data-header">№</th>
+                <th class="personal-table__data-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.75 6.93751L17.76 5.78579C16.9206 4.90415 15.9106 4.20252 14.7914 3.7236C13.6722 3.24468 12.4673 2.99849 11.25 3.00001C6.28125 3.00001 2.25 7.03126 2.25 12C2.25 16.9688 6.28125 21 11.25 21C13.1114 20.9999 14.927 20.4229 16.447 19.3484C17.967 18.2739 19.1166 16.7548 19.7377 15" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M22.0643 1.93956V9.69265C22.0643 9.99017 21.9461 10.2755 21.7358 10.4859C21.5254 10.6963 21.24 10.8145 20.9425 10.8145H13.1894C12.1896 10.8145 11.689 9.60641 12.3958 8.89967L20.1495 1.14589C20.8563 0.437745 22.0643 0.939754 22.0643 1.93956Z" fill="white"/>
+                    </svg>    
+                </th>
+                <th class="personal-table__data-header">Дата загрузки</th>
+                <th class="personal-table__data-header">Название документа</th>
+                <th class="personal-table__data-header">Тип документа</th>
+                <th class="personal-table__data-header">Комментарий</th>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">1</td>
+                <td class="personal-table__data">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1901 6.06733L18.2092 4.9262C17.3775 4.05266 16.3768 3.35748 15.2679 2.88296C14.159 2.40845 12.9652 2.16452 11.7591 2.16602C6.83599 2.16602 2.8418 6.16022 2.8418 11.0833C2.8418 16.0064 6.83599 20.0006 11.7591 20.0006C13.6034 20.0004 15.4023 19.4287 16.9083 18.3641C18.4143 17.2995 19.5534 15.7943 20.1687 14.0557" stroke="#828282" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M22.4739 1.11477V8.79658C22.4739 9.09137 22.3568 9.37408 22.1483 9.58253C21.9399 9.79097 21.6572 9.90808 21.3624 9.90808H13.6806C12.6899 9.90808 12.1939 8.71114 12.8942 8.01089L20.5767 0.328386C21.2769 -0.373245 22.4739 0.124149 22.4739 1.11477Z" fill="#828282"/>
+                    </svg>                        
+                </td>
+                <td class="personal-table__data">20.05.2020</td>
+                <td class="personal-table__data">Последний загруженный документ</td>
+                <td class="personal-table__data">УПД</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">2</td>
+                <td class="personal-table__data">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1901 6.06733L18.2092 4.9262C17.3775 4.05266 16.3768 3.35748 15.2679 2.88296C14.159 2.40845 12.9652 2.16452 11.7591 2.16602C6.83599 2.16602 2.8418 6.16022 2.8418 11.0833C2.8418 16.0064 6.83599 20.0006 11.7591 20.0006C13.6034 20.0004 15.4023 19.4287 16.9083 18.3641C18.4143 17.2995 19.5534 15.7943 20.1687 14.0557" stroke="#828282" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M22.4739 1.11477V8.79658C22.4739 9.09137 22.3568 9.37408 22.1483 9.58253C21.9399 9.79097 21.6572 9.90808 21.3624 9.90808H13.6806C12.6899 9.90808 12.1939 8.71114 12.8942 8.01089L20.5767 0.328386C21.2769 -0.373245 22.4739 0.124149 22.4739 1.11477Z" fill="#828282"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">18.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Акт</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">3</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Прочее</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">4</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">УПД</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">5</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Накладная и счет-фактура</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">6</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">УПД</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">7</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Договор</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">8</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">УПД</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">9</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Прочее</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">10</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Прочее</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+            <tr class="personal-table__row">
+                <td class="personal-table__data">11</td>
+                <td class="personal-table__data">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.8418 8L12.8418 24L6.8418 18" stroke="#90BF57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </td>
+                <td class="personal-table__data">15.05.2020</td>
+                <td class="personal-table__data">Название документа</td>
+                <td class="personal-table__data">Акт и счет-фактура</td>
+                <td class="personal-table__data">Исправил пункт 2</td>
+            </tr>
+        </table>
     </main>
     <div class="main-footer__wrapper">
         <footer class="main-footer">
