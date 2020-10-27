@@ -140,6 +140,12 @@ body {
     margin: 16px auto;
 }
 
+@media(max-width: 940px) {
+    .main-header__top a img {
+        width: 68px;
+    }
+}
+
 @media (max-width: 680px) {
     .main-header {
         max-height: initial;
@@ -617,6 +623,13 @@ body {
 
 .mobile-menu {
     display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 208px;
+    background-color: white;
+    z-index: 1;
 }
 
 .mobile-menu__slide-in {
@@ -723,11 +736,12 @@ body {
     width: 280px;
     margin: 0 auto 80px;
 }
-/* 
+
 .main-footer__fixed {
     position: fixed;
     bottom: 0;
-} */
+    z-index: 1;
+}
 
 /* контент */
 

@@ -46,8 +46,7 @@ function showMobileMenu() {
     let footerContacts = document.querySelector('.main-footer__wrapper');
 
     burgerBtn.classList.toggle('is-active');
-    mobileMenu.classList.toggle('mobile-menu__slide-in')
-    // footerContacts.classList.toggle('main-footer__fixed');
+    mobileMenu.classList.toggle('mobile-menu__slide-in');
 }
 
 //функция скрывает мобильное меню при изменении разрешения
@@ -58,8 +57,7 @@ function hideMobileMenu(x) {
 
     if(x.matches) {
         burgerBtn.classList.remove('is-active');
-        mobileMenu.classList.remove('mobile-menu__slide-in')
-        // footerContacts.classList.remove('main-footer__fixed');
+        mobileMenu.classList.remove('mobile-menu__slide-in');
     }
 }
 
