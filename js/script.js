@@ -1,3 +1,4 @@
+
 let faqMoreBtns = document.querySelectorAll('.faq-questions__layout-element button');
 let faqDetailedAnswer = document.querySelector('.faq-detailed-wrapper__text');
 let closeBtns = document.querySelectorAll('.close-button');
@@ -63,6 +64,7 @@ function hideMobileMenu(x) {
     if(x.matches) {
         burgerBtn.classList.remove('is-active');
         mobileMenu.classList.remove('mobile-menu__slide-in');
+        document.querySelector('body').style.overflowY = "auto";
     }
 }
 
