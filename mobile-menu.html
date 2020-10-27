@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Консалтинговая компания "Развитие"</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__top-wrapper">
+            <div class="main-header__top centered">
+                <a href="index.html" class="personal-logo"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+                <div class="profile-header">
+                    <p class="profile-header__post">Специалист по бухгалтерскому и налоговому учету</p>
+                    <p class="profile-header__name"><b>Колмановская</b><br>Александра Александровна</p>
+                    <a href="tel:+74822733-001" class="profile-header__contact-phone">+7 (4822) 733-001</a>
+                    <a href="mailto:callmenow@razvitie.ru" class="profile-header__contact-mail">callmenow@razvitie.ru</a>
+                </div>
+                <button class="profile-header__callback-btn main-button">Связаться</button>
+                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="main-header__bottom-wrapper">
+            <div class="main-header__bottom centered">
+                <ul class="personal-header__links">
+                    <li class="personal-header__links-element">
+                        <a href="personal-main.html">Главная</a>
+                    </li>
+                    <li class="personal-header__links-element">
+                        <a href="personal-data.html">Личные данные</a>
+                    </li>
+                    <li class="personal-header__links-element">
+                        <a href="personal-history.html">История операций</a>
+                    </li>
+                </ul>
+                <section class="login-area">
+                    <a href="index.html">Выход</a>
+                </section>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__login-area">
+                <li class="mobile-menu__login-area-element">
+                    <a href="index.html">Выход</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-element">
+                    <a href="personal-main.html">Главная</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="personal-data.html">Личные данные</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="personal-history.html">История операций</a>
+                </li>
+            </ul>
+            <div class="mobile-menu__profile">
+                <p class="mobile-menu__profile-post">Специалист по бухгалтерскому и налоговому учету</p>
+                <p class="mobile-menu__profile-name"><b>Колмановская</b><br>Александра Александровна</p>
+                <a href="tel:+74822733-001" class="mobile-menu__profile-contact-phone">+7 (4822) 733-001</a>
+                <a href="mailto:callmenow@razvitie.ru" class="mobile-menu__profile-contact-mail">callmenow@razvitie.ru</a>
+            </div>
+            <button class="mobile-menu__profile-callback-btn main-button">Связаться</button>
+        </div>
+    </header>
+    <div class="main-footer__wrapper">
+        <footer class="main-footer">
+            <nav class="main-footer__nav">
+                <ul class="main-footer__nav-list">
+                    <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
+                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
+            </div>
+            <section class="main-footer__copyright">
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+                <p>© 2020 Все права защищены</p>
+                <a href="policy.html">Политика конфиденциальности</a>
+            </section>
+            <span class="main-footer__work-hours_title">График работы</span>
+            <ul class="main-footer__work-hours">
+                <li class="main-footer__work-hours-element">
+                    <p>Пн-Чт</p>
+                    <p>08:30 - 17:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Пт</p>
+                    <p>08:30 - 16:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Сб-Вс</p>
+                    <p>Выходной</p>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
