@@ -39,31 +39,27 @@ for (let callbackFormInput of callbackFormInputs) {
 }
 
 // мобильное меню
-let burgerBtn = document.querySelector('.main-header__nav-trigger');
-let loginRow = document.querySelector('.main-header__bottom-wrapper');
-let headerNav = document.querySelector('.main-header__nav');
-let footer = document.querySelector('.main-footer__wrapper');
-let allPage = document.body;
 
-burgerBtn.addEventListener('click', function() {
-    console.log('клик');
-    burgerBtn.classList.toggle('main-header__nav-trigger-show');
-    loginRow.classList.toggle('main-header__bottom-wrapper-mobile');
-    headerNav.classList.toggle('main-header__nav-mobile');
-    footer.classList.toggle('footer-sticky');
-    allPage.classList.toggle('cancel-scroll');
-});
+function showMobileMenu() {
+    let burgerBtn = document.querySelector('.hamburger');
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let footerContacts = document.querySelector('.main-footer__wrapper');
 
-
+    burgerBtn.classList.toggle('is-active');
+    mobileMenu.classList.toggle('mobile-menu__slide-in')
+    footerContacts.classList.toggle('main-footer__fixed');
+}
 
 //функция скрывает мобильное меню при изменении разрешения
 function hideMobileMenu(x) {
+    let burgerBtn = document.querySelector('.hamburger');
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let footerContacts = document.querySelector('.main-footer__wrapper');
+
     if(x.matches) {
-        burgerBtn.classList.remove('main-header__nav-trigger-show');
-        loginRow.classList.remove('main-header__bottom-wrapper-mobile');
-        headerNav.classList.remove('main-header__nav-mobile');
-        footer.classList.remove('footer-sticky');
-        allPage.classList.remove('cancel-scroll');
+        burgerBtn.classList.remove('is-active');
+        mobileMenu.classList.remove('mobile-menu__slide-in')
+        footerContacts.classList.remove('main-footer__fixed');
     }
 }
 
