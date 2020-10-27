@@ -47,6 +47,11 @@ function showMobileMenu() {
 
     burgerBtn.classList.toggle('is-active');
     mobileMenu.classList.toggle('mobile-menu__slide-in');
+    if(mobileMenu.classList.contains('mobile-menu__slide-in')) {
+        document.querySelector('body').style.overflowY = "hidden";
+    } else {
+        document.querySelector('body').style.overflowY = "auto";
+    }
 }
 
 //функция скрывает мобильное меню при изменении разрешения

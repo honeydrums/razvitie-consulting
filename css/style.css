@@ -630,6 +630,8 @@ body {
     bottom: 208px;
     background-color: white;
     z-index: 1;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .mobile-menu__slide-in {
@@ -638,13 +640,15 @@ body {
 }
 
 .mobile-menu__login-area {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     background: linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
 }
 
-.mobile-menu__login-area-element a {
+.mobile-menu__login-area-element a,
+.mobile-menu__logout-area-element a {
     display: block;
     padding: 20px;
     font-size: 16px;
@@ -656,7 +660,7 @@ body {
 }
 
 
-.mobile-menu__login-area-element a:before {
+.mobile-menu__logout-area-element a:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
