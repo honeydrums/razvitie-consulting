@@ -621,7 +621,7 @@ body {
 
 .mobile-menu__slide-in {
     display: block;
-    animation: showMobileMenu 1s;
+    animation: showMobileMenu 0.3s;
 }
 
 .mobile-menu__login-area {
@@ -681,14 +681,53 @@ body {
     margin: 0 0 16px;
 }
 
-.mobile-menu__profile-callback-btn {
-    margin: 0 auto 80px;
+.mobile-menu__profile-post {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #828282;
 }
 
+.mobile-menu__profile-name {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.mobile-menu__profile-name b {
+    font-weight: 700;
+}
+
+.mobile-menu__profile-contact-phone {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--main-green);
+    text-decoration: none;
+}
+
+.mobile-menu__profile-contact-mail {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--main-green);
+    text-decoration: none;
+}
+
+.mobile-menu__profile-callback-btn {
+    width: 280px;
+    margin: 0 auto 80px;
+}
+/* 
 .main-footer__fixed {
     position: fixed;
     bottom: 0;
-}
+} */
 
 /* контент */
 
