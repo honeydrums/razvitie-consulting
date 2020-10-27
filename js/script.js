@@ -47,7 +47,7 @@ function showMobileMenu() {
 
     burgerBtn.classList.toggle('is-active');
     mobileMenu.classList.toggle('mobile-menu__slide-in')
-    footerContacts.classList.toggle('main-footer__fixed');
+    // footerContacts.classList.toggle('main-footer__fixed');
 }
 
 //функция скрывает мобильное меню при изменении разрешения
@@ -59,7 +59,7 @@ function hideMobileMenu(x) {
     if(x.matches) {
         burgerBtn.classList.remove('is-active');
         mobileMenu.classList.remove('mobile-menu__slide-in')
-        footerContacts.classList.remove('main-footer__fixed');
+        // footerContacts.classList.remove('main-footer__fixed');
     }
 }
 
