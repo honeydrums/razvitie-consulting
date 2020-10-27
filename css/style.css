@@ -568,6 +568,38 @@ body {
     text-decoration: none;
 }
 
+@media(max-width: 1200px) {
+    .personal-logo {
+        margin-right: 60px;
+    }
+    .profile-header__post {
+        font-size: 14px;
+    }
+    .profile-header__name {
+        font-size: 16px;
+    }
+    .profile-header__contact-phone,
+    .profile-header__contact-mail {
+        font-size: 16px;
+    }
+    .profile-header {
+        grid-gap: 0 24px;
+    }
+    .profile-header__callback-btn {
+        width: 220px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 860px) {
+    .personal-logo {
+        margin-right: 20px;
+    }
+    .profile-header__callback-btn {
+        width: 16vw;
+    }
+}
+
 @media(max-width: 680px) {
     .profile-header,
     .profile-header__callback-btn {
@@ -5245,6 +5277,7 @@ label {
 .personal-main__form-list__element label {
     cursor: pointer;
     background: var(--beige) url('../img/personal/upload-file.svg') no-repeat right;
+    overflow: auto;
 }
 
 
