@@ -22,6 +22,10 @@ body {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 /* общий класс для стилизации кнопки */
 
 .main-button {
@@ -667,6 +671,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    height: 50px;
     list-style: none;
     background: linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
     align-items: center;
