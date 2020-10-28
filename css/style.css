@@ -199,7 +199,7 @@ body {
     padding: 15px 0 15px 15px;
     display: inline-block;
     cursor: pointer;
-    transition-property: opacity, filter;
+    transition-property: filter;
     transition-duration: 0.15s;
     transition-timing-function: linear;
     font: inherit;
@@ -210,14 +210,6 @@ body {
     margin: 0;
     overflow: visible;
     outline: none;
-}
-
-.hamburger:hover {
-    opacity: 0.7;
-}
-
-.hamburger.is-active:hover {
-    opacity: 0.7;
 }
 
 .hamburger.is-active .hamburger-inner,
