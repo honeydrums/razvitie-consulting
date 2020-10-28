@@ -11,7 +11,13 @@ for (let faqMoreBtn of faqMoreBtns) {
 
 for (let closeBtn of closeBtns) {
     closeBtn.addEventListener('click', function() {
-        faqDetailedAnswer.classList.add('faq-detailed-block-hidden');
+        try {
+            faqDetailedAnswer.classList.add('faq-detailed-block-hidden');
+        } catch (error) {
+            if(closeBtn.parentNode.classList.contains('popup-email-us')) {
+                closeBtn.parentNode.parentElement.classList.add('popup-email-us-hide');
+            }
+        }
     })
 }
 
@@ -127,18 +133,33 @@ function showLoginPassword() {
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
+// let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
+// let submitBtns = document.querySelectorAll('input[type="submit"]');
+
+// function checkPropButton() {
+//     for(let submitBtn of submitBtns) {
+//         if (checkBox.checked === false) {
+//             submitBtn.disabled = true;
+//             submitBtn.classList.add('too-many-symbols__button');
+//         } else {
+//             submitBtn.disabled = false;
+//             submitBtn.classList.remove('too-many-symbols__button');
+//         }
+//     }
+// };
+
 let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
-let submitBtn = document.querySelector('input[type="submit"]');
+let submitBtn = document.querySelectorAll('input[type="submit"]');
 
 function checkPropButton() {
-    if (checkBox.checked === false) {
-        submitBtn.disabled = true;
-        submitBtn.classList.add('too-many-symbols__button');
-        console.log('nope');
-    } else {
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('too-many-symbols__button');
-        console.log('yep');
+    for(let i=0; i < submitBtn.length; i++) {
+        if (checkBox.checked === false) {
+            submitBtn[i].disabled = true;
+            submitBtn[i].classList.add('too-many-symbols__button');
+        } else {
+            submitBtn[i].disabled = false;
+            submitBtn[i].classList.remove('too-many-symbols__button');
+        }
     }
 };
 
@@ -157,4 +178,17 @@ function getFileName(evt) {
     let fileLabel = document.querySelector('#formFileLabel');
 
     fileLabel.innerHTML = fileName;
+}
+
+// попап
+
+function showPopUp() {
+    let popUp = document.querySelector('.popup-email-us__wrapper');
+
+    popUp.classList.remove('popup-email-us-hide');
+    if(!popUp.classList.contains('popup-email-us-hide')) {
+        document.querySelector('body').style.overflowY = "hidden";
+    } else {
+        document.querySelector('body').style.overflowY = "auto";
+    }
 }
