@@ -26,6 +26,24 @@ ul {
     list-style: none;
 }
 
+/* стрелка раскрывающегося списка */
+
+.dropdown-arrow {
+    position: absolute;
+    top: 13%;
+    right: 8%;
+    padding: 6px;
+    border: solid var(--main-green);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+}
+
+.dropdown-arrow__up {
+    top: 14%;
+    transform: rotate(-135deg);
+}
+
 /* общий класс для стилизации кнопки */
 
 .main-button {
@@ -640,17 +658,9 @@ ul {
 
 /* мобильное меню */
 
-@keyframes showMobileMenu {
-    from {
-        transform: translateX(200%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
 .mobile-menu {
-    display: none;
+    visibility: hidden;
+    width: 0;
     position: absolute;
     top: 60px;
     left: 0;
@@ -660,17 +670,20 @@ ul {
     z-index: 1;
     height: 100%;
     overflow-y: scroll;
+    transform: translateX(-200%);
+    transition-duration: 0.3s;
 }
 
 .mobile-menu__slide-in {
-    display: block;
-    animation: showMobileMenu 0.3s;
+    visibility: visible;
+    width: 100%;
+    transform: translateX(0);
 }
 
 .mobile-menu__login-area {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     height: 50px;
     list-style: none;
     background: linear-gradient(15.39deg, #0F512B -62.32%, #90BF57 76.94%);
@@ -679,10 +692,13 @@ ul {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.mobile-menu__login-area span {
+    margin: 0 10px;
+}
+
 .mobile-menu__login-area-element a,
 .mobile-menu__logout-area-element a {
     display: block;
-    padding: 20px;
     font-size: 16px;
     font-weight: bold;
     line-height: 19px;
@@ -711,7 +727,6 @@ ul {
 
 .mobile-menu__nav-element {
     background-color: var(--beige);
-    border-bottom: 2px solid var(--white);
 }
 
 .mobile-menu__nav-element a {
@@ -722,6 +737,22 @@ ul {
     line-height: 24px;
     color: var(--black);
     text-decoration: none;
+    border-bottom: 2px solid var(--white);
+}
+
+.mobile-menu__nav-element_dropdown__hide {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.mobile-menu__nav-element_dropdown__show {
+    height: 132px;
+}
+
+.mobile-menu__nav-element_dropdown-element a {
+    padding: 20px 20px 20px 40px;
 }
 
 .mobile-menu__profile {

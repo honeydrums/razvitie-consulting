@@ -61,6 +61,14 @@ function showMobileMenu() {
     }
 }
 
+function dropDownMenu() {
+    let arrow = document.querySelector('.dropdown-arrow');
+    let dropDownMenu = document.querySelector('.mobile-menu__nav-element_dropdown__hide');
+
+    arrow.classList.toggle('dropdown-arrow__up');
+    dropDownMenu.classList.toggle('mobile-menu__nav-element_dropdown__show')
+}
+
 //функция скрывает мобильное меню при изменении разрешения
 function hideMobileMenu(x) {
     let burgerBtn = document.querySelector('.hamburger');
