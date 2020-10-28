@@ -30,8 +30,8 @@ ul {
 
 .dropdown-arrow {
     position: absolute;
-    top: 13%;
-    right: 8%;
+    top: 35%;
+    right: 5%;
     padding: 6px;
     border: solid var(--main-green);
     border-width: 0 2px 2px 0;
@@ -726,6 +726,7 @@ ul {
 }
 
 .mobile-menu__nav-element {
+    position: relative;
     background-color: var(--beige);
 }
 
