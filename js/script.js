@@ -1,4 +1,3 @@
-
 let faqMoreBtns = document.querySelectorAll('.faq-questions__layout-element button');
 let faqDetailedAnswer = document.querySelector('.faq-detailed-wrapper__text');
 let closeBtns = document.querySelectorAll('.close-button');
@@ -16,6 +15,7 @@ for (let closeBtn of closeBtns) {
         } catch (error) {
             if(closeBtn.parentNode.classList.contains('popup-email-us')) {
                 closeBtn.parentNode.parentElement.classList.add('popup-email-us-hide');
+                document.querySelector('body').style.overflowY = "auto";
             }
         }
     })
@@ -198,5 +198,19 @@ function showPopUp() {
         document.querySelector('body').style.overflowY = "hidden";
     } else {
         document.querySelector('body').style.overflowY = "auto";
+    }
+}
+
+// теги на странице вопрос-ответ
+
+function selectTags() {
+    let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element');
+    let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag');
+
+    for(let i=0; i<cloudTags.length; i++) {
+        cloudTag.addEventListener('click', function(evt) {
+            evt.preventDefault;
+            console.log('клик');
+        })
     }
 }
