@@ -681,8 +681,7 @@ ul {
     right: 0;
     bottom: 0;
     background-color: white;
-    z-index: 1;
-    /* height: 100%; */
+    z-index: 5;
     overflow-y: scroll;
     transform: translateX(-200%);
     transition-duration: 0.3s;
