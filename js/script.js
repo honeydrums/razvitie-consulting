@@ -56,8 +56,12 @@ function showMobileMenu() {
     mobileMenu.classList.toggle('mobile-menu__slide-in');
     if(mobileMenu.classList.contains('mobile-menu__slide-in')) {
         document.querySelector('body').style.overflowY = "hidden";
+        document.querySelector('main').style.display = "none";
+        document.querySelector('.main-footer__wrapper').style.display = "none";
     } else {
-        document.querySelector('body').style.overflowY = "auto";
+        document.querySelector('body').style.overflowY = "visible";
+        document.querySelector('main').style.display = "block";
+        document.querySelector('.main-footer__wrapper').style.display = "block";
     }
 }
 
