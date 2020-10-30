@@ -1796,7 +1796,8 @@ ul {
 
 /* подвал сайта */
 
-.main-footer__wrapper {
+.main-footer__wrapper,
+.main-footer__wrapper_mobile {
     width: 100%;
     padding-bottom: 24px;
     -webkit-box-shadow: 0px -10px 50px rgba(164, 164, 164, 0.25);
