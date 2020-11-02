@@ -100,6 +100,17 @@ ul {
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* input с белым фоном и скруглёнными рамками */
+
+.input__rounded__white-bg {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: var(--white);
+    -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
 /* кастомный скроллбар */
 
 ::-webkit-scrollbar {
@@ -2372,6 +2383,8 @@ ul {
     height: 2em;
     margin: 0 -40px;
     background-image: url('../img/custom-checkbox/blank.svg');
+    background-color: white;
+    border-radius: 3px;
 }
 
 .login-page .check__box {
@@ -2382,7 +2395,7 @@ ul {
 /* чекнутая кнопка */
 
 .checkbox-wrap input:checked+.check__box {
-    background-image: url('../img/custom-checkbox/checked-box.svg');
+    background-image: url('../img/custom-checkbox/checked-box.svg'), url('https://img.icons8.com/color/2x/checkmark.png');
 }
 
 
@@ -2390,10 +2403,12 @@ ul {
 
 .checkbox-wrap input:focus+.check__box {
     background-image: url('../img/custom-checkbox/focused.svg');
+    outline: 1px solid black;
 }
 
 .checkbox-wrap input:checked:focus+.check__box {
     background-image: url('../img/custom-checkbox/focused-checked.svg');
+    outline: 1px solid black;
 }
 
 
@@ -4854,14 +4869,107 @@ label {
     text-align: center;
 }
 
-.howto-form__list
+.howto-form {
+    margin: 0 auto 0 200px;
+    width: 670px;
+}
 
-.howto-form__list-element-4:before {
-    content: '4';
+ol .howto-form__list-element:before {
+    position: absolute;
+}
+
+.howto-form__list-element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.howto-form__list-element_text {
+    padding: 28px 0 0 0;
+    margin: 0 0 26px 120px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.howto-form__list-element label {
+    margin: 0 0 23px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.howto-form__input {
+    margin: 12px 0 0 0;
+    width: 544px;
+    height: 56px;
+}
+
+.howto-form__textarea {
+    margin: 12px 0 0 0;
+    width: 544px;
+    height: 192px;
+    resize: none;
 }
 
 .howto-form__btn {
-    margin: 0 auto;
+    margin: 0 auto 33px 220px;
+    width: 368px;
+    height: 56px;
+}
+
+.howto-form__list-element-4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.howto-form__list-element-4:before {
+    content: '4';
+    position: absolute;
+}
+
+.howto-form__list-element-4 p:first-child {
+    margin: 0 0 31px 120px;
+}
+
+.howto-form__list-element-4 p:last-child {
+    padding: 0;
+    margin: 0 0 48px 120px;
+}
+
+.howto-files {
+    margin: 0;
+    padding: 0 0 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.howto-file {
+    display: flex;
+    align-items: center;
+}
+
+.howto-file:before {
+    content: '';
+    margin-right: 16px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url('../img/outsource/file-icon.svg') no-repeat;
+}
+
+.howto-file a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--light-green);
+    transition: color 0.3s;
+    width: 250px;
+}
+
+.howto-file a:hover {
+    color: var(--main-green);
 }
 
 /* страница "Юридические услуги" */
@@ -5231,6 +5339,7 @@ label {
 
 .textarea-counter {
     float: right;
+    place-self: flex-end;
 }
 
 .form-block__form .checkbox-wrap {

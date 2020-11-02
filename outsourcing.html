@@ -221,12 +221,52 @@
                     <ol class="howto-form__list">
                         <li class="howto-form__list-element">
                             <p class="howto-form__list-element_text">Оставьте свои контактные данные.</p>
+                            <label>
+                                Имя
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Алексей">
+                            </label>
+                            <label>
+                                Номер телефона
+                                <input class="input__rounded__white-bg howto-form__input" type="tel" name="" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+                            </label>
                         </li>
                         <li class="howto-form__list-element">
                             <p class="howto-form__list-element_text">Расскажите нам о вашей компании.</p>
+                            <label>
+                                Название компании или ИНН
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Название компании или ИНН">
+                            </label>
+                            <label>
+                                Объем документооборота (количество документов в месяц, например, 100 штук)
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Например, 100 штук в месяц">
+                            </label>
+                            <label>
+                                Виды деятельности
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Виды деятельности">
+                            </label>
+                            <label>
+                                Система налогообложения
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Система налогообложения">
+                            </label>
+                            <label>
+                                Количество сотрудников
+                                <input class="input__rounded__white-bg howto-form__input" type="text" name="" placeholder="Например, 100">
+                            </label>
                         </li>
                         <li class="howto-form__list-element">
                             <p class="howto-form__list-element_text">Ваши пожелания в отношении содержания и объёма предоставляемых услуг.</p>
+                            <label>
+                                Сообщение
+                                <textarea class="input__rounded__white-bg howto-form__textarea" placeholder="Ваше сообщение" onkeyup="this.value=this.value.substring(0,500);"></textarea>
+                                <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
+                            </label>
+                            <div class="checkbox-wrap">
+                                <label>
+                                    <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+                                    <span class="check__box"></span>
+                                    Я даю свое согласие на обработку моих персональных данных.
+                                </label>
+                            </div>
                         </li>
                     </ol>
                     <input class="main-button howto-form__btn" type="submit" value="Отправить">
@@ -236,6 +276,14 @@
                             <p class="howto-form__list-element_text">Вы также можете более подробно и оперативно ознакомиться с деталями нашей работы, изучив порядок взаимодействия с аутсорсинговой компанией.</p>
                         </li>
                     </ol>
+                    <ul class="howto-files">
+                        <li class="howto-file">
+                            <a href="" download>Порядок взаимодействия с аутсорсинговой компанией</a>
+                        </li>
+                        <li class="howto-file">
+                            <a href="" download>Анкета для оценки стоимости работ для вашей компании</a>
+                        </li>
+                    </ul>
                 </form>
             </section>
         </div>
