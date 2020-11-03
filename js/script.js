@@ -82,7 +82,9 @@ function hideMobileMenu(x) {
     if(x.matches) {
         burgerBtn.classList.remove('is-active');
         mobileMenu.classList.remove('mobile-menu__slide-in');
-        document.querySelector('body').style.overflowY = "scroll";
+        document.querySelector('body').style.overflowY = "visible";
+        document.querySelector('main').style.display = "block";
+        document.querySelector('.main-footer__wrapper').style.display = "block";
     }
 }
 
