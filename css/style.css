@@ -2397,6 +2397,7 @@ ul {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    left: 0;
 }
 
 .checkbox-wrap label {

@@ -82,7 +82,7 @@ function hideMobileMenu(x) {
     if(x.matches) {
         burgerBtn.classList.remove('is-active');
         mobileMenu.classList.remove('mobile-menu__slide-in');
-        document.querySelector('body').style.overflowY = "auto";
+        document.querySelector('body').style.overflowY = "scroll";
     }
 }
 
@@ -201,7 +201,7 @@ function showPopUp() {
     if(!popUp.classList.contains('popup-email-us-hide')) {
         document.querySelector('body').style.overflowY = "hidden";
     } else {
-        document.querySelector('body').style.overflowY = "auto";
+        document.querySelector('body').style.overflowY = "scroll";
     }
 }
 
