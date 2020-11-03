@@ -209,14 +209,36 @@ function showPopUp() {
 
 // теги на странице вопрос-ответ
 
-function selectTags() {
+function sort() {
     let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element');
     let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag');
 
-    for(let i=0; i<cloudTags.length; i++) {
-        cloudTag.addEventListener('click', function(evt) {
-            evt.preventDefault;
-            console.log('клик');
+    function filter(tag, cards) {
+        cards.forEach((card) => {
+            let isCardFiltered = !card.innerHTML(tag);
+            if (isCardFiltered) {
+                card.style.display = "none";
+            }
         })
     }
+
+    cloudTags.forEach((cloudTag) => {
+        cloudTag.onclick = function () {
+            console.log(cloudTag.innerHTML.filter)
+        }
+    })
 }
+
+sort()
+
+// for (let i=0; i<cloudTags; i++) {
+//     cloudTags[i].onclick = function() {
+//         console.log(this.innerHTML);
+//         // for (let i=0; i<cardTags.length; i++) {
+//         //     if(cardTags[i].innerHTML == cloudTags[i].innerHTML) {
+//         //         cardTags[i].parentNode.style.display = "none";
+//         //         console.log('удалил ' + cloudTags[i])
+//         //     }
+//         // }
+//     }
+// }

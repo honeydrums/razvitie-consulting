@@ -2806,6 +2806,7 @@ label {
 
 .faq-welcome__tags-list_element {
     margin: 0 16px 16px 0;
+    cursor: pointer;
 }
 
 .faq-questions__wrapper {
@@ -3331,7 +3332,6 @@ label {
         width: fit-content;
         width: 95%;
         max-height: 1006px;
-        margin: 26px 8px;
         padding: 25px 16px;
     }
     .popup-email-us__title {
