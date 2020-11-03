@@ -1349,7 +1349,7 @@ ul {
         margin-bottom: 16px;
     }
     .modern-block__list-element::before {
-        padding-right: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -1779,6 +1779,9 @@ ul {
     .signup-block__decorative-phone {
         padding-top: 11%;
     }
+    .signup-block__decorative-phone__title {
+        width: 280px;
+    }
 }
 
 @media (max-width: 980px) {
@@ -1790,15 +1793,23 @@ ul {
     .signup-block__decorative-phone {
         height: 60vw;
         padding-top: initial;
+        flex-basis: initial;
     }
     .signup-block__decorative-phone__title {
         width: 70%;
         padding: 16vw 5vw 0;
+        font-size: 36px;
+    }
+    .signup-block__decorative-phone__link {
+        width: 320px;
+        height: 56px;
+        padding-top: 15px;
     }
 }
 
 @media (max-width: 680px) {
     .signup-block__title {
+        padding: 0;
         margin: 0 auto 20px;
         text-align: center;
         font-size: 30px;
@@ -1812,7 +1823,7 @@ ul {
         padding: 100px 0 0;
     }
     .signup-block__decorative-phone__title {
-        width: 60%;
+        width: 320px;
         padding: initial;
     }
 }
@@ -1825,9 +1836,10 @@ ul {
         width: 90%;
         font-size: 20px;
         line-height: 30px;
-        padding: 5vw 5vw 0;
+        padding: 5vw 10vw 0;
     }
     .signup-block__decorative-phone__link {
+        width: 224px;
         font-size: 18px;
         line-height: 27px;
     }
