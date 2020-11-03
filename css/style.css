@@ -3654,6 +3654,7 @@ label {
     .work-principles__list-element::before {
         width: 48px;
         height: 48px;
+        margin-right: 10px;
     }
 }
 
@@ -3972,7 +3973,7 @@ label {
     float: left;
     width: 70px;
     height: 70px;
-    padding-right: 16px;
+    margin-right: 10px;
     vertical-align: middle;
     background-image: url(../img/advantages-icon.svg);
     background-repeat: no-repeat;
