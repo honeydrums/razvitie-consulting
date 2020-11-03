@@ -3328,7 +3328,8 @@ label {
 
 @media (max-width: 660px) {
     .popup-email-us {
-        width: auto;
+        width: fit-content;
+        width: 95%;
         max-height: 1006px;
         margin: 26px 8px;
         padding: 25px 16px;
@@ -4276,6 +4277,10 @@ label {
         font-size: 26px;
         margin: 32px auto;
         padding: 0;
+    }
+    .about-team__gallery-element {
+        width: 224px;
+        height: 314px;
     }
     .personal-description {
         padding: 5px;

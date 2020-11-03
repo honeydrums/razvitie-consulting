@@ -22,7 +22,7 @@
                     <a href="tel:+74822733-001" class="profile-header__contact-phone">+7 (4822) 733-001</a>
                     <a href="mailto:callmenow@razvitie.ru" class="profile-header__contact-mail">callmenow@razvitie.ru</a>
                 </div>
-                <button class="profile-header__callback-btn main-button">Связаться</button>
+                <button class="profile-header__callback-btn main-button" onclick="showPopUp()">Связаться</button>
                 <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -71,7 +71,7 @@
                 <a href="tel:+74822733-001" class="mobile-menu__profile-contact-phone">+7 (4822) 733-001</a>
                 <a href="mailto:callmenow@razvitie.ru" class="mobile-menu__profile-contact-mail">callmenow@razvitie.ru</a>
             </div>
-            <button class="mobile-menu__profile-callback-btn main-button">Связаться</button>
+            <button class="mobile-menu__profile-callback-btn main-button" onclick="showPopUp()">Связаться</button>
             <div class="main-footer__wrapper_mobile">
                 <footer class="main-footer">
                     <div class="main-footer__contacts">
@@ -282,6 +282,44 @@
                 </li>
             </ul>
         </footer>
+    </div>
+    <div class="popup-email-us__wrapper popup-email-us-hide">
+        <section class="popup-email-us centered">
+            <button type="button" class="close-button" aria-label="close">
+                <span class="close-button-icon" aria-hidden="true"></span>
+            </button>
+            <h2 class="popup-email-us__title">Напишите нам</h2>
+            <p class="popup-email-us__text">Специалист по бухгалтерскому и налоговому учету свяжется с вами<br> в течение двух рабочих дней.</p>
+            <form action="" method="post" class="popup-email-us__form">
+                <ul class="popup-email-us__form-list">
+                    <li>
+                        <label for="username">Имя</label>
+                        <input class="input__rounded__beige-bg" type="text" id="username" name="user-name" placeholder="Алексей">
+                    </li>
+                    <li>
+                        <label for="firmname">Название компании или ИНН</label>
+                        <input class="input__rounded__beige-bg" type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+                    </li>
+                    <li>
+                        <label for="userphone">Номер телефона</label>
+                        <input class="input__rounded__beige-bg" type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
+                    </li>
+                    <li>
+                        <label for="formmessage">Сообщение</label>
+                        <textarea class="input__rounded__beige-bg" id="formmessage" name="form-message" placeholder="Ваше сообщение" onkeyup="this.value=this.value.substring(0,500);"></textarea>
+                        <span class="textarea-counter">до 500 символов</span>
+                    </li>
+                </ul>
+                <div class="checkbox-wrap">
+                    <label>
+                        <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+                        <span class="check__box"></span>
+                        Я даю свое согласие на обработку моих персональных данных.
+                    </label>
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
     </div>
     <script src="js/script.js"></script>
 </body>
