@@ -1,3 +1,5 @@
+// страница вопрос-ответ - оживление карточек
+
 let faqMoreBtns = document.querySelectorAll('.faq-questions__layout-element button');
 let faqDetailedAnswer = document.querySelector('.faq-detailed-wrapper__text');
 let closeBtns = document.querySelectorAll('.close-button');
@@ -21,6 +23,8 @@ for (let closeBtn of closeBtns) {
     })
 }
 
+// карточки сотрудников на странице "о компании"
+
 let teamCards = document.querySelectorAll('.about-team__gallery-element')
 for (let teamCard of teamCards) {
     teamCard.addEventListener('click', function() {
@@ -29,6 +33,7 @@ for (let teamCard of teamCards) {
 }
 
 // проверим, все ли поля в форме "перезвоните нам" заполнены
+
 let callbackFormBtn = document.querySelector('.callback-form__button');
 let callbackFormInputs = document.querySelectorAll('.callback-form__list-element input');
 
@@ -36,10 +41,8 @@ for (let callbackFormInput of callbackFormInputs) {
     callbackFormBtn.addEventListener('click', function(evt) {
         // evt.preventDefault();
         if (callbackFormInput.value <= 1) {
-            console.log('пусто');
             callbackFormInput.style.boxShadow = 'inset 0px 0px 3px 1px red';
         } else {
-            console.log('не пусто');
             callbackFormInput.style.boxShadow = 'none';
         }
     })
@@ -92,7 +95,7 @@ let x = window.matchMedia('(min-width: 681px)')
 hideMobileMenu(x)
 x.addListener(hideMobileMenu)
 
-// текущая страница
+// подсветим ссылку текущей страницы
 
 let currentPage = location.href;
 let menuItems = document.querySelectorAll('.main-header__nav-list_element a');
@@ -147,21 +150,6 @@ function showLoginPassword() {
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
-// let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
-// let submitBtns = document.querySelectorAll('input[type="submit"]');
-
-// function checkPropButton() {
-//     for(let submitBtn of submitBtns) {
-//         if (checkBox.checked === false) {
-//             submitBtn.disabled = true;
-//             submitBtn.classList.add('too-many-symbols__button');
-//         } else {
-//             submitBtn.disabled = false;
-//             submitBtn.classList.remove('too-many-symbols__button');
-//         }
-//     }
-// };
-
 let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
 let submitBtn = document.querySelectorAll('input[type="submit"]');
 
@@ -177,13 +165,7 @@ function checkPropButton() {
     }
 };
 
-// счётчик символов в textarea 
-// let commentTextarea = document.querySelector('#formmessage'); //найдём textarea
-// let textareaQuantity = document.querySelector('.textarea-quantity');
-
-// commentTextarea.oninput = function() { // функция, следящая за вводом текста в textarea
-//     textareaQuantity.innerHTML = this.value.length;
-// }
+// получим имя загруженного файла
 
 function getFileName(evt) {
     console.log('загружен файл');
@@ -210,35 +192,28 @@ function showPopUp() {
 // теги на странице вопрос-ответ
 
 function sort() {
-    let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element');
-    let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag');
+    let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element'); //buttons
+    let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag'); //cards
 
     function filter(tag, cards) {
         cards.forEach((card) => {
-            let isCardFiltered = !card.innerHTML(tag);
+            let isCardFiltered = !cards.value === tag.value;
             if (isCardFiltered) {
-                card.style.display = "none";
+                console.log(tag.innerHTML);
+                card.classList.toggle('hide');
+            } else {
+                console.log('else');
+                card.classList.remove('hide');
             }
-        })
-    }
+        });
+    };
 
-    cloudTags.forEach((cloudTag) => {
-        cloudTag.onclick = function () {
-            console.log(cloudTag.innerHTML.filter)
-        }
-    })
+    cloudTags.forEach ((cloudTag) => {
+        cloudTag.addEventListener('click', function() {
+            let currentTag = cloudTag.innerHTML;
+            filter(currentTag, cardTags);
+        });
+    });
 }
 
-sort()
-
-// for (let i=0; i<cloudTags; i++) {
-//     cloudTags[i].onclick = function() {
-//         console.log(this.innerHTML);
-//         // for (let i=0; i<cardTags.length; i++) {
-//         //     if(cardTags[i].innerHTML == cloudTags[i].innerHTML) {
-//         //         cardTags[i].parentNode.style.display = "none";
-//         //         console.log('удалил ' + cloudTags[i])
-//         //     }
-//         // }
-//     }
-// }
+sort();

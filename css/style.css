@@ -6082,6 +6082,10 @@ ol li:before {
     bottom: 0;
 }
 
+.hide {
+    display: none;
+}
+
 
 /* активная ссылка */
 
