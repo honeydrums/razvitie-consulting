@@ -2894,7 +2894,6 @@ label {
 .faq-welcome__tags-list_element {
   margin: 0 16px 16px 0;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .faq-welcome__tags-list_element:active {
