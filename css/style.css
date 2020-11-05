@@ -2687,6 +2687,7 @@ label {
 
 .password-control {
   background: url(../img/no-view.svg) 0 0 no-repeat;
+  background-size: contain;
   width: 48px;
   height: 48px;
   display: inline-block;
@@ -2698,8 +2699,8 @@ label {
 
 .view {
   background: url(../img/view.svg) 0 0 no-repeat;
+  background-size: contain;
 }
-
 
 /*  */
 
@@ -5975,7 +5976,7 @@ ol .howto-form__list-element:before {
 
 @media (max-width: 860px) {
   .change-password__title {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 26px;
   }
@@ -6066,18 +6067,69 @@ ol .howto-form__list-element:before {
 
   .pd-section__company-data-wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 624px;
     grid-gap: 0;
   }
 
   .pd-section__change-password {
     width: auto;
-    height: 424px;
-    margin: 0 0 31px 0;
+    margin: 0;
     justify-self: center;
   }
 }
 
+@media (max-width: 680px) {
+  .change-password__form label .password-control {
+    width: 24px;
+    height: 24px;
+    right: 10px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .pd-section__company-data-wrapper {
+    grid-template-rows: 1fr 560px;
+  }
+
+  .company-data__info label input,
+  .change-password__form label input[type="text"],
+  .change-password__form label input[type="number"],
+  .change-password__form label input[type="password"] {
+    margin: 5px 0 10px;
+  }
+  .change-password__form {
+    padding: 0 20px;
+  }
+  .change-password__form label .password-control {
+    bottom: 23px;
+  }
+}
+
+@media (max-width: 420px) {
+  .pd-section__company-data-wrapper {
+    grid-template-rows: 1fr 420px;
+  }
+  .change-password__title {
+    font-size: 16px;
+  }
+  .change-password__form input[type="submit"] {
+    font-size: 16px;
+    height: 48px;
+  }
+  .company-data__info label input,
+  .change-password__form label input[type="text"],
+  .change-password__form label input[type="number"],
+  .change-password__form label input[type="password"] {
+    height: 48px;
+  }
+  .change-password__form label {
+    font-size: 14px;
+  }
+  .change-password__form {
+    padding: 0;
+  }
+}
 
 /* контактные данные личного помощника */
 
