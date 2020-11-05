@@ -2897,8 +2897,8 @@ label {
 }
 
 .faq-welcome__tags-list_element:active {
-  color: var(--white);
-  background-color: var(--light-green);
+  color: var(--main-green);
+  border: 2px solid var(--main-green);
 }
 
 .faq-questions__wrapper {
