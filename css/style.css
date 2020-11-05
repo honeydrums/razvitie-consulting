@@ -6123,6 +6123,10 @@ ol .howto-form__list-element:before {
   .change-password__form label input[type="password"] {
     height: 48px;
   }
+  .change-password__form label #user-password,
+  .change-password__form label #user-password-repeat {
+    padding: 0 40px 0 10px;
+  }
   .change-password__form label {
     font-size: 14px;
   }
