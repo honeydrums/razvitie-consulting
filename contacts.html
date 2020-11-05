@@ -2,209 +2,214 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-    <title>Консалтинговая компания "Развитие"</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <title>Консалтинговая компания "Развитие"</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-header__top-wrapper">
-            <div class="main-header__top centered">
-                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-                <nav class="main-header__nav">
-                    <ul class="main-header__nav-list">
-                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-                            <ul class="main-header__nav-list_dropdown">
-                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
-                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское сопровождение</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
-                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+<header class="main-header">
+  <div class="main-header__top-wrapper">
+    <div class="main-header__top centered">
+      <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-list_element"><a href="#">Услуги</a>
+            <ul class="main-header__nav-list_dropdown">
+              <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
+              <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
+                сопровождение</a></li>
+            </ul>
+          </li>
+          <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
+          <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+          <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
-                </button>
-                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
-            </div>
-        </div>
-        <div class="main-header__bottom-wrapper">
-            <div class="main-header__bottom centered">
-                <ul class="main-header__work-hours">
-                    <li class="main-header__work-hours-element">
-                        <p>Пн-Чт</p>
-                        <p>08:30 - 17:30</p>
-                    </li>
-                    <li class="main-header__work-hours-element">
-                        <p>Пт</p>
-                        <p>08:30 - 16:30</p>
-                    </li>
-                    <li class="main-header__work-hours-element">
-                        <p>Сб-Вс</p>
-                        <p>Выходной</p>
-                    </li>
-                </ul>
-                <section class="login-area">
-                    <a href="login.html">Вход</a>
-                    <span>или</span>
-                    <a href="signup.html">регистрация</a>
-                </section>
-            </div>
-        </div>
-        <div class="mobile-menu">
-            <ul class="mobile-menu__login-area">
-                <li class="mobile-menu__login-area-element">
-                    <a href="login.html">Вход</a>
-                </li>
-                <span>или</span>
-                <li class="mobile-menu__login-area-element">
-                    <a href="signup.html">регистрация</a>
-                </li>
-            </ul>
-            <ul class="mobile-menu__nav">
-                <li class="mobile-menu__nav-element">
-                    <a href="#" onclick="dropDownMenu()">Услуги</a>
-                    <span class="dropdown-arrow"></span>
-                    <ul class="mobile-menu__nav-element_dropdown__hide">
-                        <li class="mobile-menu__nav-element_dropdown-element">
-                            <a href="legal.html">Юридическая поддержка</a>
-                        </li>
-                        <li class="mobile-menu__nav-element_dropdown-element">
-                            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mobile-menu__nav-element">
-                    <a href="about.html">О компании</a>
-                </li>
-                <li class="mobile-menu__nav-element">
-                    <a href="faq.html">Вопрос-ответ</a>
-                </li>
-                <li class="mobile-menu__nav-element">
-                    <a href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-            <div class="main-footer__wrapper_mobile">
-                <footer class="main-footer">
-                    <div class="main-footer__contacts">
-                        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-                    </div>
-                    <span class="main-footer__work-hours_title">График работы</span>
-                    <ul class="main-footer__work-hours">
-                        <li class="main-footer__work-hours-element">
-                            <p>Пн-Чт</p>
-                            <p>08:30 - 17:30</p>
-                        </li>
-                        <li class="main-footer__work-hours-element">
-                            <p>Пт</p>
-                            <p>08:30 - 16:30</p>
-                        </li>
-                        <li class="main-footer__work-hours-element">
-                            <p>Сб-Вс</p>
-                            <p>Выходной</p>
-                        </li>
-                    </ul>
-                </footer>
-            </div>
-    </header>
-    <main>
-        <section class="contacts-page__top-section centered">
-            <h1 class="contacts-page__title">Контакты</h1>
-            <ul class="contacts-page__list">
-                <li class="contacts-page__list-phone">
-                    <a href="tel:+74822733001" class="contacts-page__phone">+7 (4822) 733-001</a>
-                    <a href="tel:+74822733002" class="contacts-page__phone">+7 (4822) 733-002</a>
-                </li>
-                <li class="contacts-page__list-address">170007 г. Тверь,<br> ул. Новая Заря, дом 6, офис 1</li>
-                <li class="contacts-page__list-mail">
-                    <a href="mailto:info@rvtbk.ru">info@rvtbk.ru</a>
-                </li>
-            </ul>
-        </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.209389159002!2d35.92046975893308!3d56.86540388332265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b686f6a856c75d%3A0xcb7202a6b13f1eba!2z0JrQvtC90YHQsNC70YLQuNC90LPQvtCy0LDRjyDQutC-0LzQv9Cw0L3QuNGPICLQoNCw0LfQstC40YLQuNC1Ig!5e0!3m2!1sru!2sru!4v1595944753721!5m2!1sru!2sru"
-            width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="contacts-page__email-us__wrapper">
-            <section class="contacts-page__email-us centered">
-                <h2 class="contacts-page__email-us_title">Напишите нам</h2>
-                <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все интересующие вас вопросы.</p>
-                <form action="" method="post" class="contacts-page__email-us__form">
-                    <ul class="contacts-page__email-us__form-list">
-                        <li>
-                            <label for="username">Имя</label>
-                            <input type="text" id="username" name="user-name" placeholder="Алексей">
-                        </li>
-                        <li>
-                            <label for="firmname">Название компании или ИНН</label>
-                            <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
-                        </li>
-                        <li>
-                            <label for="userphone">Номер телефона</label>
-                            <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
-                        </li>
-                        <li>
-                            <label for="formmessage">Сообщение</label>
-                            <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение" onkeyup="this.value=this.value.substring(0,500);"></textarea>
-                            <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
-                        </li>
-                    </ul>
-                    <div class="checkbox-wrap">
-                        <label>
-                            <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
-                            <span class="check__box"></span>
-                            Я даю свое согласие на обработку моих персональных данных.
-                        </label>
-                    </div>
-                    <input type="submit" value="Отправить">
-                </form>
-            </section>
-        </div>
-    </main>
-    <div class="main-footer__wrapper">
-        <footer class="main-footer">
-            <nav class="main-footer__nav">
-                <ul class="main-footer__nav-list">
-                    <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
-                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
-                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="main-footer__contacts">
-                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
-            </div>
-            <section class="main-footer__copyright">
-                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
-                <p>© 2020 Все права защищены</p>
-                <a href="policy.html">Политика конфиденциальности</a>
-            </section>
-            <span class="main-footer__work-hours_title">График работы</span>
-            <ul class="main-footer__work-hours">
-                <li class="main-footer__work-hours-element">
-                    <p>Пн-Чт</p>
-                    <p>08:30 - 17:30</p>
-                </li>
-                <li class="main-footer__work-hours-element">
-                    <p>Пт</p>
-                    <p>08:30 - 16:30</p>
-                </li>
-                <li class="main-footer__work-hours-element">
-                    <p>Сб-Вс</p>
-                    <p>Выходной</p>
-                </li>
-            </ul>
-        </footer>
+      </button>
+      <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
     </div>
-    <script src="js/script.js"></script>
+  </div>
+  <div class="main-header__bottom-wrapper">
+    <div class="main-header__bottom centered">
+      <ul class="main-header__work-hours">
+        <li class="main-header__work-hours-element">
+          <p>Пн-Чт</p>
+          <p>08:30 - 17:30</p>
+        </li>
+        <li class="main-header__work-hours-element">
+          <p>Пт</p>
+          <p>08:30 - 16:30</p>
+        </li>
+        <li class="main-header__work-hours-element">
+          <p>Сб-Вс</p>
+          <p>Выходной</p>
+        </li>
+      </ul>
+      <section class="login-area">
+        <a href="login.html">Вход</a>
+        <span>или</span>
+        <a href="signup.html">регистрация</a>
+      </section>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <ul class="mobile-menu__login-area">
+      <li class="mobile-menu__login-area-element">
+        <a href="login.html">Вход</a>
+      </li>
+      <span>или</span>
+      <li class="mobile-menu__login-area-element">
+        <a href="signup.html">регистрация</a>
+      </li>
+    </ul>
+    <ul class="mobile-menu__nav">
+      <li class="mobile-menu__nav-element">
+        <a href="#" onclick="dropDownMenu()">Услуги</a>
+        <span class="dropdown-arrow"></span>
+        <ul class="mobile-menu__nav-element_dropdown__hide">
+          <li class="mobile-menu__nav-element_dropdown-element">
+            <a href="legal.html">Юридическая поддержка</a>
+          </li>
+          <li class="mobile-menu__nav-element_dropdown-element">
+            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu__nav-element">
+        <a href="about.html">О компании</a>
+      </li>
+      <li class="mobile-menu__nav-element">
+        <a href="faq.html">Вопрос-ответ</a>
+      </li>
+      <li class="mobile-menu__nav-element">
+        <a href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+    <div class="main-footer__wrapper_mobile">
+      <footer class="main-footer">
+        <div class="main-footer__contacts">
+          <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+        </div>
+        <span class="main-footer__work-hours_title">График работы</span>
+        <ul class="main-footer__work-hours">
+          <li class="main-footer__work-hours-element">
+            <p>Пн-Чт</p>
+            <p>08:30 - 17:30</p>
+          </li>
+          <li class="main-footer__work-hours-element">
+            <p>Пт</p>
+            <p>08:30 - 16:30</p>
+          </li>
+          <li class="main-footer__work-hours-element">
+            <p>Сб-Вс</p>
+            <p>Выходной</p>
+          </li>
+        </ul>
+      </footer>
+    </div>
+</header>
+<main>
+  <section class="contacts-page__top-section centered">
+    <h1 class="contacts-page__title">Контакты</h1>
+    <ul class="contacts-page__list">
+      <li class="contacts-page__list-phone">
+        <a href="tel:+74822733001" class="contacts-page__phone">+7 (4822) 733-001</a>
+        <a href="tel:+74822733002" class="contacts-page__phone">+7 (4822) 733-002</a>
+      </li>
+      <li class="contacts-page__list-address">170007 г. Тверь,<br> ул. Новая Заря, дом 6, офис 1</li>
+      <li class="contacts-page__list-mail">
+        <a href="mailto:info@rvtbk.ru">info@rvtbk.ru</a>
+      </li>
+    </ul>
+  </section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.209389159002!2d35.92046975893308!3d56.86540388332265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b686f6a856c75d%3A0xcb7202a6b13f1eba!2z0JrQvtC90YHQsNC70YLQuNC90LPQvtCy0LDRjyDQutC-0LzQv9Cw0L3QuNGPICLQoNCw0LfQstC40YLQuNC1Ig!5e0!3m2!1sru!2sru!4v1595944753721!5m2!1sru!2sru"
+    width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
+  <div class="contacts-page__email-us__wrapper">
+    <section class="contacts-page__email-us centered">
+      <h2 class="contacts-page__email-us_title">Напишите нам</h2>
+      <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все
+        интересующие вас вопросы.</p>
+      <form action="" method="post" class="contacts-page__email-us__form">
+        <ul class="contacts-page__email-us__form-list">
+          <li>
+            <label for="username">Имя</label>
+            <input type="text" id="username" name="user-name" placeholder="Алексей">
+          </li>
+          <li>
+            <label for="firmname">Название компании или ИНН</label>
+            <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+          </li>
+          <li>
+            <label for="userphone">Номер телефона</label>
+            <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
+          </li>
+          <li>
+            <label for="formmessage">Сообщение</label>
+            <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"
+                      onkeyup="this.value=this.value.substring(0,500);"></textarea>
+            <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов</span>
+          </li>
+        </ul>
+        <div class="checkbox-wrap">
+          <label>
+            <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+            <span class="check__box"></span>
+            Я даю свое согласие на обработку моих персональных данных.
+          </label>
+        </div>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+  </div>
+</main>
+<div class="main-footer__wrapper">
+  <footer class="main-footer">
+    <nav class="main-footer__nav">
+      <ul class="main-footer__nav-list">
+        <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
+        <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+        <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+        <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="main-footer__contacts">
+      <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+      <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
+    </div>
+    <section class="main-footer__copyright">
+      <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+      <p>© 2020 Все права защищены</p>
+      <a href="policy.html">Политика конфиденциальности</a>
+    </section>
+    <span class="main-footer__work-hours_title">График работы</span>
+    <ul class="main-footer__work-hours">
+      <li class="main-footer__work-hours-element">
+        <p>Пн-Чт</p>
+        <p>08:30 - 17:30</p>
+      </li>
+      <li class="main-footer__work-hours-element">
+        <p>Пт</p>
+        <p>08:30 - 16:30</p>
+      </li>
+      <li class="main-footer__work-hours-element">
+        <p>Сб-Вс</p>
+        <p>Выходной</p>
+      </li>
+    </ul>
+  </footer>
+</div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
