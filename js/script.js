@@ -150,7 +150,7 @@ function showLoginPassword() {
 
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
-let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
+let checkBox = document.querySelector('.checkbox-wrap input[type="checkbox"]');
 let submitBtn = document.querySelectorAll('input[type="submit"]');
 
 function checkPropButton() {
