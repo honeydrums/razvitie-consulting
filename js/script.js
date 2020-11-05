@@ -192,25 +192,18 @@ function showPopUp() {
 // теги на странице вопрос-ответ
 
 function sort() {
-  let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element'); //buttons
-  let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag'); //cards
+  let cloudTags = document.querySelectorAll('.faq-welcome__tags-list_element');
+  let cardTags = document.querySelectorAll('.faq-questions__layout-element > .faq-tag');
 
   function filter(tag, cards) {
     cards.forEach((card) => {
-      let isCardFiltered = !cards.value === tag.value;
-      if (isCardFiltered) {
-        console.log(tag.innerHTML);
-        card.classList.toggle('hide');
-      } else {
-        console.log('else');
-        card.classList.remove('hide');
-      }
+      let isCardFiltered = (!card.classList.contains(tag)) ? card.parentNode.classList.add('hide') : card.parentNode.classList.remove('hide');
     });
   };
 
   cloudTags.forEach((cloudTag) => {
-    cloudTag.addEventListener('click', function () {
-      let currentTag = cloudTag.innerHTML;
+    cloudTag.addEventListener('click', () => {
+      let currentTag = cloudTag.dataset.filter;
       filter(currentTag, cardTags);
     });
   });
