@@ -3432,7 +3432,9 @@ label {
     width: fit-content;
     width: 95%;
     max-height: 1006px;
+    height: inherit;
     padding: 25px 16px;
+    overflow: scroll;
   }
 
   .popup-email-us__title {
