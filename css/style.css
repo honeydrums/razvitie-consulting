@@ -26,6 +26,12 @@ ul {
   list-style: none;
 }
 
+/* красная звёздочка */
+
+.red-star {
+  color: #ff0000;
+}
+
 /* стрелка раскрывающегося списка */
 
 .dropdown-arrow {
