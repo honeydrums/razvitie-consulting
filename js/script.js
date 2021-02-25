@@ -151,17 +151,15 @@ function showLoginPassword() {
 // отключим кнопку отправить/зарегистрироваться, если не чекнут чекбокс с соглашением
 
 let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]');
-let submitBtn = document.querySelectorAll('input[type="submit"]');
+let submitBtn = document.querySelector('input[type="submit"]');
 
 function checkPropButton() {
-  for (let i = 0; i < submitBtn.length; i++) {
-    if (checkBox.checked === false) {
-      submitBtn[i].disabled = true;
-      submitBtn[i].classList.add('too-many-symbols__button');
-    } else {
-      submitBtn[i].disabled = false;
-      submitBtn[i].classList.remove('too-many-symbols__button');
-    }
+  if (checkBox.checked) {
+    submitBtn.disabled = false;
+    submitBtn.classList.remove('too-many-symbols__button');
+  } else {
+    submitBtn.disabled = true;
+    submitBtn.classList.add('too-many-symbols__button');
   }
 };
 
