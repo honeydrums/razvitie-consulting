@@ -254,12 +254,18 @@ var checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]'
 var submitBtn = document.querySelector('input[type="submit"]');
 
 function checkPropButton() {
-  if (checkBox.checked) {
-    submitBtn.disabled = false;
-    submitBtn.classList.remove('too-many-symbols__button');
-  } else {
-    submitBtn.disabled = true;
-    submitBtn.classList.add('too-many-symbols__button');
+  var requiredInputs = document.querySelectorAll('input:required');
+
+  for (var i = 0; i < requiredInputs.length; i++) {
+    if (checkBox.checked || requiredInputs[i].value !== '') {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('too-many-symbols__button');
+      requiredInputs[i].style.background = 'var(--beige)';
+    } else {
+      submitBtn.disabled = true;
+      submitBtn.classList.add('too-many-symbols__button');
+      requiredInputs[i].style.background = 'rgba(245, 92, 92, 0.2)';
+    }
   }
 }
 

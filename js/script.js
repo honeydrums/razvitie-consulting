@@ -154,12 +154,17 @@ let checkBox = document.querySelector('.checkbox-wrap input[name="confirm-yes"]'
 let submitBtn = document.querySelector('input[type="submit"]');
 
 function checkPropButton() {
-  if (checkBox.checked) {
-    submitBtn.disabled = false;
-    submitBtn.classList.remove('too-many-symbols__button');
-  } else {
-    submitBtn.disabled = true;
-    submitBtn.classList.add('too-many-symbols__button');
+  let requiredInputs = document.querySelectorAll('input:required');
+  for (let i = 0; i < requiredInputs.length; i++) {
+    if (checkBox.checked || requiredInputs[i].value !== '') {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('too-many-symbols__button');
+      requiredInputs[i].style.background = 'var(--beige)';
+    } else {
+      submitBtn.disabled = true;
+      submitBtn.classList.add('too-many-symbols__button');
+      requiredInputs[i].style.background = 'rgba(245, 92, 92, 0.2)';
+    }
   }
 };
 
