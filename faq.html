@@ -2,385 +2,360 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style-min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-  <title>Консалтинговая компания "Развитие"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Консалтинговая компания "Развитие"</title>
+    <link rel="icon" href="/img/favicon/favicon.ico">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-<header class="main-header">
-  <div class="main-header__top-wrapper">
-    <div class="main-header__top centered">
-      <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-      <nav class="main-header__nav">
-        <ul class="main-header__nav-list">
-          <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-            <ul class="main-header__nav-list_dropdown">
-              <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
-              <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
-                сопровождение</a></li>
+    <header class="main-header">
+        <div class="main-header__top-wrapper">
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+                <nav class="main-header__nav">
+                    <ul class="main-header__nav-list">
+                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
+                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
+                    сопровождение</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
+                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
+            </div>
+        </div>
+        <div class="main-header__bottom-wrapper">
+            <div class="main-header__bottom centered">
+                <ul class="main-header__work-hours">
+                    <li class="main-header__work-hours-element">
+                        <p>Пн-Чт</p>
+                        <p>08:30 - 17:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Пт</p>
+                        <p>08:30 - 16:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Сб-Вс</p>
+                        <p>Выходной</p>
+                    </li>
+                </ul>
+                <section class="login-area">
+                    <a href="login.html">Вход</a>
+                    <span>или</span>
+                    <a href="signup.html">регистрация</a>
+                </section>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__login-area">
+                <li class="mobile-menu__login-area-element">
+                    <a href="login.html">Вход</a>
+                </li>
+                <span>или</span>
+                <li class="mobile-menu__login-area-element">
+                    <a href="signup.html">регистрация</a>
+                </li>
             </ul>
-          </li>
-          <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-          <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-          <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-      </button>
-      <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-element">
+                    <a href="#" onclick="dropDownMenu()">Услуги</a>
+                    <span class="dropdown-arrow"></span>
+                    <ul class="mobile-menu__nav-element_dropdown__hide">
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="legal.html">Юридическая поддержка</a>
+                        </li>
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="about.html">О компании</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="faq.html">Вопрос-ответ</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="main-footer__wrapper_mobile">
+                <footer class="main-footer">
+                    <div class="main-footer__contacts">
+                        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                    </div>
+                    <span class="main-footer__work-hours_title">График работы</span>
+                    <ul class="main-footer__work-hours">
+                        <li class="main-footer__work-hours-element">
+                            <p>Пн-Чт</p>
+                            <p>08:30 - 17:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Пт</p>
+                            <p>08:30 - 16:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Сб-Вс</p>
+                            <p>Выходной</p>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="faq-welcome centered">
+            <h1 class="faq-welcome__title">Вопрос-ответ</h1>
+            <p class="faq-welcome__text">За время работы, наша команда столкнулась с различными ситуациями и задачами и накопила большой объем полезных знаний. Ознакомьтесь с готовыми вопросами ,возможно, ответ на ваш вопрос уже есть в нашей базе.
+            </p>
+            <ul class="faq-welcome__tags-list">
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="rights">гражданские права</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="egrul">ЕГРЮЛ</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="realty">недвижимость</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="reporting">промежуточная и годовая отчетность
+                </li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="ip-turnkey">ИП под ключ</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="salary">расчет заработной платы</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="offences">административные правонарушения</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="accounting">налоги</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="accounting-reporting">налоговая отчетность</li>
+                <li class="faq-welcome__tags-list_element faq-tag" data-filter="respawn">восстановление бухгалтерского учета
+                </li>
+            </ul>
+        </section>
+        <div class="faq-questions__wrapper">
+            <section class="faq-questions centered">
+                <h2 class="faq-questions__title">Популярные вопросы</h2>
+                <div class="faq-questions__layout">
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag rights">гражданские права</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag egrul">ЕГРЮЛ</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag realty">недвижимость</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag reporting">промежуточная и годовая отчетность</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag ip-turnkey">ИП под ключ</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag salary">расчет заработной платы</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag offences">административные правонарушения</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag accounting">налоги</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag accounting-reporting">налоговая отчетность</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag respawn">восстановление бухгалтерского учета</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag rights">гражданские права</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag egrul">ЕГРЮЛ</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag realty">недвижимость</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag reporting">промежуточная и годовая отчетность</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag ip-turnkey">ИП под ключ</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag salary">расчет заработной платы</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag offences">административные правонарушения</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag accounting">налоги</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag accounting-reporting">налоговая отчетность</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                    <div class="faq-questions__layout-element">
+                        <span class="faq-tag card__faq-tag respawn">восстановление бухгалтерского учета</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
+                        <button>Видео-ответ</button>
+                    </div>
+                </div>
+                <p class="your-ask">Задайте свой вопрос в форме ниже<br>Это удобно!</p>
+            </section>
+        </div>
+        <div class="contacts-page__email-us__wrapper">
+            <section class="contacts-page__email-us centered">
+                <h2 class="contacts-page__email-us_title">Напишите нам</h2>
+                <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все интересующие вас вопросы.</p>
+                <form action="" method="post" class="contacts-page__email-us__form">
+                    <ul class="contacts-page__email-us__form-list">
+                        <li>
+                            <label for="username">Имя</label>
+                            <input type="text" id="username" name="user-name" placeholder="Алексей">
+                        </li>
+                        <li>
+                            <label for="firmname">Название компании или ИНН</label>
+                            <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+                        </li>
+                        <li>
+                            <label for="userphone">Номер телефона</label>
+                            <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
+                        </li>
+                        <li>
+                            <label for="formmessage">Сообщение</label>
+                            <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение" onkeyup="this.value=this.value.substring(0,500);"></textarea>
+                            <span class="textarea-counter">до 500 символов</span>
+                        </li>
+                    </ul>
+                    <div class="checkbox-wrap">
+                        <label>
+              <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+              <span class="check__box"></span>
+              Я даю свое согласие на обработку моих персональных данных.
+            </label>
+                    </div>
+                    <input type="submit" value="Отправить">
+                </form>
+            </section>
+        </div>
+        <div class="faq-detailed-wrapper__text faq-detailed-block-hidden">
+            <section class="faq-detailed__text">
+                <button type="button" class="close-button" aria-label="close">
+          <span class="close-button-icon" aria-hidden="true"></span>
+        </button>
+                <h3 class="faq-detailed__title">Ответ</h3>
+                <div class="faq-detailed__text-question">
+                    <p><span>Вопрос: </span>Tristique urna, tellus tincidunt egestas diam. Duis et ornare tristique id. Lorem vitae scelerisque nunc interdum etiam viverra leo. A quam eget nisi.</p>
+                </div>
+                <div class="faq-detailed__text-answer">
+                    <p><span>Ответ: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie interdum dui donec sed tincidunt ullamcorper vestibulum justo. Ullamcorper iaculis ac non velit. Fringilla massa amet auctor mattis morbi volutpat.
+                        Porta sit amet at est magna volutpat. In tempor, scelerisque ullamcorper turpis tristique adipiscing egestas volutpat velit. In quis dignissim lectus turpis. Sit ultrices amet et malesuada. Neque vel ultrices lorem dictum nec dui
+                        nibh commodo nisi. Dignissim libero accumsan sit eget in vivamus. Nibh risus, vulputate erat enim. Neque auctor consequat volutpat maecenas viverra commodo porttitor. Pretium laoreet porta diam, a gravida elit vitae mi ut. Amet,
+                        vestibulum non suspendisserisus sit. Morbi tempus sagittis ultrices interdum donec suspendisse pharetra iaculis a. Tristique bibendum feugiat non posuere massa eu ornare. Tristique bibendum feugiat non posuere.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="faq-detailed-wrapper__video faq-detailed-block-hidden">
+            <section class="faq-detailed__video">
+                <button type="button" class="close-button" aria-label="close">
+          <span class="close-button-icon" aria-hidden="true"></span>
+        </button>
+                <h3 class="faq-detailed__title">Видео-ответ</h3>
+                <div class="faq-detailed__text-question">
+                    <span>Вопрос: </span>
+                    <p>Tristique urna, tellus tincidunt egestas diam. Duis et ornare tristique id. Lorem vitae scelerisque nunc interdum etiam viverra leo. A quam eget nisi.</p>
+                </div>
+                <div class="faq-detailed__video-answer">
+                    <video src=""></video>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="main-footer__wrapper">
+        <footer class="main-footer">
+            <nav class="main-footer__nav">
+                <ul class="main-footer__nav-list">
+                    <li class="main-footer__nav-list_element"><a href="#">Услуги</a></li>
+                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
+            </div>
+            <section class="main-footer__copyright">
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+                <p>© 2020 Все права защищены</p>
+                <a href="policy.html">Политика конфиденциальности</a>
+            </section>
+            <span class="main-footer__work-hours_title">График работы</span>
+            <ul class="main-footer__work-hours">
+                <li class="main-footer__work-hours-element">
+                    <p>Пн-Чт</p>
+                    <p>08:30 - 17:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Пт</p>
+                    <p>08:30 - 16:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Сб-Вс</p>
+                    <p>Выходной</p>
+                </li>
+            </ul>
+        </footer>
     </div>
-  </div>
-  <div class="main-header__bottom-wrapper">
-    <div class="main-header__bottom centered">
-      <ul class="main-header__work-hours">
-        <li class="main-header__work-hours-element">
-          <p>Пн-Чт</p>
-          <p>08:30 - 17:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Пт</p>
-          <p>08:30 - 16:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Сб-Вс</p>
-          <p>Выходной</p>
-        </li>
-      </ul>
-      <section class="login-area">
-        <a href="login.html">Вход</a>
-        <span>или</span>
-        <a href="signup.html">регистрация</a>
-      </section>
-    </div>
-  </div>
-  <div class="mobile-menu">
-    <ul class="mobile-menu__login-area">
-      <li class="mobile-menu__login-area-element">
-        <a href="login.html">Вход</a>
-      </li>
-      <span>или</span>
-      <li class="mobile-menu__login-area-element">
-        <a href="signup.html">регистрация</a>
-      </li>
-    </ul>
-    <ul class="mobile-menu__nav">
-      <li class="mobile-menu__nav-element">
-        <a href="#" onclick="dropDownMenu()">Услуги</a>
-        <span class="dropdown-arrow"></span>
-        <ul class="mobile-menu__nav-element_dropdown__hide">
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="legal.html">Юридическая поддержка</a>
-          </li>
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-          </li>
-        </ul>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="about.html">О компании</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="faq.html">Вопрос-ответ</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="contacts.html">Контакты</a>
-      </li>
-    </ul>
-    <div class="main-footer__wrapper_mobile">
-      <footer class="main-footer">
-        <div class="main-footer__contacts">
-          <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-        </div>
-        <span class="main-footer__work-hours_title">График работы</span>
-        <ul class="main-footer__work-hours">
-          <li class="main-footer__work-hours-element">
-            <p>Пн-Чт</p>
-            <p>08:30 - 17:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Пт</p>
-            <p>08:30 - 16:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Сб-Вс</p>
-            <p>Выходной</p>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </div>
-</header>
-<main>
-  <section class="faq-welcome centered">
-    <h1 class="faq-welcome__title">Вопрос-ответ</h1>
-    <p class="faq-welcome__text">За время работы, наша команда столкнулась с различными ситуациями и задачами и накопила
-      большой объем полезных знаний. Ознакомьтесь с готовыми вопросами ,возможно, ответ на ваш вопрос уже есть в нашей
-      базе.</p>
-    <ul class="faq-welcome__tags-list">
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="rights">гражданские права</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="egrul">ЕГРЮЛ</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="realty">недвижимость</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="reporting">промежуточная и годовая отчетность</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="ip-turnkey">ИП под ключ</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="salary">расчет заработной платы</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="offences">административные правонарушения</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="accounting">налоги</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="accounting-reporting">налоговая отчетность</li>
-      <li class="faq-welcome__tags-list_element faq-tag" data-filter="respawn">восстановление бухгалтерского учета</li>
-    </ul>
-  </section>
-  <div class="faq-questions__wrapper">
-    <section class="faq-questions centered">
-      <h2 class="faq-questions__title">Популярные вопросы</h2>
-      <div class="faq-questions__layout">
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag rights">гражданские права</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag egrul">ЕГРЮЛ</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag realty">недвижимость</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag reporting">промежуточная и годовая отчетность</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag ip-turnkey">ИП под ключ</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag salary">расчет заработной платы</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag offences">административные правонарушения</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag accounting">налоги</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag accounting-reporting">налоговая отчетность</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag respawn">восстановление бухгалтерского учета</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag rights">гражданские права</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag egrul">ЕГРЮЛ</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag realty">недвижимость</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag reporting">промежуточная и годовая отчетность</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag ip-turnkey">ИП под ключ</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag salary">расчет заработной платы</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag offences">административные правонарушения</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag accounting">налоги</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag accounting-reporting">налоговая отчетность</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-        <div class="faq-questions__layout-element">
-          <span class="faq-tag card__faq-tag respawn">восстановление бухгалтерского учета</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque cupiditate eum, ab non iusto at
-            voluptas velit eligendi sunt. Nam cumque adipisci quo cum nisi illo dolor. Voluptate, facere?</p>
-          <button>Видео-ответ</button>
-        </div>
-      </div>
-      <p class="your-ask">Задайте свой вопрос в форме ниже<br>Это удобно!</p>
-    </section>
-  </div>
-  <div class="contacts-page__email-us__wrapper">
-    <section class="contacts-page__email-us centered">
-      <h2 class="contacts-page__email-us_title">Напишите нам</h2>
-      <p class="contacts-page__email-us_text">Оставьте свои контактные данные для связи.<br>Мы готовы ответить на все
-        интересующие вас вопросы.</p>
-      <form action="" method="post" class="contacts-page__email-us__form">
-        <ul class="contacts-page__email-us__form-list">
-          <li>
-            <label for="username">Имя</label>
-            <input type="text" id="username" name="user-name" placeholder="Алексей">
-          </li>
-          <li>
-            <label for="firmname">Название компании или ИНН</label>
-            <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
-          </li>
-          <li>
-            <label for="userphone">Номер телефона</label>
-            <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
-          </li>
-          <li>
-            <label for="formmessage">Сообщение</label>
-            <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"
-                      onkeyup="this.value=this.value.substring(0,500);"></textarea>
-            <span class="textarea-counter">до 500 символов</span>
-          </li>
-        </ul>
-        <div class="checkbox-wrap">
-          <label>
-            <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
-            <span class="check__box"></span>
-            Я даю свое согласие на обработку моих персональных данных.
-          </label>
-        </div>
-        <input type="submit" value="Отправить">
-      </form>
-    </section>
-  </div>
-  <div class="faq-detailed-wrapper__text faq-detailed-block-hidden">
-    <section class="faq-detailed__text">
-      <button type="button" class="close-button" aria-label="close">
-        <span class="close-button-icon" aria-hidden="true"></span>
-      </button>
-      <h3 class="faq-detailed__title">Ответ</h3>
-      <div class="faq-detailed__text-question">
-        <p><span>Вопрос: </span>Tristique urna, tellus tincidunt egestas diam. Duis et ornare tristique id. Lorem vitae
-          scelerisque nunc interdum etiam viverra leo. A quam eget nisi.</p>
-      </div>
-      <div class="faq-detailed__text-answer">
-        <p><span>Ответ: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie interdum dui donec sed
-          tincidunt ullamcorper vestibulum justo. Ullamcorper iaculis ac non velit. Fringilla massa amet auctor mattis
-          morbi volutpat.
-          Porta sit amet at est magna volutpat. In tempor, scelerisque ullamcorper turpis tristique adipiscing egestas
-          volutpat velit. In quis dignissim lectus turpis. Sit ultrices amet et malesuada. Neque vel ultrices lorem
-          dictum nec dui
-          nibh commodo nisi. Dignissim libero accumsan sit eget in vivamus. Nibh risus, vulputate erat enim. Neque
-          auctor consequat volutpat maecenas viverra commodo porttitor. Pretium laoreet porta diam, a gravida elit vitae
-          mi ut. Amet,
-          vestibulum non suspendisserisus sit. Morbi tempus sagittis ultrices interdum donec suspendisse pharetra
-          iaculis a. Tristique bibendum feugiat non posuere massa eu ornare. Tristique bibendum feugiat non posuere.</p>
-      </div>
-    </section>
-  </div>
-  <div class="faq-detailed-wrapper__video faq-detailed-block-hidden">
-    <section class="faq-detailed__video">
-      <button type="button" class="close-button" aria-label="close">
-        <span class="close-button-icon" aria-hidden="true"></span>
-      </button>
-      <h3 class="faq-detailed__title">Видео-ответ</h3>
-      <div class="faq-detailed__text-question">
-        <span>Вопрос: </span>
-        <p>Tristique urna, tellus tincidunt egestas diam. Duis et ornare tristique id. Lorem vitae scelerisque nunc
-          interdum etiam viverra leo. A quam eget nisi.</p>
-      </div>
-      <div class="faq-detailed__video-answer">
-        <video src=""></video>
-      </div>
-    </section>
-  </div>
-</main>
-<div class="main-footer__wrapper">
-  <footer class="main-footer">
-    <nav class="main-footer__nav">
-      <ul class="main-footer__nav-list">
-        <li class="main-footer__nav-list_element"><a href="#">Услуги</a></li>
-        <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
-        <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-        <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="main-footer__contacts">
-      <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-      <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
-    </div>
-    <section class="main-footer__copyright">
-      <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
-      <p>© 2020 Все права защищены</p>
-      <a href="policy.html">Политика конфиденциальности</a>
-    </section>
-    <span class="main-footer__work-hours_title">График работы</span>
-    <ul class="main-footer__work-hours">
-      <li class="main-footer__work-hours-element">
-        <p>Пн-Чт</p>
-        <p>08:30 - 17:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Пт</p>
-        <p>08:30 - 16:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Сб-Вс</p>
-        <p>Выходной</p>
-      </li>
-    </ul>
-  </footer>
-</div>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

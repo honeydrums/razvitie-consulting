@@ -2,476 +2,430 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style-min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-  <title>Консалтинговая компания "Развитие"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Консалтинговая компания "Развитие"</title>
+    <link rel="icon" href="/img/favicon/favicon.ico">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-<header class="main-header">
-  <div class="main-header__top-wrapper">
-    <div class="main-header__top centered">
-      <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-      <nav class="main-header__nav">
-        <ul class="main-header__nav-list">
-          <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-            <ul class="main-header__nav-list_dropdown">
-              <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
-              <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
-                сопровождение</a></li>
-            </ul>
-          </li>
-          <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-          <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-          <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-      </button>
-      <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
-    </div>
-  </div>
-  <div class="main-header__bottom-wrapper">
-    <div class="main-header__bottom centered">
-      <ul class="main-header__work-hours">
-        <li class="main-header__work-hours-element">
-          <p>Пн-Чт</p>
-          <p>08:30 - 17:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Пт</p>
-          <p>08:30 - 16:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Сб-Вс</p>
-          <p>Выходной</p>
-        </li>
-      </ul>
-      <section class="login-area">
-        <a href="login.html">Вход</a>
-        <span>или</span>
-        <a href="signup.html">регистрация</a>
-      </section>
-    </div>
-  </div>
-  <div class="mobile-menu">
-    <ul class="mobile-menu__login-area">
-      <li class="mobile-menu__login-area-element">
-        <a href="login.html">Вход</a>
-      </li>
-      <span>или</span>
-      <li class="mobile-menu__login-area-element">
-        <a href="signup.html">регистрация</a>
-      </li>
-    </ul>
-    <ul class="mobile-menu__nav">
-      <li class="mobile-menu__nav-element">
-        <a href="#" onclick="dropDownMenu()">Услуги</a>
-        <span class="dropdown-arrow"></span>
-        <ul class="mobile-menu__nav-element_dropdown__hide">
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="legal.html">Юридическая поддержка</a>
-          </li>
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-          </li>
-        </ul>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="about.html">О компании</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="faq.html">Вопрос-ответ</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="contacts.html">Контакты</a>
-      </li>
-    </ul>
-    <div class="main-footer__wrapper_mobile">
-      <footer class="main-footer">
-        <div class="main-footer__contacts">
-          <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+    <header class="main-header">
+        <div class="main-header__top-wrapper">
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+                <nav class="main-header__nav">
+                    <ul class="main-header__nav-list">
+                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
+                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
+                    сопровождение</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
+                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
+            </div>
         </div>
-        <span class="main-footer__work-hours_title">График работы</span>
-        <ul class="main-footer__work-hours">
-          <li class="main-footer__work-hours-element">
-            <p>Пн-Чт</p>
-            <p>08:30 - 17:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Пт</p>
-            <p>08:30 - 16:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Сб-Вс</p>
-            <p>Выходной</p>
-          </li>
-        </ul>
-      </footer>
+        <div class="main-header__bottom-wrapper">
+            <div class="main-header__bottom centered">
+                <ul class="main-header__work-hours">
+                    <li class="main-header__work-hours-element">
+                        <p>Пн-Чт</p>
+                        <p>08:30 - 17:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Пт</p>
+                        <p>08:30 - 16:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Сб-Вс</p>
+                        <p>Выходной</p>
+                    </li>
+                </ul>
+                <section class="login-area">
+                    <a href="login.html">Вход</a>
+                    <span>или</span>
+                    <a href="signup.html">регистрация</a>
+                </section>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__login-area">
+                <li class="mobile-menu__login-area-element">
+                    <a href="login.html">Вход</a>
+                </li>
+                <span>или</span>
+                <li class="mobile-menu__login-area-element">
+                    <a href="signup.html">регистрация</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-element">
+                    <a href="#" onclick="dropDownMenu()">Услуги</a>
+                    <span class="dropdown-arrow"></span>
+                    <ul class="mobile-menu__nav-element_dropdown__hide">
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="legal.html">Юридическая поддержка</a>
+                        </li>
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="about.html">О компании</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="faq.html">Вопрос-ответ</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="main-footer__wrapper_mobile">
+                <footer class="main-footer">
+                    <div class="main-footer__contacts">
+                        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                    </div>
+                    <span class="main-footer__work-hours_title">График работы</span>
+                    <ul class="main-footer__work-hours">
+                        <li class="main-footer__work-hours-element">
+                            <p>Пн-Чт</p>
+                            <p>08:30 - 17:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Пт</p>
+                            <p>08:30 - 16:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Сб-Вс</p>
+                            <p>Выходной</p>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+    </header>
+    <main>
+        <div class="about-welcome__wrapper">
+            <section class="about-welcome centered">
+                <h1 class="about-welcome__title">Консалтинговая Компания «Развитие» - ваш лучший выбор!</h1>
+                <p class="about-welcome__text">Современная и молодая, активная и трудолюбивая представительница среднего бизнеса. Опытный профессионал своего дела, с более чем одиннадцатилетним стажем. Специалист на рынке услуг и консалтинга, ориентированный на работу с предприятиями
+                    и организациями всех форм собственности в различных отраслях экономики. Признанный член Института профессиональных бухгалтеров и аудиторов России. Она заставит вас забыть о ворохе бумаг и непредвиденных визитах налоговой. С ее профессиональной
+                    командой вы вступите в цифровую эпоху комфорта.</p>
+            </section>
+        </div>
+        <div class="work-principles__wrapper">
+            <section class="work-principles centered">
+                <h2 class="work-principles__title">Принципы работы</h2>
+                <ul class="work-principles__list">
+                    <li class="work-principles__list-element">Качество</li>
+                    <li class="work-principles__list-element">Уверенный рост и развитие</li>
+                    <li class="work-principles__list-element">Ответственность</li>
+                    <li class="work-principles__list-element">Репутация</li>
+                    <li class="work-principles__list-element">Цифровые технологии</li>
+                    <li class="work-principles__list-element">Честность</li>
+                </ul>
+                <section class="work-principles__quality">
+                    <h3 class="work-principles__quality-title">Консалтинговая Компания «Развитие» демонстрирует качество<br>своей работы на конкретных цифрах.</h3>
+                    <ul class="work-principles__quality-list">
+                        <li class="work-principles__quality-list-element">
+                            <h4>7 лет</h4>
+                            <p>Составляет опыт наших специалистов в вопросе предоставлению полного цикла услуг в процедуре банкротства. Консалтинговая Компания «Развитие» одна из немногих на рынке имеет собственные наработки в данной области.
+                            </p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>120 000 000 ₽</h4>
+                            <p>Было возмещено нашими специалистами из бюджета в пользу наших клиентов.</p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>Опытная команда</h4>
+                            <p>Качество работы команды определяет и большой опыт в сферах внедрения бухгалтерского и налогового учета, оптимизации расходов в сфере строительства и производства.</p>
+                        </li>
+                        <li class="work-principles__quality-list-element">
+                            <h4>Точно в срок!</h4>
+                            <p>Слаженность, оперативность и точность в работе для нас не пустой звук. Именно поэтому отчётность наших клиентов сдается в срок и в полном объеме.</p>
+                        </li>
+                    </ul>
+                </section>
+                <div class="work-principles__other-wrapper">
+                    <section class="work-principles__tech">
+                        <h3 class="work-principles__tech-title">Цифровые<br>технологии</h3>
+                        <p class="work-principles__tech-text">Консалтинговая Компания «Развитие» не только не боится нововведений, но и активно принимает участие по внедрению инноваций в рабочий процесс. Нашим клиентам мы предлагаем ведение цифрового документооборота через личный кабинет.
+                            Цифровая бухгалтерия гораздо практичнее, надежнее и проще в использовании.</p><br>
+                        <p class="work-principles__tech-text">Наша команда имеет непосредственный контакт с каждым клиентом, что позволит оперативно решать все возникающие вопросы и загружать документы с собственного смартфона. Долговечность, доступность и скорость получения информации делают
+                            вашу и нашу работу в разы эффективнее.</p>
+                    </section>
+                    <section class="work-principles__grow">
+                        <h3 class="work-principles__grow-title">Уверенный рост и развитие</h3>
+                        <p class="work-principles__grow-slogan">Наша работа – ваше развитие! Именно поэтому мы начинаем с себя.</p>
+                        <ul class="work-principles__grow-list">
+                            <li class="work-principles__grow-list_element"><span>В 3 раза</span><br>увеличился штат наших высококвалифицированных специалистов с 2009 года
+                            </li>
+                            <li class="work-principles__grow-list_element"><span>За 10 лет</span><br>количество наших клиентов возрасло в 10 раз
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="work-principles__responsibility">
+                        <h3 class="work-principles__responsibility-title">Ответственность</h3>
+                        <p class="work-principles__responsibility-slogan">Для нас важно долгосрочное сотрудничество со всеми клиентами.
+                        </p>
+                        <p class="work-principles__responsibility-text">Наша Компания гарантирует полную конфиденциальность в отношении любой информации. Мы уверены в качестве своей работы, именно поэтому не боимся брать за нее ответственность и возмещать убытки, последовавшие в результате нашей деятельности.</p>
+                    </section>
+                    <section class="work-principles__reputation">
+                        <h3 class="work-principles__reputation-title">Репутация</h3>
+                        <p class="work-principles__reputation-slogan">Мы готовы жертвовать деньгами, но не репутацией!</p>
+                        <p class="work-principles__reputation-text">В современной высококонкурентной среде, с огромным количеством похожих товаров именно доверие - определяющий фактор. На протяжении десятилетия Консалтинговая Компания «Развитие» создает и поддерживает репутацию надежного, эффективного
+                            и честного партнера, успешным прохождением 8 выездных налоговых проверок, партнерством с ведущими адвокатами, проводящими судебно-бухгалтерскую экспретизу.</p>
+                    </section>
+                    <section class="work-principles__honest">
+                        <h3 class="work-principles__honest-title">Честность</h3>
+                        <p class="work-principles__honest-slogan">Наша работа строится на толковом, прямом и честном диалоге с клиентом.
+                        </p>
+                        <p class="work-principles__honest-text">Мы считаем важным предупреждать Вас о возможных рисках, а также открыто сообщать о неудачах или неблагоприятных прогнозах для Вашего бизнеса. Позиция Консалтинговой Компании «Развитие» проста – честность в работе позволяет избежать
+                            ошибок и учесть их при дальнейшей работе. </p>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div class="about-team__wrapper">
+            <section class="about-team centered">
+                <h2 class="about-team__title">Наша команда</h2>
+                <div class="about-team__gallery">
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-1.jpg" alt="Воробьева Ольга Юрьевна">
+                        <span class="front-name">Воробьева Ольга Юрьевна</span>
+                        <figcaption class="personal-description">
+                            <h4>Воробьева Ольга Юрьевна</h4>
+                            <p class="personal-description__position">
+                                <span>Ведущий специалист по бухгалтерскому и налоговому учету</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Аттестованный профессиональный бухгалтер, высококвалифицированный специалист в области бухгалтерского и налогового учета, с опытом работы более 10 лет. Стала частью нашей команды 7 лет назад. На высоком уровне сопровождает юридических лиц и ИП. Работает
+                                с разными системами налогообложения и отраслями: строительство, сфера оказания услуг, производство. Имеет опыт работы по внедрению программных обеспечений и является изобретателем вариантов и систем технологий, упрощающих
+                                обработку и учет данных. Знает, как быстро и качественно обработать большой массив данных.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-2.jpg" alt="Малинкина Олеся Владимировна">
+                        <span class="front-name">Малинкина Олеся Владимировна</span>
+                        <figcaption class="personal-description">
+                            <h4>Малинкина Олеся Владимировна</h4>
+                            <p class="personal-description__position">
+                                <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы порядка 6 лет</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Профессионал, знающий на практике специфику работы в крупном ресторанном бизнесе и производственных холдингах. Имеет опыт работы в областях управления, управленческого учета, финансового контроля, бухгалтерского учета и бюджетирования, работает с нами
+                                последние 7 лет. В нашей компании специализируется в отраслях торговли и сферы услуг, общепита, медицинской деятельности. Хорошо владеет кадровым и персонифицированным учетом. Благодаря ее работе у нас 86 % выигранных трудовых
+                                судебных споров и регулярное положительное прохождение проверок трудовой инспекции.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-3.jpg" alt="Михайлова Наталья Владимировна">
+                        <span class="front-name">Михайлова Наталья Владимировна</span>
+                        <figcaption class="personal-description">
+                            <h4>Михайлова Наталья Владимировна</h4>
+                            <p class="personal-description__position">
+                                <span>Руководитель отдела бухгалтерского сопровождения</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Аттестованный профессиональный бухгалтер и специалист в области МСФО, с опытом работы более 18 лет. Наш внутренний аудитор и методолог. За последние 3 года под ее руководством произведено восстановление учета более 16 юридических лиц. Работает в нашей
+                                организации с момента ее создания.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-4.jpg" alt="Зубакина Наталья Владимировна">
+                        <span class="front-name">Зубакина Наталья Владимировна</span>
+                        <figcaption class="personal-description">
+                            <h4>Зубакина Наталья Владимировна</h4>
+                            <p class="personal-description__position">
+                                <span>Директор</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Аттестованный профессиональный бухгалтер и судебно-бухгалтерский эксперт с опытом работы более 21 года. Занимала позицию главного бухгалтера в международной Компании РОЛЬФ, а также работала в аудиторских и консалтинговых компаниях. С момента основания
+                                компании занимает должность генерального директора. Только за последние 5 лет под руководством Натальи Владимировны успешно были проведены более 10 налоговых проверок и возмещено из бюджета более 156 млн. рублей. В более
+                                чем 19 гражданских и уголовных дел выступала в качестве судебно-бухгалтерского эксперта.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-5.jpg" alt="Турмакова Татьяна Николаевна">
+                        <span class="front-name">Турмакова Татьяна Николаевна</span>
+                        <figcaption class="personal-description">
+                            <h4>Турмакова Татьяна Николаевна</h4>
+                            <p class="personal-description__position">
+                                <span>Ведущий специалист по бухгалтерскому и налоговому учету</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Аттестованный профессиональный бухгалтер, высококвалифицированный специалист в области бухгалтерского и налогового учета, с опытом работы более 16 лет. Пришла в нашу организацию из аудиторской компании 7 лет назад. На высоком уровне сопровождает юридические
+                                лица разных форм собственности (АО, ООО) и систем налогообложения, имеет опыт работы с ВЭД, раздельным учетом, профессионал в области учета в производстве.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-6.jpg" alt="Алмаева Наталья Алексанровна">
+                        <span class="front-name">Алмаева Наталья Алексанровна</span>
+                        <figcaption class="personal-description">
+                            <h4>Алмаева Наталья Алексанровна</h4>
+                            <p class="personal-description__position">
+                                <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы порядка 12 лет</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Ранее работала в крупных автомобильных холдингах и энергетических компаниях в областях финансового контроля, бухгалтерского учета, бюджетирования и управленческого учета. Работает с нами последние 7 лет. Специалист в отраслях: строительства и производства.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-7.jpg" alt="Демьянова Алла">
+                        <span class="front-name">Демьянова Алла</span>
+                        <figcaption class="personal-description">
+                            <h4>Демьянова Алла</h4>
+                            <!-- на релизе нужно убрать --><br><br>
+                            <p class="personal-description__position">
+                                <span>Специалист по бухгалтерскому и налоговому учету</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Опыт работы порядка 4 лет, 2 из которых в крупной консалтинговой аутсорсинговой компании, в областях, финансового контроля, бухгалтерского учета. Последние 2 года в нашей компании специализируется на работе с клиентами из сферы услуг и строительства.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-8.jpg" alt="Чехнева Татьяна Владимировна">
+                        <span class="front-name">Чехнева Татьяна Владимировна</span>
+                        <figcaption class="personal-description">
+                            <h4>Чехнева Татьяна Владимировна</h4>
+                            <p class="personal-description__position">
+                                <span>Главный специалист по бухгалтерскому и налоговому учету, с опытом более 16 лет.</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Специализировалась на работе в области финансового, бухгалтерского и налогового учета, а также бюджетирования в крупных международных организациях и газовых компаниях. Последние 6 лет в нашей компании, профессионально ведет клиентов в отраслях строительства,
+                                внешней торговли, автомобильного бизнеса. В течении 3 лет все ее клиенты успешно прошли внешнюю аудиторскую проверку.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-9.jpg" alt="Сорокина Анастасия Александровна">
+                        <span class="front-name">Сорокина Анастасия Александровна</span>
+                        <figcaption class="personal-description">
+                            <h4>Сорокина Анастасия Александровна</h4>
+                            <p class="personal-description__position">
+                                <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы более 9 лет</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Имеет опыт работы в крупном производственном холдинге и строительных компаниях, в областях управленческого учета, финансового контроля, бухгалтерского учета и бюджетирования, сметного учета работает с нами последние 7 лет. Специалист в отраслях: строительства
+                                и сферы услуг. Благодаря ее аналитическим запискам наши клиенты получили банковские гарантий на сумму более 70 млн рублей и кредитов на 92 млн. рублей.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-10.jpg" alt="Балина Ольга Александровна">
+                        <span class="front-name">Балина Ольга Александровна</span>
+                        <figcaption class="personal-description">
+                            <h4>Балина Ольга Александровна</h4>
+                            <p class="personal-description__position">
+                                <span>Специалист в области корпоративного и трудового права, специалист по банкротству.</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Юридический опыт работы более 10 лет. За последние 5 лет под ее руководство выиграно более 242 дел на общую сумму 78 млн. рублей.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="about-team__gallery-element">
+                        <img src="img/team/person-11.jpg" alt="Баранов Виталий Валерьевич">
+                        <span class="front-name">Баранов Виталий Валерьевич</span>
+                        <figcaption class="personal-description">
+                            <h4>Баранов Виталий Валерьевич</h4>
+                            <p class="personal-description__position">
+                                <span>Специалист в области корпоративного и трудового права</span>
+                            </p>
+                            <p class="personal-description__regalia">
+                                Опыт более 15 лет. Благодаря его нестандартному и креативному подходу десятки дел за последний год были закрыты в процессе досудебного урегулирования.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+        <div class="our-clients__wrapper">
+            <section class="our-clients centered">
+                <h2 class="our-clients__title">Наши клиенты</h2>
+                <ul class="our-clients__list">
+                    <li class="our-clients__list-element"><img src="img/clients/logo-1.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-2.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-3.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-4.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-5.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-6.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-7.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-8.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-9.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-10.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-11.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-12.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-13.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-14.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-15.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-16.png" alt="Логотип клиента"></li>
+                    <li class="our-clients__list-element"><img src="img/clients/logo-17.png" alt="Логотип клиента"></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <div class="main-footer__wrapper">
+        <footer class="main-footer">
+            <nav class="main-footer__nav">
+                <ul class="main-footer__nav-list">
+                    <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
+                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
+            </div>
+            <section class="main-footer__copyright">
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+                <p>© 2020 Все права защищены</p>
+                <a href="policy.html">Политика конфиденциальности</a>
+            </section>
+            <span class="main-footer__work-hours_title">График работы</span>
+            <ul class="main-footer__work-hours">
+                <li class="main-footer__work-hours-element">
+                    <p>Пн-Чт</p>
+                    <p>08:30 - 17:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Пт</p>
+                    <p>08:30 - 16:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Сб-Вс</p>
+                    <p>Выходной</p>
+                </li>
+            </ul>
+        </footer>
     </div>
-</header>
-<main>
-  <div class="about-welcome__wrapper">
-    <section class="about-welcome centered">
-      <h1 class="about-welcome__title">Консалтинговая Компания «Развитие» - ваш лучший выбор!</h1>
-      <p class="about-welcome__text">Современная и молодая, активная и трудолюбивая представительница среднего бизнеса.
-        Опытный профессионал своего дела, с более чем одиннадцатилетним стажем. Специалист на рынке услуг и консалтинга,
-        ориентированный на работу с предприятиями
-        и организациями всех форм собственности в различных отраслях экономики. Признанный член Института
-        профессиональных бухгалтеров и аудиторов России. Она заставит вас забыть о ворохе бумаг и непредвиденных визитах
-        налоговой. С ее профессиональной
-        командой вы вступите в цифровую эпоху комфорта.</p>
-    </section>
-  </div>
-  <div class="work-principles__wrapper">
-    <section class="work-principles centered">
-      <h2 class="work-principles__title">Принципы работы</h2>
-      <ul class="work-principles__list">
-        <li class="work-principles__list-element">Качество</li>
-        <li class="work-principles__list-element">Уверенный рост и развитие</li>
-        <li class="work-principles__list-element">Ответственность</li>
-        <li class="work-principles__list-element">Репутация</li>
-        <li class="work-principles__list-element">Цифровые технологии</li>
-        <li class="work-principles__list-element">Честность</li>
-      </ul>
-      <section class="work-principles__quality">
-        <h3 class="work-principles__quality-title">Консалтинговая Компания «Развитие» демонстрирует качество<br>своей
-          работы на конкретных цифрах.</h3>
-        <ul class="work-principles__quality-list">
-          <li class="work-principles__quality-list-element">
-            <h4>7 лет</h4>
-            <p>Составляет опыт наших специалистов в вопросе предоставлению полного цикла услуг в процедуре банкротства.
-              Консалтинговая Компания «Развитие» одна из немногих на рынке имеет собственные наработки в данной
-              области.</p>
-          </li>
-          <li class="work-principles__quality-list-element">
-            <h4>120 000 000 ₽</h4>
-            <p>Было возмещено нашими специалистами из бюджета в пользу наших клиентов.</p>
-          </li>
-          <li class="work-principles__quality-list-element">
-            <h4>Опытная команда</h4>
-            <p>Качество работы команды определяет и большой опыт в сферах внедрения бухгалтерского и налогового учета,
-              оптимизации расходов в сфере строительства и производства.</p>
-          </li>
-          <li class="work-principles__quality-list-element">
-            <h4>Точно в срок!</h4>
-            <p>Слаженность, оперативность и точность в работе для нас не пустой звук. Именно поэтому отчётность наших
-              клиентов сдается в срок и в полном объеме.</p>
-          </li>
-        </ul>
-      </section>
-      <div class="work-principles__other-wrapper">
-        <section class="work-principles__tech">
-          <h3 class="work-principles__tech-title">Цифровые<br>технологии</h3>
-          <p class="work-principles__tech-text">Консалтинговая Компания «Развитие» не только не боится нововведений, но
-            и активно принимает участие по внедрению инноваций в рабочий процесс. Нашим клиентам мы предлагаем ведение
-            цифрового документооборота через личный кабинет.
-            Цифровая бухгалтерия гораздо практичнее, надежнее и проще в использовании.</p><br>
-          <p class="work-principles__tech-text">Наша команда имеет непосредственный контакт с каждым клиентом, что
-            позволит оперативно решать все возникающие вопросы и загружать документы с собственного смартфона.
-            Долговечность, доступность и скорость получения информации делают
-            вашу и нашу работу в разы эффективнее.</p>
-        </section>
-        <section class="work-principles__grow">
-          <h3 class="work-principles__grow-title">Уверенный рост и развитие</h3>
-          <p class="work-principles__grow-slogan">Наша работа – ваше развитие! Именно поэтому мы начинаем с себя.</p>
-          <ul class="work-principles__grow-list">
-            <li class="work-principles__grow-list_element"><span>В 3 раза</span><br>увеличился штат наших
-              высококвалифицированных специалистов с 2009 года
-            </li>
-            <li class="work-principles__grow-list_element"><span>За 10 лет</span><br>количество наших клиентов возрасло
-              в 10 раз
-            </li>
-          </ul>
-        </section>
-        <section class="work-principles__responsibility">
-          <h3 class="work-principles__responsibility-title">Ответственность</h3>
-          <p class="work-principles__responsibility-slogan">Для нас важно долгосрочное сотрудничество со всеми
-            клиентами.</p>
-          <p class="work-principles__responsibility-text">Наша Компания гарантирует полную конфиденциальность в
-            отношении любой информации. Мы уверены в качестве своей работы, именно поэтому не боимся брать за нее
-            ответственность и возмещать убытки, последовавшие в результате нашей деятельности.</p>
-        </section>
-        <section class="work-principles__reputation">
-          <h3 class="work-principles__reputation-title">Репутация</h3>
-          <p class="work-principles__reputation-slogan">Мы готовы жертвовать деньгами, но не репутацией!</p>
-          <p class="work-principles__reputation-text">В современной высококонкурентной среде, с огромным количеством
-            похожих товаров именно доверие - определяющий фактор. На протяжении десятилетия Консалтинговая Компания
-            «Развитие» создает и поддерживает репутацию надежного, эффективного
-            и честного партнера, успешным прохождением 8 выездных налоговых проверок, партнерством с ведущими
-            адвокатами, проводящими судебно-бухгалтерскую экспретизу.</p>
-        </section>
-        <section class="work-principles__honest">
-          <h3 class="work-principles__honest-title">Честность</h3>
-          <p class="work-principles__honest-slogan">Наша работа строится на толковом, прямом и честном диалоге с
-            клиентом.</p>
-          <p class="work-principles__honest-text">Мы считаем важным предупреждать Вас о возможных рисках, а также
-            открыто сообщать о неудачах или неблагоприятных прогнозах для Вашего бизнеса. Позиция Консалтинговой
-            Компании «Развитие» проста – честность в работе позволяет избежать
-            ошибок и учесть их при дальнейшей работе. </p>
-        </section>
-      </div>
-    </section>
-  </div>
-  <div class="about-team__wrapper">
-    <section class="about-team centered">
-      <h2 class="about-team__title">Наша команда</h2>
-      <div class="about-team__gallery">
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-1.jpg" alt="Воробьева Ольга Юрьевна">
-          <span class="front-name">Воробьева Ольга Юрьевна</span>
-          <figcaption class="personal-description">
-            <h4>Воробьева Ольга Юрьевна</h4>
-            <p class="personal-description__position">
-              <span>Ведущий специалист по бухгалтерскому и налоговому учету</span>
-            </p>
-            <p class="personal-description__regalia">
-              Аттестованный профессиональный бухгалтер, высококвалифицированный специалист в области бухгалтерского и
-              налогового учета, с опытом работы более 10 лет. Стала частью нашей команды 7 лет назад. На высоком уровне
-              сопровождает юридических лиц и ИП. Работает
-              с разными системами налогообложения и отраслями: строительство, сфера оказания услуг, производство. Имеет
-              опыт работы по внедрению программных обеспечений и является изобретателем вариантов и систем технологий,
-              упрощающих
-              обработку и учет данных. Знает, как быстро и качественно обработать большой массив данных.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-2.jpg" alt="Малинкина Олеся Владимировна">
-          <span class="front-name">Малинкина Олеся Владимировна</span>
-          <figcaption class="personal-description">
-            <h4>Малинкина Олеся Владимировна</h4>
-            <p class="personal-description__position">
-              <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы порядка 6 лет</span>
-            </p>
-            <p class="personal-description__regalia">
-              Профессионал, знающий на практике специфику работы в крупном ресторанном бизнесе и производственных
-              холдингах. Имеет опыт работы в областях управления, управленческого учета, финансового контроля,
-              бухгалтерского учета и бюджетирования, работает с нами
-              последние 7 лет. В нашей компании специализируется в отраслях торговли и сферы услуг, общепита,
-              медицинской деятельности. Хорошо владеет кадровым и персонифицированным учетом. Благодаря ее работе у нас
-              86 % выигранных трудовых
-              судебных споров и регулярное положительное прохождение проверок трудовой инспекции.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-3.jpg" alt="Михайлова Наталья Владимировна">
-          <span class="front-name">Михайлова Наталья Владимировна</span>
-          <figcaption class="personal-description">
-            <h4>Михайлова Наталья Владимировна</h4>
-            <p class="personal-description__position">
-              <span>Руководитель отдела бухгалтерского сопровождения</span>
-            </p>
-            <p class="personal-description__regalia">
-              Аттестованный профессиональный бухгалтер и специалист в области МСФО, с опытом работы более 18 лет. Наш
-              внутренний аудитор и методолог. За последние 3 года под ее руководством произведено восстановление учета
-              более 16 юридических лиц. Работает в нашей
-              организации с момента ее создания.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-4.jpg" alt="Зубакина Наталья Владимировна">
-          <span class="front-name">Зубакина Наталья Владимировна</span>
-          <figcaption class="personal-description">
-            <h4>Зубакина Наталья Владимировна</h4>
-            <p class="personal-description__position">
-              <span>Директор</span>
-            </p>
-            <p class="personal-description__regalia">
-              Аттестованный профессиональный бухгалтер и судебно-бухгалтерский эксперт с опытом работы более 21 года.
-              Занимала позицию главного бухгалтера в международной Компании РОЛЬФ, а также работала в аудиторских и
-              консалтинговых компаниях. С момента основания
-              компании занимает должность генерального директора. Только за последние 5 лет под руководством Натальи
-              Владимировны успешно были проведены более 10 налоговых проверок и возмещено из бюджета более 156 млн.
-              рублей. В более
-              чем 19 гражданских и уголовных дел выступала в качестве судебно-бухгалтерского эксперта.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-5.jpg" alt="Турмакова Татьяна Николаевна">
-          <span class="front-name">Турмакова Татьяна Николаевна</span>
-          <figcaption class="personal-description">
-            <h4>Турмакова Татьяна Николаевна</h4>
-            <p class="personal-description__position">
-              <span>Ведущий специалист по бухгалтерскому и налоговому учету</span>
-            </p>
-            <p class="personal-description__regalia">
-              Аттестованный профессиональный бухгалтер, высококвалифицированный специалист в области бухгалтерского и
-              налогового учета, с опытом работы более 16 лет. Пришла в нашу организацию из аудиторской компании 7 лет
-              назад. На высоком уровне сопровождает юридические
-              лица разных форм собственности (АО, ООО) и систем налогообложения, имеет опыт работы с ВЭД, раздельным
-              учетом, профессионал в области учета в производстве.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-6.jpg" alt="Алмаева Наталья Алексанровна">
-          <span class="front-name">Алмаева Наталья Алексанровна</span>
-          <figcaption class="personal-description">
-            <h4>Алмаева Наталья Алексанровна</h4>
-            <p class="personal-description__position">
-              <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы порядка 12 лет</span>
-            </p>
-            <p class="personal-description__regalia">
-              Ранее работала в крупных автомобильных холдингах и энергетических компаниях в областях финансового
-              контроля, бухгалтерского учета, бюджетирования и управленческого учета. Работает с нами последние 7 лет.
-              Специалист в отраслях: строительства и производства.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-7.jpg" alt="Демьянова Алла">
-          <span class="front-name">Демьянова Алла</span>
-          <figcaption class="personal-description">
-            <h4>Демьянова Алла</h4>
-            <!-- на релизе нужно убрать --><br><br>
-            <p class="personal-description__position">
-              <span>Специалист по бухгалтерскому и налоговому учету</span>
-            </p>
-            <p class="personal-description__regalia">
-              Опыт работы порядка 4 лет, 2 из которых в крупной консалтинговой аутсорсинговой компании, в областях,
-              финансового контроля, бухгалтерского учета. Последние 2 года в нашей компании специализируется на работе с
-              клиентами из сферы услуг и строительства.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-8.jpg" alt="Чехнева Татьяна Владимировна">
-          <span class="front-name">Чехнева Татьяна Владимировна</span>
-          <figcaption class="personal-description">
-            <h4>Чехнева Татьяна Владимировна</h4>
-            <p class="personal-description__position">
-              <span>Главный специалист по бухгалтерскому и налоговому учету, с опытом более 16 лет.</span>
-            </p>
-            <p class="personal-description__regalia">
-              Специализировалась на работе в области финансового, бухгалтерского и налогового учета, а также
-              бюджетирования в крупных международных организациях и газовых компаниях. Последние 6 лет в нашей компании,
-              профессионально ведет клиентов в отраслях строительства,
-              внешней торговли, автомобильного бизнеса. В течении 3 лет все ее клиенты успешно прошли внешнюю
-              аудиторскую проверку.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-9.jpg" alt="Сорокина Анастасия Александровна">
-          <span class="front-name">Сорокина Анастасия Александровна</span>
-          <figcaption class="personal-description">
-            <h4>Сорокина Анастасия Александровна</h4>
-            <p class="personal-description__position">
-              <span>Специалист по бухгалтерскому и налоговому учету, с опытом работы более 9 лет</span>
-            </p>
-            <p class="personal-description__regalia">
-              Имеет опыт работы в крупном производственном холдинге и строительных компаниях, в областях управленческого
-              учета, финансового контроля, бухгалтерского учета и бюджетирования, сметного учета работает с нами
-              последние 7 лет. Специалист в отраслях: строительства
-              и сферы услуг. Благодаря ее аналитическим запискам наши клиенты получили банковские гарантий на сумму
-              более 70 млн рублей и кредитов на 92 млн. рублей.
-            </p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-10.jpg" alt="Балина Ольга Александровна">
-          <span class="front-name">Балина Ольга Александровна</span>
-          <figcaption class="personal-description">
-            <h4>Балина Ольга Александровна</h4>
-            <p class="personal-description__position">
-              <span>Специалист в области корпоративного и трудового права, специалист по банкротству.</span>
-            </p>
-            <p class="personal-description__regalia">
-              Юридический опыт работы более 10 лет. За последние 5 лет под ее руководство выиграно более 242 дел на
-              общую сумму 78 млн. рублей.</p>
-          </figcaption>
-        </figure>
-        <figure class="about-team__gallery-element">
-          <img src="img/team/person-11.jpg" alt="Баранов Виталий Валерьевич">
-          <span class="front-name">Баранов Виталий Валерьевич</span>
-          <figcaption class="personal-description">
-            <h4>Баранов Виталий Валерьевич</h4>
-            <p class="personal-description__position">
-              <span>Специалист в области корпоративного и трудового права</span>
-            </p>
-            <p class="personal-description__regalia">
-              Опыт более 15 лет. Благодаря его нестандартному и креативному подходу десятки дел за последний год были
-              закрыты в процессе досудебного урегулирования.
-            </p>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-  </div>
-  <div class="our-clients__wrapper">
-    <section class="our-clients centered">
-      <h2 class="our-clients__title">Наши клиенты</h2>
-      <ul class="our-clients__list">
-        <li class="our-clients__list-element"><img src="img/clients/logo-1.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-2.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-3.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-4.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-5.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-6.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-7.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-8.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-9.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-10.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-11.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-12.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-13.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-14.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-15.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-16.png" alt="Логотип клиента"></li>
-        <li class="our-clients__list-element"><img src="img/clients/logo-17.png" alt="Логотип клиента"></li>
-      </ul>
-    </section>
-  </div>
-</main>
-<div class="main-footer__wrapper">
-  <footer class="main-footer">
-    <nav class="main-footer__nav">
-      <ul class="main-footer__nav-list">
-        <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
-        <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
-        <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-        <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="main-footer__contacts">
-      <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-      <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
-    </div>
-    <section class="main-footer__copyright">
-      <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
-      <p>© 2020 Все права защищены</p>
-      <a href="policy.html">Политика конфиденциальности</a>
-    </section>
-    <span class="main-footer__work-hours_title">График работы</span>
-    <ul class="main-footer__work-hours">
-      <li class="main-footer__work-hours-element">
-        <p>Пн-Чт</p>
-        <p>08:30 - 17:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Пт</p>
-        <p>08:30 - 16:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Сб-Вс</p>
-        <p>Выходной</p>
-      </li>
-    </ul>
-  </footer>
-</div>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

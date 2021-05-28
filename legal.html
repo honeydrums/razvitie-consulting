@@ -2,295 +2,291 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style-min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-  <title>Консалтинговая компания "Развитие"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Консалтинговая компания "Развитие"</title>
+    <link rel="icon" href="/img/favicon/favicon.ico">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-<header class="main-header">
-  <div class="main-header__top-wrapper">
-    <div class="main-header__top centered">
-      <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-      <nav class="main-header__nav">
-        <ul class="main-header__nav-list">
-          <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-            <ul class="main-header__nav-list_dropdown">
-              <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
-              <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
-                сопровождение</a></li>
-            </ul>
-          </li>
-          <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-          <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-          <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-      </button>
-      <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
-    </div>
-  </div>
-  <div class="main-header__bottom-wrapper">
-    <div class="main-header__bottom centered">
-      <ul class="main-header__work-hours">
-        <li class="main-header__work-hours-element">
-          <p>Пн-Чт</p>
-          <p>08:30 - 17:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Пт</p>
-          <p>08:30 - 16:30</p>
-        </li>
-        <li class="main-header__work-hours-element">
-          <p>Сб-Вс</p>
-          <p>Выходной</p>
-        </li>
-      </ul>
-      <section class="login-area">
-        <a href="login.html">Вход</a>
-        <span>или</span>
-        <a href="signup.html">регистрация</a>
-      </section>
-    </div>
-  </div>
-  <div class="mobile-menu">
-    <ul class="mobile-menu__login-area">
-      <li class="mobile-menu__login-area-element">
-        <a href="login.html">Вход</a>
-      </li>
-      <span>или</span>
-      <li class="mobile-menu__login-area-element">
-        <a href="signup.html">регистрация</a>
-      </li>
-    </ul>
-    <ul class="mobile-menu__nav">
-      <li class="mobile-menu__nav-element">
-        <a href="#" onclick="dropDownMenu()">Услуги</a>
-        <span class="dropdown-arrow"></span>
-        <ul class="mobile-menu__nav-element_dropdown__hide">
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="legal.html">Юридическая поддержка</a>
-          </li>
-          <li class="mobile-menu__nav-element_dropdown-element">
-            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-          </li>
-        </ul>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="about.html">О компании</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="faq.html">Вопрос-ответ</a>
-      </li>
-      <li class="mobile-menu__nav-element">
-        <a href="contacts.html">Контакты</a>
-      </li>
-    </ul>
-    <div class="main-footer__wrapper_mobile">
-      <footer class="main-footer">
-        <div class="main-footer__contacts">
-          <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-        </div>
-        <span class="main-footer__work-hours_title">График работы</span>
-        <ul class="main-footer__work-hours">
-          <li class="main-footer__work-hours-element">
-            <p>Пн-Чт</p>
-            <p>08:30 - 17:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Пт</p>
-            <p>08:30 - 16:30</p>
-          </li>
-          <li class="main-footer__work-hours-element">
-            <p>Сб-Вс</p>
-            <p>Выходной</p>
-          </li>
-        </ul>
-      </footer>
-    </div>
-</header>
-<main>
-  <div class="legal-welcome__wrapper">
-    <section class="legal-welcome centered">
-      <h1 class="legal-welcome__title">Юридические услуги -</h1>
-      <p class="legal-welcome__text">Консалтинговая Компания «Развитие» оказывает ряд юридических услуг. К нам могут
-        обратиться юридические лица и граждане. Мы окажем вам комплекс услуг, а также представим Ваши интересы в судах
-        Твери и Тверской области.</p>
-      <p class="legal-welcome__text">Юристы нашего коллектива проводят консультации по любым вопросам, интересующим вас,
-        осуществляют вступление в дела на любых стадиях процесса.</p>
-    </section>
-  </div>
-  <aside class="callback-form">
-    <form action="" method="post" class="centered">
-      <ul class="callback-form__list">
-        <li class="callback-form__list-element">
-          <label for="name-input">Имя</label>
-          <input class="input__rounded__beige-bg" type="text" name="name" id="name-input" placeholder="Алексей">
-        </li>
-        <li class="callback-form__list-element">
-          <label for="phone-input">Номер телефона</label>
-          <input class="input__rounded__beige-bg" type="tel" name="phone" id="phone-input"
-                 placeholder="+7(___)___-__-__">
-        </li>
-        <li class="callback-form__list-element">
-          <button class="callback-form__button">Перезвоните нам</button>
-        </li>
-      </ul>
-    </form>
-  </aside>
-  <section class="lg-services">
-    <div class="lg-services__wrapper centered">
-      <h2 class="lg-services__title">Услуги в сфере юридической поддержки</h2>
-      <ul class="lg-services__list">
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-1.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Регистрация юридических лиц и ИП под ключ</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-2.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Внесение изменений в ЕГРЮЛ</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-3.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Оформление прав на недвижимость</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-4.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Договорная работа в области Гражданского права и Трудового
-            Кодекса</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-5.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Претензионная работа</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-6.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Судебное представительство</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-7.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Помощь в разрешении конфликтов, связанных с земельными
-            спорами</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-8.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Решение трудовых споров</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-9.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Административные правонарушения</h3>
-        </li>
-        <li class="lg-services__list-element">
-          <img src="./img/legal/lg-icons/lg-icon-10.svg" alt="Иконка услуги" width="64" height="64">
-          <h3 class="lg-services__list-element_title">Составление договоров купли-продажи, дарения и регистрация их в
-            Управлении Федеральной регистрационной службы</h3>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="feedback-help__wrapper">
-    <div class="feedback-help centered">
-      <h2 class="feedback-help__title">Окажем квалифицированную помощь</h2>
-      <div class="feedback-help__content">
-        <div class="rules-block">
-          <p class="rules-block__title">Если у Вас возникли проблемы, связанные с:</p>
-          <ul class="rules-block__list">
-            <li class="rules-block__list-element">Арбитражем (представление интересов в арбитражном суде);</li>
-            <li class="rules-block__list-element">Взысканием дебиторской задолженности;</li>
-            <li class="rules-block__list-element">Сопровождением деятельности предприятий;</li>
-            <li class="rules-block__list-element">Регистрацией предприятий коммерческих и некоммерческих;</li>
-            <li class="rules-block__list-element">Регистрацией индивидуальных предпринимателей;</li>
-            <li class="rules-block__list-element">Банкротством.</li>
-          </ul>
-          <p class="rules-block__text">Обратившись к нам со своей проблемой, Вы можете быть уверены в том, что Вас
-            внимательно выслушают, дадут необходимые консультации и ответят на все интересующие Вас вопросы.</p>
-          <p class="rules-block__text">Наша Компания не оказывает услуги в рамках уголовного и семейного права, но
-            непременно подскажет куда обратиться к соответствующим специалистам.</p>
-          <a class="rules-block__rules-file">Порядок взаимодействия с аутсорсинговой компанией</a>
-        </div>
-        <div class="form-block">
-          <p class="form-block__text">Оставьте свои контактные данные для связи.</p>
-          <form action="" method="post" class="form-block__form">
-            <ul class="form-block__form-list">
-              <li>
-                <label for="username">Имя</label>
-                <input type="text" id="username" name="user-name" placeholder="Алексей">
-              </li>
-              <li>
-                <label for="firmname">Название компании или ИНН</label>
-                <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
-              </li>
-              <li>
-                <label for="userphone">Номер телефона</label>
-                <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
-              </li>
-              <li>
-                <label for="formmessage">Сообщение</label>
-                <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение"
-                          onkeyup="this.value=this.value.substring(0,500);"></textarea>
-                <span class="textarea-counter">Использовано <span
-                  class="textarea-quantity">0</span> из 500 символов</span>
-              </li>
-            </ul>
-            <div class="checkbox-wrap">
-              <label>
-                <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
-                <span class="check__box"></span>
-                Я даю свое согласие на обработку моих персональных данных.
-              </label>
+    <header class="main-header">
+        <div class="main-header__top-wrapper">
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+                <nav class="main-header__nav">
+                    <ul class="main-header__nav-list">
+                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая поддержка</a></li>
+                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
+                    сопровождение</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
+                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
             </div>
-            <input type="submit" value="Отправить">
-          </form>
         </div>
-      </div>
+        <div class="main-header__bottom-wrapper">
+            <div class="main-header__bottom centered">
+                <ul class="main-header__work-hours">
+                    <li class="main-header__work-hours-element">
+                        <p>Пн-Чт</p>
+                        <p>08:30 - 17:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Пт</p>
+                        <p>08:30 - 16:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Сб-Вс</p>
+                        <p>Выходной</p>
+                    </li>
+                </ul>
+                <section class="login-area">
+                    <a href="login.html">Вход</a>
+                    <span>или</span>
+                    <a href="signup.html">регистрация</a>
+                </section>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__login-area">
+                <li class="mobile-menu__login-area-element">
+                    <a href="login.html">Вход</a>
+                </li>
+                <span>или</span>
+                <li class="mobile-menu__login-area-element">
+                    <a href="signup.html">регистрация</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-element">
+                    <a href="#" onclick="dropDownMenu()">Услуги</a>
+                    <span class="dropdown-arrow"></span>
+                    <ul class="mobile-menu__nav-element_dropdown__hide">
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="legal.html">Юридическая поддержка</a>
+                        </li>
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="about.html">О компании</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="faq.html">Вопрос-ответ</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="main-footer__wrapper_mobile">
+                <footer class="main-footer">
+                    <div class="main-footer__contacts">
+                        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                    </div>
+                    <span class="main-footer__work-hours_title">График работы</span>
+                    <ul class="main-footer__work-hours">
+                        <li class="main-footer__work-hours-element">
+                            <p>Пн-Чт</p>
+                            <p>08:30 - 17:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Пт</p>
+                            <p>08:30 - 16:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Сб-Вс</p>
+                            <p>Выходной</p>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+    </header>
+    <main>
+        <div class="legal-welcome__wrapper">
+            <section class="legal-welcome centered">
+                <h1 class="legal-welcome__title">Юридические услуги -</h1>
+                <p class="legal-welcome__text">Консалтинговая Компания «Развитие» оказывает ряд юридических услуг. К нам могут обратиться юридические лица и граждане. Мы окажем вам комплекс услуг, а также представим Ваши интересы в судах Твери и Тверской области.</p>
+                <p class="legal-welcome__text">Юристы нашего коллектива проводят консультации по любым вопросам, интересующим вас, осуществляют вступление в дела на любых стадиях процесса.</p>
+            </section>
+        </div>
+        <aside class="callback-form">
+            <form action="" method="post" class="centered">
+                <ul class="callback-form__list">
+                    <li class="callback-form__list-element">
+                        <label for="name-input">Имя</label>
+                        <input class="input__rounded__beige-bg" type="text" name="name" id="name-input" placeholder="Алексей">
+                    </li>
+                    <li class="callback-form__list-element">
+                        <label for="phone-input">Номер телефона</label>
+                        <input class="input__rounded__beige-bg" type="tel" name="phone" id="phone-input" placeholder="+7(___)___-__-__">
+                    </li>
+                    <li class="callback-form__list-element">
+                        <button class="callback-form__button">Перезвоните нам</button>
+                    </li>
+                </ul>
+            </form>
+        </aside>
+        <section class="lg-services">
+            <div class="lg-services__wrapper centered">
+                <h2 class="lg-services__title">Услуги в сфере юридической поддержки</h2>
+                <ul class="lg-services__list">
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-1.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Регистрация юридических лиц и ИП под ключ</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-2.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Внесение изменений в ЕГРЮЛ</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-3.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Оформление прав на недвижимость</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-4.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Договорная работа в области Гражданского права и Трудового Кодекса
+                        </h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-5.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Претензионная работа</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-6.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Судебное представительство</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-7.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Помощь в разрешении конфликтов, связанных с земельными спорами
+                        </h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-8.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Решение трудовых споров</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-9.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Административные правонарушения</h3>
+                    </li>
+                    <li class="lg-services__list-element">
+                        <img src="./img/legal/lg-icons/lg-icon-10.svg" alt="Иконка услуги" width="64" height="64">
+                        <h3 class="lg-services__list-element_title">Составление договоров купли-продажи, дарения и регистрация их в Управлении Федеральной регистрационной службы</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="feedback-help__wrapper">
+            <div class="feedback-help centered">
+                <h2 class="feedback-help__title">Окажем квалифицированную помощь</h2>
+                <div class="feedback-help__content">
+                    <div class="rules-block">
+                        <p class="rules-block__title">Если у Вас возникли проблемы, связанные с:</p>
+                        <ul class="rules-block__list">
+                            <li class="rules-block__list-element">Арбитражем (представление интересов в арбитражном суде);</li>
+                            <li class="rules-block__list-element">Взысканием дебиторской задолженности;</li>
+                            <li class="rules-block__list-element">Сопровождением деятельности предприятий;</li>
+                            <li class="rules-block__list-element">Регистрацией предприятий коммерческих и некоммерческих;</li>
+                            <li class="rules-block__list-element">Регистрацией индивидуальных предпринимателей;</li>
+                            <li class="rules-block__list-element">Банкротством.</li>
+                        </ul>
+                        <p class="rules-block__text">Обратившись к нам со своей проблемой, Вы можете быть уверены в том, что Вас внимательно выслушают, дадут необходимые консультации и ответят на все интересующие Вас вопросы.</p>
+                        <p class="rules-block__text">Наша Компания не оказывает услуги в рамках уголовного и семейного права, но непременно подскажет куда обратиться к соответствующим специалистам.</p>
+                        <a class="rules-block__rules-file">Порядок взаимодействия с аутсорсинговой компанией</a>
+                    </div>
+                    <div class="form-block">
+                        <p class="form-block__text">Оставьте свои контактные данные для связи.</p>
+                        <form action="" method="post" class="form-block__form">
+                            <ul class="form-block__form-list">
+                                <li>
+                                    <label for="username">Имя</label>
+                                    <input type="text" id="username" name="user-name" placeholder="Алексей">
+                                </li>
+                                <li>
+                                    <label for="firmname">Название компании или ИНН</label>
+                                    <input type="text" id="firmname" name="firm-name" placeholder="Название компании или ИНН">
+                                </li>
+                                <li>
+                                    <label for="userphone">Номер телефона</label>
+                                    <input type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__">
+                                </li>
+                                <li>
+                                    <label for="formmessage">Сообщение</label>
+                                    <textarea id="formmessage" name="form-message" placeholder="Ваше сообщение" onkeyup="this.value=this.value.substring(0,500);"></textarea>
+                                    <span class="textarea-counter">Использовано <span class="textarea-quantity">0</span> из 500 символов
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="checkbox-wrap">
+                                <label>
+                  <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
+                  <span class="check__box"></span>
+                  Я даю свое согласие на обработку моих персональных данных.
+                </label>
+                            </div>
+                            <input type="submit" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="main-footer__wrapper">
+        <footer class="main-footer">
+            <nav class="main-footer__nav">
+                <ul class="main-footer__nav-list">
+                    <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
+                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
+            </div>
+            <section class="main-footer__copyright">
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+                <p>© 2020 Все права защищены</p>
+                <a href="policy.html">Политика конфиденциальности</a>
+            </section>
+            <span class="main-footer__work-hours_title">График работы</span>
+            <ul class="main-footer__work-hours">
+                <li class="main-footer__work-hours-element">
+                    <p>Пн-Чт</p>
+                    <p>08:30 - 17:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Пт</p>
+                    <p>08:30 - 16:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Сб-Вс</p>
+                    <p>Выходной</p>
+                </li>
+            </ul>
+        </footer>
     </div>
-  </section>
-</main>
-<div class="main-footer__wrapper">
-  <footer class="main-footer">
-    <nav class="main-footer__nav">
-      <ul class="main-footer__nav-list">
-        <li class="main-footer__nav-list_element"><a href="services.html">Услуги</a></li>
-        <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
-        <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-        <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="main-footer__contacts">
-      <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-      <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
-    </div>
-    <section class="main-footer__copyright">
-      <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
-      <p>© 2020 Все права защищены</p>
-      <a href="policy.html">Политика конфиденциальности</a>
-    </section>
-    <span class="main-footer__work-hours_title">График работы</span>
-    <ul class="main-footer__work-hours">
-      <li class="main-footer__work-hours-element">
-        <p>Пн-Чт</p>
-        <p>08:30 - 17:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Пт</p>
-        <p>08:30 - 16:30</p>
-      </li>
-      <li class="main-footer__work-hours-element">
-        <p>Сб-Вс</p>
-        <p>Выходной</p>
-      </li>
-    </ul>
-  </footer>
-</div>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
