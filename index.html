@@ -2,327 +2,312 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style-min.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
-  <title>Консалтинговая компания "Развитие"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Консалтинговая компания "Развитие"</title>
+    <link rel="icon" href="/img/favicon/favicon.ico">
+    <link rel="icon" href="/img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="main-header__top-wrapper">
-      <div class="main-header__top centered">
-        <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
-        <nav class="main-header__nav">
-          <ul class="main-header__nav-list">
-            <li class="main-header__nav-list_element"><a href="#">Услуги</a>
-              <ul class="main-header__nav-list_dropdown">
-                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая
+    <header class="main-header">
+        <div class="main-header__top-wrapper">
+            <div class="main-header__top centered">
+                <a href="index.html"><img src="img/logo.svg" alt="Логотип консалтинговой компании Развитие"></a>
+                <nav class="main-header__nav">
+                    <ul class="main-header__nav-list">
+                        <li class="main-header__nav-list_element"><a href="#">Услуги</a>
+                            <ul class="main-header__nav-list_dropdown">
+                                <li class="main-header__nav-list_dropdown-element"><a href="legal.html">Юридическая
                     поддержка</a></li>
-                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
+                                <li class="main-header__nav-list_dropdown-element"><a href="outsourcing.html">Бухгалтерское
                     сопровождение</a></li>
-              </ul>
-            </li>
-            <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
-            <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-            <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
+                            </ul>
+                        </li>
+                        <li class="main-header__nav-list_element"><a href="about.html">О компании</a></li>
+                        <li class="main-header__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                        <li class="main-header__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--spring" type="button" onclick="showMobileMenu()">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
-      </div>
-    </div>
-    <div class="main-header__bottom-wrapper">
-      <div class="main-header__bottom centered">
-        <ul class="main-header__work-hours">
-          <li class="main-header__work-hours-element">
-            <p>Пн-Чт</p>
-            <p>08:30 - 17:30</p>
-          </li>
-          <li class="main-header__work-hours-element">
-            <p>Пт</p>
-            <p>08:30 - 16:30</p>
-          </li>
-          <li class="main-header__work-hours-element">
-            <p>Сб-Вс</p>
-            <p>Выходной</p>
-          </li>
-        </ul>
-        <section class="login-area">
-          <a href="login.html">Вход</a>
-          <span>или</span>
-          <a href="signup.html">регистрация</a>
-        </section>
-      </div>
-    </div>
-    <div class="mobile-menu">
-      <ul class="mobile-menu__login-area">
-        <li class="mobile-menu__login-area-element">
-          <a href="login.html">Вход</a>
-        </li>
-        <span>или</span>
-        <li class="mobile-menu__login-area-element">
-          <a href="signup.html">регистрация</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu__nav">
-        <li class="mobile-menu__nav-element">
-          <a href="#" onclick="dropDownMenu()">Услуги</a>
-          <span class="dropdown-arrow"></span>
-          <ul class="mobile-menu__nav-element_dropdown__hide">
-            <li class="mobile-menu__nav-element_dropdown-element">
-              <a href="legal.html">Юридическая поддержка</a>
-            </li>
-            <li class="mobile-menu__nav-element_dropdown-element">
-              <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-menu__nav-element">
-          <a href="about.html">О компании</a>
-        </li>
-        <li class="mobile-menu__nav-element">
-          <a href="faq.html">Вопрос-ответ</a>
-        </li>
-        <li class="mobile-menu__nav-element">
-          <a href="contacts.html">Контакты</a>
-        </li>
-      </ul>
-      <div class="main-footer__wrapper_mobile">
-        <footer class="main-footer">
-          <div class="main-footer__contacts">
-            <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-          </div>
-          <span class="main-footer__work-hours_title">График работы</span>
-          <ul class="main-footer__work-hours">
-            <li class="main-footer__work-hours-element">
-              <p>Пн-Чт</p>
-              <p>08:30 - 17:30</p>
-            </li>
-            <li class="main-footer__work-hours-element">
-              <p>Пт</p>
-              <p>08:30 - 16:30</p>
-            </li>
-            <li class="main-footer__work-hours-element">
-              <p>Сб-Вс</p>
-              <p>Выходной</p>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="main-banner__wrapper">
-      <section class="main-banner centered">
-        <h1 class="main-banner__title">Консалтинговая Компания «Развитие» — эволюция вашего бизнеса</h1>
-      </section>
-    </div>
-    <aside class="callback-form">
-      <form action="" method="post" class="centered">
-        <ul class="callback-form__list">
-          <li class="callback-form__list-element">
-            <label for="name-input">Имя</label>
-            <input class="input__rounded__beige-bg" type="text" name="name" id="name-input" placeholder="Алексей"
-              required>
-          </li>
-          <li class="callback-form__list-element">
-            <label for="phone-input">Номер телефона</label>
-            <input class="input__rounded__beige-bg" type="tel" name="phone" id="phone-input"
-              placeholder="+7(___)___-__-__" required>
-          </li>
-          <li class="callback-form__list-element">
-            <button class="callback-form__button">Перезвоните нам</button>
-          </li>
-        </ul>
-      </form>
-    </aside>
-    <div class="advantages-block__wrapper">
-      <section class="advantages-block centered">
-        <h2 class="advantages-block__title">Консалтинговая Компания «Развитие» в 4 раза:</h2>
-        <ul class="advantages-block__list">
-          <li class="advantages-block__list-element">Надёжнее</li>
-          <li class="advantages-block__list-element">Профессиональнее</li>
-          <li class="advantages-block__list-element">Качественнее</li>
-          <li class="advantages-block__list-element">Ответственнее</li>
-        </ul>
-        <div class="advantages-block__description">
-          <p>Консалтинговая Компания «Развитие» имеет высокий интеллектуальный потенциал. Основная часть наших
-            сотрудников - молодые, творчески мыслящие, имеющие широкий кругозор специалисты.</p>
-          <p>Все сотрудники обладают большим опытом работы в сфере бухгалтерского и налогового учета,
-            экономического анализа, юриспруденции.</p>
-          <p>В нашей команде <strong>4 аттестованных бухгалтера</strong> с высшим экономическим образованием и
-            профильной специализацией на бухгалтерском учете и аудите.</p>
-          <p>Наши юристы имеют более <strong>7 лет опыта работы</strong> по банкротству крупных компаний, а также
-            в сфере корпоративного права.</p>
+                <a href="tel:+7(4822)733-001" class="contact-phone">+7 (4822) 733-001</a>
+            </div>
         </div>
-      </section>
-    </div>
-    <div class="modern-block__wrapper">
-      <section class="modern-block centered">
-        <h3 class="modern-block__title">Сосредоточьтесь на главном</h3>
-        <div class="modern-block__description">
-          <p>Пока наши консервативные конкуренты придерживаются традиционных методов работы, мы шагаем в ногу со
-            временем!</p>
-          <p>Консалтинговая Компания «Развитие» предлагает цифровизацию вашей бухгалтерии, что позволит избежать
-            бюрократических проволочек, получить постоянный доступ к документам и обеспечить их надежное и
-            долговременное хранение.</p>
-          <p>Мы берем на себя все эти обязательства, чтобы предприниматели могли сосредоточиться на развитии и
-            совершенствовании своей работы, а не на отчетах, платежных поручениях и актах.</p>
+        <div class="main-header__bottom-wrapper">
+            <div class="main-header__bottom centered">
+                <ul class="main-header__work-hours">
+                    <li class="main-header__work-hours-element">
+                        <p>Пн-Чт</p>
+                        <p>08:30 - 17:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Пт</p>
+                        <p>08:30 - 16:30</p>
+                    </li>
+                    <li class="main-header__work-hours-element">
+                        <p>Сб-Вс</p>
+                        <p>Выходной</p>
+                    </li>
+                </ul>
+                <section class="login-area">
+                    <a href="login.html">Вход</a>
+                    <span>или</span>
+                    <a href="signup.html">регистрация</a>
+                </section>
+            </div>
         </div>
-        <ul class="modern-block__list">
-          <li class="modern-block__list-element">Цифровизация вашей бухгалтерии</li>
-          <li class="modern-block__list-element">Отсутствие бюрократических проволочек</li>
-          <li class="modern-block__list-element">Постоянный доступ к документам</li>
-          <li class="modern-block__list-element">Надежное и долговременное хранение документации</li>
-        </ul>
-      </section>
-    </div>
-    <div class="ask-block__wrapper">
-      <section class="ask-block centered">
-        <h3 class="ask-block__title">Вашему бизнесу пора вырасти!</h3>
-        <div class="ask-block__questions-wrapper">
-          <h4 class="ask-block__questions-title">К нам обращаются:</h4>
-          <ul class="ask-block__quesitons-list">
-            <li class="ask-block__quesitons-list_element">Когда увольняется прежний главный бухгалтер и
-              оставляет после себя необработанную первичку или неполную отчетность.
-            </li>
-            <li class="ask-block__quesitons-list_element">В случае возникновения нестандартных ситуаций,
-              например, процесса банкротства или корпоративного спора.
-            </li>
-            <li class="ask-block__quesitons-list_element">Когда необходима обработка документации,
-              восстановление отчетности или сопровождение в течение кризисного периода. При обнаружении фактов
-              нарушения законодательства – непременно сообщим вам.
-            </li>
-          </ul>
-          <p class="ask-block__questions-text">Если вы начинаете свой бизнес с нами, можете быть уверены, мы
-            наладим грамотную систему учета и защитим вас от противоправных действий.</p>
-          <div class="ask-block__questions-brick_wrapper">
-            <div class="ask-block__questions-brick">
-              <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
-              <span class="brick-hashtag"># ведение налогового учета</span>
-              <span class="arrow-forward"></span>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__login-area">
+                <li class="mobile-menu__login-area-element">
+                    <a href="login.html">Вход</a>
+                </li>
+                <span>или</span>
+                <li class="mobile-menu__login-area-element">
+                    <a href="signup.html">регистрация</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__nav-element">
+                    <a href="#" onclick="dropDownMenu()">Услуги</a>
+                    <span class="dropdown-arrow"></span>
+                    <ul class="mobile-menu__nav-element_dropdown__hide">
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="legal.html">Юридическая поддержка</a>
+                        </li>
+                        <li class="mobile-menu__nav-element_dropdown-element">
+                            <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="about.html">О компании</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="faq.html">Вопрос-ответ</a>
+                </li>
+                <li class="mobile-menu__nav-element">
+                    <a href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="main-footer__wrapper_mobile">
+                <footer class="main-footer">
+                    <div class="main-footer__contacts">
+                        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                    </div>
+                    <span class="main-footer__work-hours_title">График работы</span>
+                    <ul class="main-footer__work-hours">
+                        <li class="main-footer__work-hours-element">
+                            <p>Пн-Чт</p>
+                            <p>08:30 - 17:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Пт</p>
+                            <p>08:30 - 16:30</p>
+                        </li>
+                        <li class="main-footer__work-hours-element">
+                            <p>Сб-Вс</p>
+                            <p>Выходной</p>
+                        </li>
+                    </ul>
+                </footer>
             </div>
-            <div class="ask-block__questions-brick">
-              <p>Не успеваете адаптироваться к изменениям в налоговом кодексе?</p>
-              <span class="brick-hashtag"># решение трудовых споров</span>
-              <span class="arrow-forward"></span>
-            </div>
-            <div class="ask-block__questions-brick">
-              <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
-              <span class="brick-hashtag"># ведение налогового учета</span>
-              <span class="arrow-forward"></span>
-            </div>
-            <div class="ask-block__questions-brick">
-              <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
-              <span class="brick-hashtag"># ведение налогового учета</span>
-              <span class="arrow-forward"></span>
-            </div>
-          </div>
         </div>
-        <form action="" method="post" class="ask-block__callback-form">
-          <legend>Задайте нам свой вопрос</legend>
-          <p>Если хотя бы один вопрос заставил вас задуматься, то вам несомненно требуются перемены и надежный
-            партнер!</p>
-          <ul class="ask-block__callback-form_list">
-            <li>
-              <label for="username">Имя<span class="red-star">*</span></label>
-              <input class="input__rounded__beige-bg" type="text" name="user-name" id="username" placeholder="Алексей"
-                required>
-            </li>
-            <li>
-              <label for="companyname">Название компании или ИНН<span class="red-star">*</span></label>
-              <input class="input__rounded__beige-bg" type="text" name="company-name" id="companyname"
-                placeholder="Название компании или ИНН" required>
-            </li>
-            <li>
-              <label for="userphone">Номер телефона<span class="red-star">*</span></label>
-              <input class="input__rounded__beige-bg" type="tel" name="user-phone" id="userphone"
-                placeholder="+7(___)___-__-__" required>
-            </li>
-            <div class="checkbox-wrap">
-              <label>
+    </header>
+    <main>
+        <div class="main-banner__wrapper">
+            <section class="main-banner centered">
+                <h1 class="main-banner__title">Консалтинговая Компания «Развитие» — эволюция вашего бизнеса</h1>
+            </section>
+        </div>
+        <aside class="callback-form">
+            <form action="" method="post" class="centered">
+                <ul class="callback-form__list">
+                    <li class="callback-form__list-element">
+                        <label for="name-input">Имя</label>
+                        <input class="input__rounded__beige-bg" type="text" name="name" id="name-input" placeholder="Алексей" required>
+                    </li>
+                    <li class="callback-form__list-element">
+                        <label for="phone-input">Номер телефона</label>
+                        <input class="input__rounded__beige-bg" type="tel" name="phone" id="phone-input" placeholder="+7(___)___-__-__" required>
+                    </li>
+                    <li class="callback-form__list-element">
+                        <button class="callback-form__button">Перезвоните нам</button>
+                    </li>
+                </ul>
+            </form>
+        </aside>
+        <div class="advantages-block__wrapper">
+            <section class="advantages-block centered">
+                <h2 class="advantages-block__title">Консалтинговая Компания «Развитие» в 4 раза:</h2>
+                <ul class="advantages-block__list">
+                    <li class="advantages-block__list-element">Надёжнее</li>
+                    <li class="advantages-block__list-element">Профессиональнее</li>
+                    <li class="advantages-block__list-element">Качественнее</li>
+                    <li class="advantages-block__list-element">Ответственнее</li>
+                </ul>
+                <div class="advantages-block__description">
+                    <p>Консалтинговая Компания «Развитие» имеет высокий интеллектуальный потенциал. Основная часть наших сотрудников - молодые, творчески мыслящие, имеющие широкий кругозор специалисты.</p>
+                    <p>Все сотрудники обладают большим опытом работы в сфере бухгалтерского и налогового учета, экономического анализа, юриспруденции.</p>
+                    <p>В нашей команде <strong>4 аттестованных бухгалтера</strong> с высшим экономическим образованием и профильной специализацией на бухгалтерском учете и аудите.</p>
+                    <p>Наши юристы имеют более <strong>7 лет опыта работы</strong> по банкротству крупных компаний, а также в сфере корпоративного права.</p>
+                </div>
+            </section>
+        </div>
+        <div class="modern-block__wrapper">
+            <section class="modern-block centered">
+                <h3 class="modern-block__title">Сосредоточьтесь на главном</h3>
+                <div class="modern-block__description">
+                    <p>Пока наши консервативные конкуренты придерживаются традиционных методов работы, мы шагаем в ногу со временем!
+                    </p>
+                    <p>Консалтинговая Компания «Развитие» предлагает цифровизацию вашей бухгалтерии, что позволит избежать бюрократических проволочек, получить постоянный доступ к документам и обеспечить их надежное и долговременное хранение.</p>
+                    <p>Мы берем на себя все эти обязательства, чтобы предприниматели могли сосредоточиться на развитии и совершенствовании своей работы, а не на отчетах, платежных поручениях и актах.</p>
+                </div>
+                <ul class="modern-block__list">
+                    <li class="modern-block__list-element">Цифровизация вашей бухгалтерии</li>
+                    <li class="modern-block__list-element">Отсутствие бюрократических проволочек</li>
+                    <li class="modern-block__list-element">Постоянный доступ к документам</li>
+                    <li class="modern-block__list-element">Надежное и долговременное хранение документации</li>
+                </ul>
+            </section>
+        </div>
+        <div class="ask-block__wrapper">
+            <section class="ask-block centered">
+                <h3 class="ask-block__title">Вашему бизнесу пора вырасти!</h3>
+                <div class="ask-block__questions-wrapper">
+                    <h4 class="ask-block__questions-title">К нам обращаются:</h4>
+                    <ul class="ask-block__quesitons-list">
+                        <li class="ask-block__quesitons-list_element">Когда увольняется прежний главный бухгалтер и оставляет после себя необработанную первичку или неполную отчетность.
+                        </li>
+                        <li class="ask-block__quesitons-list_element">В случае возникновения нестандартных ситуаций, например, процесса банкротства или корпоративного спора.
+                        </li>
+                        <li class="ask-block__quesitons-list_element">Когда необходима обработка документации, восстановление отчетности или сопровождение в течение кризисного периода. При обнаружении фактов нарушения законодательства – непременно сообщим вам.
+                        </li>
+                    </ul>
+                    <p class="ask-block__questions-text">Если вы начинаете свой бизнес с нами, можете быть уверены, мы наладим грамотную систему учета и защитим вас от противоправных действий.</p>
+                    <div class="ask-block__questions-brick_wrapper">
+                        <div class="ask-block__questions-brick">
+                            <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
+                            <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
+                        </div>
+                        <div class="ask-block__questions-brick">
+                            <p>Не успеваете адаптироваться к изменениям в налоговом кодексе?</p>
+                            <span class="brick-hashtag"># решение трудовых споров</span>
+                            <span class="arrow-forward"></span>
+                        </div>
+                        <div class="ask-block__questions-brick">
+                            <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
+                            <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
+                        </div>
+                        <div class="ask-block__questions-brick">
+                            <p>Возникло ощущение, что вы не понимаете сути происходящего в собственной компании?</p>
+                            <span class="brick-hashtag"># ведение налогового учета</span>
+                            <span class="arrow-forward"></span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="post" class="ask-block__callback-form">
+                    <legend>Задайте нам свой вопрос</legend>
+                    <p>Если хотя бы один вопрос заставил вас задуматься, то вам несомненно требуются перемены и надежный партнер!
+                    </p>
+                    <ul class="ask-block__callback-form_list">
+                        <li>
+                            <label for="username">Имя<span class="red-star">*</span></label>
+                            <input class="input__rounded__beige-bg" type="text" name="user-name" id="username" placeholder="Алексей" required>
+                        </li>
+                        <li>
+                            <label for="companyname">Название компании или ИНН<span class="red-star">*</span></label>
+                            <input class="input__rounded__beige-bg" type="text" name="company-name" id="companyname" placeholder="Название компании или ИНН" required>
+                        </li>
+                        <li>
+                            <label for="userphone">Номер телефона<span class="red-star">*</span></label>
+                            <input class="input__rounded__beige-bg" type="tel" name="user-phone" id="userphone" placeholder="+7(___)___-__-__" required>
+                        </li>
+                        <div class="checkbox-wrap">
+                            <label>
                 <input type="checkbox" name="confirm-yes" checked onchange="checkPropButton()">
                 <span class="check__box"></span>
                 Я даю свое согласие на обработку моих персональных данных.
               </label>
+                        </div>
+                    </ul>
+                    <input type="submit" value="Перезвоните нам">
+                </form>
+            </section>
+        </div>
+        <div class="signup-block__wrapper">
+            <section class="signup-block centered">
+                <div class="signup-block__description">
+                    <h3 class="signup-block__title">Развитие - эволюция вашего бизнеса</h3>
+                    <p class="signup-block__text">Консалтинговая Компания «Развитие» имеет высокий интеллектуальный потенциал. Основная часть наших сотрудников - это молодые, творчески мыслящие, имеющие широкий кругозор специалисты. Все сотрудники имеют большой опыт работы в сфере
+                        бухгалтерского и налогового учета, экономического анализа, юриспруденции.</p>
+                </div>
+                <div class="signup-block__decorative-phone">
+                    <h4 class="signup-block__decorative-phone__title">Зарегистрируйтесь и получите доступ в личный кабинет
+                    </h4>
+                    <a href="signup.html" class="signup-block__decorative-phone__link">Зарегистрироваться</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="main-footer__wrapper">
+        <footer class="main-footer">
+            <nav class="main-footer__nav">
+                <ul class="main-footer__nav-list">
+                    <li class="main-footer__nav-list_element">
+                        <a href="#">Услуги</a>
+                        <ul class="main-footer__nav-list_dropdown">
+                            <li class="main-footer__nav-list_dropdown-element">
+                                <a href="legal.html">Юридическая поддержка</a>
+                            </li>
+                            <li class="main-footer__nav-list_dropdown-element">
+                                <a href="outsourcing.html">Бухгалтерское сопровождение</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
+                    <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
+                    <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main-footer__contacts">
+                <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
+                <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
             </div>
-          </ul>
-          <input type="submit" value="Перезвоните нам">
-        </form>
-      </section>
-    </div>
-    <div class="signup-block__wrapper">
-      <section class="signup-block centered">
-        <div class="signup-block__description">
-          <h3 class="signup-block__title">Развитие - эволюция вашего бизнеса</h3>
-          <p class="signup-block__text">Консалтинговая Компания «Развитие» имеет высокий интеллектуальный
-            потенциал. Основная часть наших сотрудников - это молодые, творчески мыслящие, имеющие широкий
-            кругозор специалисты. Все сотрудники имеют большой опыт работы в сфере
-            бухгалтерского и налогового учета, экономического анализа, юриспруденции.</p>
-        </div>
-        <div class="signup-block__decorative-phone">
-          <h4 class="signup-block__decorative-phone__title">Зарегистрируйтесь и получите доступ в личный
-            кабинет</h4>
-          <a href="signup.html" class="signup-block__decorative-phone__link">Зарегистрироваться</a>
-        </div>
-      </section>
-    </div>
-  </main>
-  <div class="main-footer__wrapper">
-    <footer class="main-footer">
-      <nav class="main-footer__nav">
-        <ul class="main-footer__nav-list">
-          <li class="main-footer__nav-list_element">
-            <a href="#">Услуги</a>
-            <ul class="main-footer__nav-list_dropdown">
-              <li class="main-footer__nav-list_dropdown-element">
-                <a href="legal.html">Юридическая поддержка</a>
-              </li>
-              <li class="main-footer__nav-list_dropdown-element">
-                <a href="outsourcing.html">Бухгалтерское сопровождение</a>
-              </li>
+            <section class="main-footer__copyright">
+                <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
+                <p>© 2020 Все права защищены</p>
+                <a href="policy.html">Политика конфиденциальности</a>
+            </section>
+            <span class="main-footer__work-hours_title">График работы</span>
+            <ul class="main-footer__work-hours">
+                <li class="main-footer__work-hours-element">
+                    <p>Пн-Чт</p>
+                    <p>08:30 - 17:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Пт</p>
+                    <p>08:30 - 16:30</p>
+                </li>
+                <li class="main-footer__work-hours-element">
+                    <p>Сб-Вс</p>
+                    <p>Выходной</p>
+                </li>
             </ul>
-          </li>
-          <li class="main-footer__nav-list_element"><a href="about.html">О компании</a></li>
-          <li class="main-footer__nav-list_element"><a href="faq.html">Вопрос-ответ</a></li>
-          <li class="main-footer__nav-list_element"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="main-footer__contacts">
-        <a href="tel:+74822733001" class="contact-phone">+7 (4822) 733-001</a>
-        <a href="tel:+74822733002" class="contact-phone">+7 (4822) 733-002</a>
-      </div>
-      <section class="main-footer__copyright">
-        <p>Сайт создан <a href="https://www.wizard-c.ru/web-studiya/">WIZARD-C</a>&#10084;&#65039;</p>
-        <p>© 2020 Все права защищены</p>
-        <a href="policy.html">Политика конфиденциальности</a>
-      </section>
-      <span class="main-footer__work-hours_title">График работы</span>
-      <ul class="main-footer__work-hours">
-        <li class="main-footer__work-hours-element">
-          <p>Пн-Чт</p>
-          <p>08:30 - 17:30</p>
-        </li>
-        <li class="main-footer__work-hours-element">
-          <p>Пт</p>
-          <p>08:30 - 16:30</p>
-        </li>
-        <li class="main-footer__work-hours-element">
-          <p>Сб-Вс</p>
-          <p>Выходной</p>
-        </li>
-      </ul>
-    </footer>
-  </div>
-  <script src="js/script.js"></script>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
